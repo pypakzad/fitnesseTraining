@@ -1,0 +1,7 @@
+WumpuS (parent page is ShootArrows)
+
+|Start game|
+|Put user in 3|
+|shoot arrow South|
+|check arrow count is 4|
+|check message appears saying "User killed the Wumpus."|
