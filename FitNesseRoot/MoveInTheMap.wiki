@@ -3,3 +3,16 @@ MoveInTheMap (the ultimate parent is HuntTheWumpus)
 Testing that the user can move around the map.
 
 Input Map:
+|Start| Direction | End|
+|1| E |2|
+|2| E |3|
+|3| S |4|
+|4| S |5|
+|5| W |6|
+|6| W |7|
+|7| N |8|
+|8| N |1|
+
+Testing '''valid''' movements: ValidMovement
+
+Testing '''invalid''' movements: InvalidMovement
