@@ -22,4 +22,10 @@ public class ArrowTest {
 		assertFalse(newArrow.canUseArrow());
 	}
 
+	@Test
+	public void setArrowLocation() {
+		Arrow newArrow = new Arrow();
+
+	}
+
 }

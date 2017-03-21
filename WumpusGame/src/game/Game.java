@@ -6,15 +6,15 @@ public class Game {
 	private Map map;
 
 	public Game() {
-		this.map = new Map();
-	}
-
-	public int movePlayer() {
-		return 0;
+		this.map = new Map(50);
 	}
 
 	public Map getMap() {
 		return this.map;
 	}
+
+	public void move() {
+		// TODO: return
+	};
 
 }
