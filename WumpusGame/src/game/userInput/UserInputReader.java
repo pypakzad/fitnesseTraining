@@ -1,5 +1,5 @@
 package game.userInput;
 
-public interface UserInput {
+public interface UserInputReader {
 	public String getUserInput();
 }
