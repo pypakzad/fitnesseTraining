@@ -10,8 +10,7 @@ public class Player {
 	private ArrayList<Arrow> arrows;
 
 	public Player() {
-		this.arrows = new ArrayList<>();
-
+		this.initializeArrows();
 	}
 
 	public void setPlayerLocation(Cavern location) {
@@ -22,9 +21,20 @@ public class Player {
 		return this.location;
 	}
 
+	private void initializeArrows() {
+		this.arrows = new ArrayList<>();
+		for (int i = 0; i < 5; i++) {
+			this.arrows.add(new Arrow(this.location));
+		}
+	}
+
 	public int getNumberOfAvailableArrows() {
-		// TODO Auto-generated method stub
-		return 0;
+		int availableArrowCount = 0;
+		for (Arrow arrow : arrows) {
+			if (arrow.canUseArrow())
+				availableArrowCount++;
+		}
+		return availableArrowCount;
 	}
 
 }

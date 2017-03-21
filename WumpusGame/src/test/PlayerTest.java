@@ -1,6 +1,7 @@
-package test.game.player;
+package test;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -14,6 +15,7 @@ public class PlayerTest {
 		assertNotNull(player);
 	}
 
+	@Test
 	public void playerStartsWithFiveArrows() {
 		Player player = new Player();
 		int numberOfArrows = player.getNumberOfAvailableArrows();
