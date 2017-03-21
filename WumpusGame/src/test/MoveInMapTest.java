@@ -1,9 +1,10 @@
-package game;
+package test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import game.Game;
 import game.Game.Direction;
 import game.map.Map;
 import game.map.MockMap;

@@ -1,3 +1,8 @@
-HuntTheWumpus
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+|Import|
+|Fitnesse|
 
+HuntTheWumpus
 IterationOne
+>IterationOne

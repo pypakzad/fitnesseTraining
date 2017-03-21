@@ -2,37 +2,46 @@ ValidMovement (parent page is MoveInTheMap)
 
 Testing clockwise movement:
 
-|put user in 1|
-|go E|
-|check user is in 2|
 
-|put user in 2|
-|go E|
-|check user is in 3|
+|script| moveMap|
+|put |user |in|1|
+|go|E|
+|check |user |is in| 2|
 
-|put user in 3|
-|go S|
+|script moveMap|
+|put |user |in| 2|
+|go| E|
+|check |user| is in| 3|
+
+|script moveMap|
+|put |user |in| 3|
+|go| S|
 |check user is in 4|
 
-|put user in 4|
-|go S|
-|check user is in 5|
+|script moveMap|
+|put |user |in| 4|
+|go| S|
+|check |user |is in| 5|
 
-|put user in 5|
-|go W|
-|check user is in 6|
+|script moveMap|
+|put |user |in| 5|
+|go|W|
+|check |user |is in| 6|
 
-|put user in 6|
-|go W|
+|script moveMap|
+|put |user |in|6|
+|go| W|
 |check user is in 7|
 
-|put user in 7|
-|go N|
+|script moveMap|
+|put |user |in| 7|
+|go| N|
 |check user is in 8|
 
-|put user in 8|
-|go N|
-|check user is in 1|
+|script moveMap|
+|put |user |in| 8|
+|go| N|
+|check |user |is in| 1|
 
 
 Testing counter-clockwise movement:

@@ -1,3 +1,9 @@
+|HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
+|HuntTheWumpus||16:08:17 Tue, Mar 21, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
+|HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
+|ValidMovement||16:01:31 Tue, Mar 21, 2017|
 |ArrowCountAndMovement||15:38:02 Tue, Mar 21, 2017|
 <<<<<<< HEAD
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
@@ -6,7 +12,6 @@
 =======
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
 |MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
-|ValidMovement||14:56:15 Tue, Mar 21, 2017|
 |TrackArrows||14:45:11 Tue, Mar 21, 2017|
 >>>>>>> cab803e0fa5251ab63c16edb255d5c9a202d741b
 <<<<<<< HEAD
@@ -14,7 +19,6 @@
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 =======
 >>>>>>> 0e72175afcd3ee39b9de2e1c338bee363ed54345
-|HuntTheWumpus||14:06:19 Tue, Mar 21, 2017|
 <<<<<<< HEAD
 |IterationOne||13:22:44 Tue, Mar 21, 2017|
 |ShootArrows||13:15:13 Tue, Mar 21, 2017|
