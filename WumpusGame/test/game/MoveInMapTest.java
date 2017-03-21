@@ -11,7 +11,7 @@ public class MoveInMapTest {
 	@Test
 	public void NullPlayerMovementThrowsException() {
 		Direction move = null;
-		Game g = new Game();
+		Game g = new Game(1);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");
@@ -21,28 +21,14 @@ public class MoveInMapTest {
 		}
 	}
 	@Test
-	public void PlayerHitsNorthWallThrowsException(){
+	public void PlayerHitsObjectThrowsException(){
 		Direction move = Direction.N;
-		Game g = new Game();
+		Game g = new Game(1);
 		try{
 			for(int i=0;i<100;i++)
 			g.playerMove(move);
 			fail("No Exception Thrown");
 		}catch(Exception e){
-			if(e.getMessage()!="Wall")
-				fail("Wrong Exception Thrown");
-		}
-	}
-	@Test
-	public void PlayerHitsNorthBatsThrowsException(){
-		Direction move = Direction.N;
-		Game g = new Game();
-		try{
-			g.playerMove(move);
-			fail("No Exception Thrown");
-		}catch(Exception e){
-			if(e.getMessage()!="Bats!!!!!")
-				fail("Wrong Exception Thrown");
 		}
 	}
 

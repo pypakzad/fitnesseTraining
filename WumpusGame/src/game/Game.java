@@ -13,9 +13,12 @@ public enum Direction{N,S,E,W};
 		if(d==null)
 			throw new Exception("Input Null Move");
 	}
-	
 	public Game() {
 		this.map = new Map(50);
+	}
+	
+	public Game(int mapSize) {
+		this.map = new Map(mapSize);
 	}
 
 	public Map getMap() {
