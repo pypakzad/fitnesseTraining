@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |ArrowCountAndMovement||15:20:31 Tue, Mar 21, 2017|
 |TrackArrows||15:11:51 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
+=======
+|InvalidMovement||15:11:13 Tue, Mar 21, 2017|
+|MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
+|ValidMovement||14:56:15 Tue, Mar 21, 2017|
+|TrackArrows||14:45:11 Tue, Mar 21, 2017|
+>>>>>>> cab803e0fa5251ab63c16edb255d5c9a202d741b
 <<<<<<< HEAD
-|MoveInTheMap||14:31:03 Tue, Mar 21, 2017|
 |CreateMap||14:27:08 Tue, Mar 21, 2017|
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 =======
