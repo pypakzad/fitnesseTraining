@@ -5,7 +5,7 @@ public class Game {
 public enum Direction{N,S,E,W};
 	public void playerMove(Direction d) throws Exception {
 		validateMove(d);
-		
+		map.getCaverns();
 		throw new Exception("Wall");
 	}
 
@@ -17,8 +17,8 @@ public enum Direction{N,S,E,W};
 		this.map = new Map(50);
 	}
 	
-	public Game(int mapSize) {
-		this.map = new Map(mapSize);
+	public Game(Map map) {
+		this.map = map;
 	}
 
 	public Map getMap() {
