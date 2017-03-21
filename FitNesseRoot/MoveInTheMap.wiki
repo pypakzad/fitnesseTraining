@@ -1,1 +1,5 @@
-MoveInTheMap
+MoveInTheMap (the ultimate parent is HuntTheWumpus)
+
+Testing that the user can move around the map.
+
+Input Map:
