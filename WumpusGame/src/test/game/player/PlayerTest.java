@@ -14,4 +14,10 @@ public class PlayerTest {
 		assertNotNull(player);
 	}
 
+	public void playerStartsWithFiveArrows() {
+		Player player = new Player();
+		int numberOfArrows = player.getNumberOfAvailableArrows();
+		assertTrue(numberOfArrows == 5);
+	}
+
 }
