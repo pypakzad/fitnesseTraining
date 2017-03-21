@@ -3,7 +3,7 @@ package test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class ArrowTest {
 	public void init() {
 		newArrow = null;
 		Map map = new Map(10);
-		ArrayList<Cavern> caverns = map.getCaverns();
+		HashMap<Coordinate, Cavern> caverns = map.getCaverns();
 		startingCavern = caverns.get(0);
 		newArrow = new Arrow(startingCavern);
 	}
