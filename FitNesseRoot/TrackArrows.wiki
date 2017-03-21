@@ -1,0 +1,45 @@
+TrackArrows (the ultimate parent page is HuntTheWumpus)
+
+We are testing how we track arrows throughout HTW.
+
+Testing that the user has all arrows when the game begins:
+|At game start|
+|check user arrow count|
+|user has 5 arrows|
+
+Testing that the arrows move with the user, when the user moves in all directions:
+|User is at start|
+|Go North|
+|Check user arrow count|
+|user has 5 arrows|
+
+|User is at start|
+|Go South|
+|Check user arrow count|
+|user has 5 arrows|
+
+|User is at start|
+|Go East|
+|Check user arrow count|
+|user has 5 arrows|
+
+|User is at start|
+|Go West|
+|Check user arrow count|
+|user has 5 arrows|
+
+Testing that the arrow count decreases when the user shoots an arrow:
+|User shoots arrow|
+|check user arrow count|
+|user arrow count decreases by 1|
+
+Testing that the arrow count increases when the user picks up an arrow:
+|User picks up arrow|
+|check user arrow count|
+|user arrow count increases by 1|
+
+Testing that the arrow count does not change when the user shoots and has zero arrows:
+|user arrow count is 0|
+|user shoots arrow|
+|check user arrow count|
+|user has 0 arrows|
