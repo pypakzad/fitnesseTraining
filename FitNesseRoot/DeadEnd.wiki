@@ -1,0 +1,7 @@
+DeadEnd (parent page is ShootArrows)
+
+|Start game|
+|Put user in 5|
+|shoot arrow East|
+|check arrow count is 4|
+|check message appears saying "Arrow rebounded. User dies."|
