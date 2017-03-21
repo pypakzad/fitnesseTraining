@@ -1,1 +1,10 @@
-CreateMap
+CreateMap (ultimate parent page HuntTheWumpus)
+
+Testing that when a new random map is created for each game that there are 50 caverns, 5 pits, 5 bats, 40 empty caverns, and 1 wumpus.
+
+|When map is created|
+|check there are 50 caverns|
+|check there are 5 pits|
+|check there are 5 bats|
+|check there are 40 empty caverns|
+|check there is 1 wumpus|

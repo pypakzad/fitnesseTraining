@@ -1,0 +1,24 @@
+ArrowCountAndMovement (parent page is .TrackArrows)
+
+Testing that the user has all arrows when the game begins:
+|At game start|
+|check user arrow count|
+|user has 5 arrows|
+
+Testing that the arrows move with the user, when the user moves in all directions:
+|User is at start of game|
+|Go North|
+|user has 5 arrows|
+
+|User is at start of game|
+|Go South|
+|user has 5 arrows|
+
+|User is at start of game|
+|Go East|
+|user has 5 arrows|
+
+|User is at start of game|
+|Go West|
+|user has 5 arrows|
+
