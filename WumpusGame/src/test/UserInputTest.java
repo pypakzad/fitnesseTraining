@@ -1,4 +1,4 @@
-package test.game.userInput;
+package test;
 
 import org.junit.Test;
 
