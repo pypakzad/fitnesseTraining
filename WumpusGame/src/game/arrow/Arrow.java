@@ -4,19 +4,20 @@ import game.map.Map.Cavern;
 
 public class Arrow {
 
-	private boolean olayerHasArrow;
+	private boolean playerHasArrow;
 	private Cavern location;
 
-	public Arrow() {
-		this.olayerHasArrow = true;
+	public Arrow(Cavern location) {
+		this.playerHasArrow = true;
+		this.location = location;
 	}
 
 	public boolean canUseArrow() {
-		return this.olayerHasArrow;
+		return this.playerHasArrow;
 	}
 
 	public void setArrowStatus(boolean status) {
-		this.olayerHasArrow = status;
+		this.playerHasArrow = status;
 	}
 
 	public void setLocation(Cavern cavern) {
