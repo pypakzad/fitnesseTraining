@@ -1,0 +1,7 @@
+TrackArrows (the ultimate parent page is HuntTheWumpus)
+
+We are testing how we track arrows throughout HTW.
+
+Test Cases for intial arrow count and movement: ArrowCountAndMovement
+
+Test Cases for changing arrow counts after shooting and picking up arrows: ChangingArrows

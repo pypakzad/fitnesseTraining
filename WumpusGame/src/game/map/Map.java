@@ -12,6 +12,7 @@ public class Map {
 	public Map(int mapsize) {
 		makeCaverns(mapsize);
 	}
+
 	
 	private class Coordinate {
 		int x;
@@ -33,8 +34,7 @@ public class Map {
 						break;
 			case 'E':	eastCavern=cavern;
 						eastCavern.westCavern = this;
-			}
-			
+			}	
 		}
 
 	}
@@ -76,7 +76,8 @@ public class Map {
 
 	private void makeCaverns(int mapsize) {
 		Cavern firstCavern = new Cavern();
-		caverns.put(new Coordinate(0,0), firstCavern);
+		Coordinate currentCoordinate = new Coordinate(0,0);
+		caverns.put(currentCoordinate, firstCavern);
 		Random connectionGenerator = new Random(System.currentTimeMillis());
 		int connection = connectionGenerator.nextInt(4)+1;
 		char[] directions = new char[4];
@@ -85,11 +86,11 @@ public class Map {
 		directions[2] = 'S';
 		directions[3] = 'E';
 		int currentCavern = 0;
-		Coordinate currentCoordinate = new Coordinate(0,0);
+
 		for (int i=0; i<mapsize; i++) {
 			Cavern cavern = new Cavern();
 			cavern.connectCavern(caverns.get(currentCavern), directions[connection]);
-			caverns.add(cavern);
+			caverns.put(currentCoordinate, firstCavern);
 			connection--;
 			if (connection<0) {
 				connection = connectionGenerator.nextInt(5);
@@ -97,5 +98,4 @@ public class Map {
 			}
 		}
 	}
-	
 }
