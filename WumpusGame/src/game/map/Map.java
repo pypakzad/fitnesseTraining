@@ -23,7 +23,7 @@ public class Map {
 		}
 		Coordinate move(char direction){
 			switch (direction) {
-			case 'N':	northCavern=cavern;
+			case 'N':	Cavern.northCavern=cavern;
 						northCavern.southCavern = this;
 						break;
 			case 'W':	westCavern=cavern;
@@ -97,5 +97,9 @@ public class Map {
 				currentCavern++;
 			}
 		}
+	}
+	public  void checkMap(int x, int y) throws Exception
+	{
+		
 	}
 }

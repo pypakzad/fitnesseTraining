@@ -17,13 +17,13 @@ public class ArrowTest {
 	private Map.Cavern startingCavern;
 
 	@Before
-	public void init() {
-		newArrow = null;
-		Map map = new Map(10);
-		ArrayList<Cavern> caverns = map.getCaverns();
-		startingCavern = caverns.get(0);
-		newArrow = new Arrow(startingCavern);
-	}
+//	public void init() {
+//		newArrow = null;
+//		Map map = new Map(10);
+//		ArrayList<Cavern> caverns = map.getCaverns();
+//		startingCavern = caverns.get(0);
+//		newArrow = new Arrow(startingCavern);
+//	}
 
 	@Test
 	public void newArrowIsAvailable() {

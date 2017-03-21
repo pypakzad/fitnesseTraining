@@ -14,6 +14,7 @@ public class Game {
 
 	public void playerMove(Direction d) throws Exception {
 		validateMove(d);
+		map.checkMap(0, 0);
 		throw new Exception("Wall");
 	}
 
