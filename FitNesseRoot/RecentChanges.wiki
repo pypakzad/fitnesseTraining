@@ -1,6 +1,8 @@
+|InvalidMovement||15:11:13 Tue, Mar 21, 2017|
+|MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
+|ValidMovement||14:56:15 Tue, Mar 21, 2017|
 |TrackArrows||14:45:11 Tue, Mar 21, 2017|
 <<<<<<< HEAD
-|MoveInTheMap||14:31:03 Tue, Mar 21, 2017|
 |CreateMap||14:27:08 Tue, Mar 21, 2017|
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 |ArrowCountAndMovement||14:11:54 Tue, Mar 21, 2017|

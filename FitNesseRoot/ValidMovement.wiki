@@ -1,0 +1,70 @@
+ValidMovement (parent page is MoveInTheMap)
+
+Testing clockwise movement:
+
+|put user in 1|
+|go E|
+|check user is in 2|
+
+|put user in 2|
+|go E|
+|check user is in 3|
+
+|put user in 3|
+|go S|
+|check user is in 4|
+
+|put user in 4|
+|go S|
+|check user is in 5|
+
+|put user in 5|
+|go W|
+|check user is in 6|
+
+|put user in 6|
+|go W|
+|check user is in 7|
+
+|put user in 7|
+|go N|
+|check user is in 8|
+
+|put user in 8|
+|go N|
+|check user is in 1|
+
+
+Testing counter-clockwise movement:
+
+|put user in 1|
+|go S|
+|check user is in 8|
+
+|put user in 8|
+|go S|
+|check user is in 7|
+
+|put user in 7|
+|go E|
+|check user is in 6|
+
+|put user in 6|
+|go E|
+|check user is in 5|
+
+|put user in 5|
+|go N|
+|check user is in 4|
+
+|put user in 4|
+|go N|
+|check user is in 3|
+
+|put user in 3|
+|go W|
+|check user is in 2|
+
+|put user in 2|
+|go W|
+|check user is in 1|
