@@ -13,11 +13,15 @@ public enum Direction{N,S,E,W};
 	}
 	
 	public Game() {
-		this.map = new Map();
+		this.map = new Map(50);
 	}
 
 	public Map getMap() {
 		return this.map;
 	}
+
+	public void move() {
+		// TODO: return
+	};
 
 }
