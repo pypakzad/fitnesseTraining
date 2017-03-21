@@ -11,6 +11,7 @@ import org.junit.Test;
 import game.arrow.Arrow;
 import game.map.Map;
 import game.map.Map.Cavern;
+import game.map.Map.Coordinate;
 
 public class ArrowTest {
 	private Arrow newArrow;

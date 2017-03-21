@@ -14,7 +14,7 @@ public class Game {
 
 	public void playerMove(Direction d) throws Exception {
 		validateMove(d);
-
+		map.checkMap(0, 0);
 		throw new Exception("Wall");
 	}
 
@@ -26,9 +26,9 @@ public class Game {
 	public Game() {
 		this.map = new Map(50);
 	}
-
-	public Game(int mapSize) {
-		this.map = new Map(mapSize);
+	
+	public Game(Map map) {
+		this.map = map;
 	}
 
 	public Map getMap() {
