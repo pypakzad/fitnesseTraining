@@ -15,7 +15,7 @@ import game.map.Map.Coordinate;
 
 public class ArrowTest {
 	private Arrow newArrow;
-	private Map.Cavern startingCavern;
+	private Map.Coordinate startingCavern;
 
 	@Before
 	public void init() {

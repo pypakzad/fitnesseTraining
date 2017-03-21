@@ -1,13 +1,13 @@
 package game.arrow;
 
-import game.map.Map.Cavern;
+import game.map.Map.Coordinate;
 
 public class Arrow {
 
 	private boolean playerHasArrow;
-	private Cavern location;
+	private Coordinate location;
 
-	public Arrow(Cavern location) {
+	public Arrow(Coordinate location) {
 		this.playerHasArrow = true;
 		this.location = location;
 	}
@@ -20,11 +20,11 @@ public class Arrow {
 		this.playerHasArrow = status;
 	}
 
-	public void setLocation(Cavern cavern) {
+	public void setLocation(Coordinate cavern) {
 		this.location = cavern;
 	}
 
-	public Cavern getLocation() {
+	public Coordinate getLocation() {
 		return this.location;
 	}
 
