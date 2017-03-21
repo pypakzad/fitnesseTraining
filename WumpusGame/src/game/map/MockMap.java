@@ -10,7 +10,7 @@ public class MockMap extends Map{
 		private String message;
 		public enum MockMapType{Wall,Bats,Pit,Wumpus};
 		public void setMap(MockMapType m) {
-			if (Wall){
+			if (MockMapType.Wall){
 				
 			}
 		}
