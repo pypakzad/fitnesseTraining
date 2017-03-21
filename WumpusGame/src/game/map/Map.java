@@ -82,6 +82,7 @@ public class Map {
 			case 'E':
 				eastCavern = cavern;
 			}
+
 		}
 	}
 
@@ -114,15 +115,19 @@ public class Map {
 		directions[3] = 'E';
 		int currentCavern = 0;
 
-		cavernsToConnect.add(currentCoordinate);
 		for (int i = 0; i < mapsize; i++) {
-			connectCavern(caverns.get(cavernsToConnect.pop()), currentCoordinate, directions[connection]);
-			cavernsToConnect.add(currentCoordinate.move(directions[connection]));
+			Cavern cavern = new Cavern();
+			cavern.connectCavern(caverns.get(currentCavern), directions[connection]);
+			caverns.put(currentCoordinate, firstCavern);
 			connection--;
 			if (connection < 0) {
 				connection = connectionGenerator.nextInt(5);
 				currentCavern++;
 			}
 		}
+	}
+
+	public void checkMap(int x, int y) throws Exception {
+
 	}
 }

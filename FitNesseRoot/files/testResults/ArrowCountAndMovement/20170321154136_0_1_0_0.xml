@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ArrowCountAndMovement</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>8</exceptions>
+    </counts>
+    <date>2017-03-21T15:41:36-04:00</date>
+    <runTimeInMillis>208</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;a href="ArrowCountAndMovement"&gt;ArrowCountAndMovement&lt;/a&gt; (parent page is &lt;a href="TrackArrows"&gt;.TrackArrows&lt;/a&gt;)&lt;br/&gt;&lt;br/&gt;Testing that the user has all arrows when the game begins:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;arrow&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;1&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;5&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Testing that the arrows move with the user, when the user moves in all directions:&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;User is at start of game &lt;span class="error"&gt;Could not invoke constructor for UserIsAtStartOfGame[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Go North&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user has 5 arrows &lt;span class="error"&gt;The instance decisionTable_2.setGoNorth. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;User is at start of game &lt;span class="error"&gt;Could not invoke constructor for UserIsAtStartOfGame[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Go South&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user has 5 arrows &lt;span class="error"&gt;The instance decisionTable_3.setGoSouth. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;User is at start of game &lt;span class="error"&gt;Could not invoke constructor for UserIsAtStartOfGame[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Go East&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user has 5 arrows &lt;span class="error"&gt;The instance decisionTable_4.setGoEast. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;User is at start of game &lt;span class="error"&gt;Could not invoke constructor for UserIsAtStartOfGame[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Go West&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user has 5 arrows &lt;span class="error"&gt;The instance decisionTable_5.setGoWest. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;</content>
+    <relativePageName>ArrowCountAndMovement</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='user', args=[arrow]}</instruction>
+        <slimResult>fail(a=1;e=5)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>3</col>
+                              <row>1</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>1</actual>
+                              <expected>5</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='UserIsAtStartOfGame', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for UserIsAtStartOfGame[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_4', instruction='call', instanceName='decisionTable_2', methodName='setGoNorth', args=[user has 5 arrows]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_2_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_2.setGoNorth. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_0', instruction='make', instanceName='decisionTable_3', className='UserIsAtStartOfGame', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for UserIsAtStartOfGame[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_3_4', instruction='call', instanceName='decisionTable_3', methodName='setGoSouth', args=[user has 5 arrows]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_3_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_3.setGoSouth. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_0', instruction='make', instanceName='decisionTable_4', className='UserIsAtStartOfGame', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for UserIsAtStartOfGame[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_4', instruction='call', instanceName='decisionTable_4', methodName='setGoEast', args=[user has 5 arrows]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_4.setGoEast. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_0', instruction='make', instanceName='decisionTable_5', className='UserIsAtStartOfGame', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_5_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for UserIsAtStartOfGame[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_4', instruction='call', instanceName='decisionTable_5', methodName='setGoWest', args=[user has 5 arrows]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_5_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_5.setGoWest. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Parker/Desktop/Fitnesse/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>570</totalRunTimeInMillis>
+</testResults>
+
