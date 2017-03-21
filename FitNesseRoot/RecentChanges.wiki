@@ -1,9 +1,22 @@
+<<<<<<< HEAD
 |ArrowCountAndMovement||16:01:48 Tue, Mar 21, 2017|
+=======
+<<<<<<< HEAD
+|EmptyCavern||16:06:14 Tue, Mar 21, 2017|
+|DeadEnd||16:02:34 Tue, Mar 21, 2017|
+|WumpuS||15:59:13 Tue, Mar 21, 2017|
+|BatS||15:55:44 Tue, Mar 21, 2017|
+|PitS||15:49:14 Tue, Mar 21, 2017|
+|ShootArrows||15:41:37 Tue, Mar 21, 2017|
+=======
+|ArrowCountAndMovement||15:42:03 Tue, Mar 21, 2017|
+>>>>>>> 3bfb95ea1dff1c52163be76a08db77e8e8fe6707
 <<<<<<< HEAD
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |TrackArrows||15:11:51 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
 =======
+>>>>>>> adbc29dbba9debc19bc6761139faddc7ecd45bd0
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
 |MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
 |ValidMovement||14:56:15 Tue, Mar 21, 2017|
@@ -17,7 +30,6 @@
 |HuntTheWumpus||14:06:19 Tue, Mar 21, 2017|
 <<<<<<< HEAD
 |IterationOne||13:22:44 Tue, Mar 21, 2017|
-|ShootArrows||13:15:13 Tue, Mar 21, 2017|
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
 |ExampleTest||10:47:38 Tue, Mar 21, 2017|

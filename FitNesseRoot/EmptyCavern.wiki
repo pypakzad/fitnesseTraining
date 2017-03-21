@@ -1,0 +1,8 @@
+EmptyCavern (parent page is ShootArrows)
+
+|Start game|
+|Put user in 3|
+|shoot arrow East|
+|check arrow count is 4|
+|check message appears saying "Empty cavern, arrow continues East."|
+|check message appears saying "Dead end, arrow falls."|

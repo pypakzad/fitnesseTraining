@@ -1,0 +1,7 @@
+PitS (parent page is ShootArrows)
+
+|Start game|
+|Put user in 2|
+|shoot arrow East|
+|check arrow count is 4|
+|check message appears saying "User lost arrow in pit"|

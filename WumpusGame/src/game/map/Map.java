@@ -2,10 +2,12 @@ package game.map;
 
 import java.util.HashMap;
 import java.util.Random;
+import java.util.Stack;
 
 public class Map {
 
 	private HashMap<Coordinate, Cavern> caverns = new HashMap<Coordinate, Cavern>();
+	private Stack<Coordinate> cavernsToConnect = new Stack<Coordinate>();
 
 	public Map(int mapsize) {
 		makeCaverns(mapsize);
@@ -23,23 +25,27 @@ public class Map {
 		Coordinate move(char direction) {
 			switch (direction) {
 			case 'N':
-				Cavern.northCavern = cavern;
-				northCavern.southCavern = this;
-				break;
+				return new Coordinate(x, y++);
 			case 'W':
-				westCavern = cavern;
-				westCavern.eastCavern = this;
-				break;
+				return new Coordinate(x--, y);
 			case 'S':
-				southCavern = cavern;
-				southCavern.northCavern = this;
-				break;
+				return new Coordinate(x, y--);
 			case 'E':
-				eastCavern = cavern;
-				eastCavern.westCavern = this;
+				return new Coordinate(x++, y);
 			}
+			return null;
 		}
 
+		@Override
+		public boolean equals(Object obj) {
+			Coordinate other = (Coordinate) obj;
+			return (other.x == x && other.y == y);
+		}
+
+		@Override
+		public int hashCode() {
+			return x * 100 + y;
+		}
 	}
 
 	public class Cavern {
@@ -47,26 +53,6 @@ public class Map {
 		Cavern eastCavern;
 		Cavern westCavern;
 		Cavern southCavern;
-
-		private void connectCavern(Cavern cavern, char direction) {
-			switch (direction) {
-			case 'N':
-				northCavern = cavern;
-				northCavern.southCavern = this;
-				break;
-			case 'W':
-				westCavern = cavern;
-				westCavern.eastCavern = this;
-				break;
-			case 'S':
-				southCavern = cavern;
-				southCavern.northCavern = this;
-				break;
-			case 'E':
-				eastCavern = cavern;
-				eastCavern.westCavern = this;
-			}
-		}
 
 		public Cavern getCavern(char direction) {
 			switch (direction) {
@@ -80,6 +66,35 @@ public class Map {
 				return eastCavern;
 			}
 			return null;
+		}
+
+		public void setCavern(char direction, Cavern cavern) {
+			switch (direction) {
+			case 'N':
+				northCavern = cavern;
+				break;
+			case 'W':
+				westCavern = cavern;
+				break;
+			case 'S':
+				southCavern = cavern;
+				break;
+			case 'E':
+				eastCavern = cavern;
+			}
+
+		}
+	}
+
+	private void connectCavern(Cavern currentCavern, Coordinate currentCoordinate, char direction) {
+		Coordinate newCoordinate = currentCoordinate.move(direction);
+		if (caverns.containsKey(newCoordinate)) {
+			currentCavern.setCavern(direction, caverns.get(currentCoordinate));
+		} else {
+			Cavern cavern = new Cavern();
+			currentCavern.setCavern(direction, cavern);
+			cavernsToConnect.add(newCoordinate);
+			caverns.put(newCoordinate, cavern);
 		}
 	}
 

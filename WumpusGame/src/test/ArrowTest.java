@@ -22,8 +22,8 @@ public class ArrowTest {
 		newArrow = null;
 		Map map = new Map(10);
 		HashMap<Coordinate, Cavern> caverns = map.getCaverns();
-		startingCavern = caverns.get(0);
-		newArrow = new Arrow(startingCavern);
+		// startingCavern = caverns.get(0);
+		// newArrow = new Arrow(startingCavern);
 	}
 
 	@Test
