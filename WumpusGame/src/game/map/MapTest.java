@@ -33,8 +33,11 @@ public class MapTest {
 		Iterator<Coordinate> coordinates = caverns.keySet().iterator();
 		Map.Cavern cavern = caverns.get(coordinates.next());
 		Map.Cavern otherCavern = caverns.get(coordinates.next());
-		assertTrue(cavern.getCavern('N') == otherCavern || cavern.getCavern('W') == otherCavern
-				|| cavern.getCavern('S') == otherCavern || cavern.getCavern('E') == otherCavern);
+		// assertTrue(cavern.getCavern('N') == otherCavern ||
+		// cavern.getCavern('W') == otherCavern
+		// || cavern.getCavern('S') == otherCavern || cavern.getCavern('E') ==
+		// otherCavern);
+		assertTrue(cavern.getCavern('N') == otherCavern);
 	}
 
 	@Test

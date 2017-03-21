@@ -25,13 +25,13 @@ public class Map {
 		Coordinate move(char direction) {
 			switch (direction) {
 			case 'N':
-				return new Coordinate(x, y++);
+				return new Coordinate(x, y + 1);
 			case 'W':
-				return new Coordinate(x--, y);
+				return new Coordinate(x - 1, y);
 			case 'S':
-				return new Coordinate(x, y--);
+				return new Coordinate(x, y - 1);
 			case 'E':
-				return new Coordinate(x++, y);
+				return new Coordinate(x + 1, y);
 			}
 			return null;
 		}
@@ -104,25 +104,27 @@ public class Map {
 
 	private void makeCaverns(int mapsize) {
 		Cavern firstCavern = new Cavern();
-		Coordinate currentCoordinate = new Coordinate(0, 0);
-		caverns.put(currentCoordinate, firstCavern);
+		Coordinate origin = new Coordinate(0, 0);
+		caverns.put(origin, firstCavern);
+		cavernsToConnect.add(origin);
 		Random connectionGenerator = new Random(System.currentTimeMillis());
 		int connection = connectionGenerator.nextInt(4) + 1;
 		char[] directions = new char[4];
 		directions[0] = 'N';
-		directions[1] = 'W';
-		directions[2] = 'S';
-		directions[3] = 'E';
-		int currentCavern = 0;
+		// directions[1] = 'W';
+		// directions[2] = 'S';
+		// directions[3] = 'E';
+		directions[1] = 'N';
+		directions[2] = 'N';
+		directions[3] = 'N';
 
 		for (int i = 0; i < mapsize; i++) {
-			Cavern cavern = new Cavern();
-			cavern.connectCavern(caverns.get(currentCavern), directions[connection]);
+			Coordinate currentCoordinate = cavernsToConnect.pop();
+			connectCavern(caverns.get(currentCoordinate), currentCoordinate, directions[connection]);
 			caverns.put(currentCoordinate, firstCavern);
 			connection--;
 			if (connection < 0) {
 				connection = connectionGenerator.nextInt(5);
-				currentCavern++;
 			}
 		}
 	}
