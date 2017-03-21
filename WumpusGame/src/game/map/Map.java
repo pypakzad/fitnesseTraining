@@ -2,12 +2,9 @@ package game.map;
 
 import java.util.ArrayList;
 
-import game.arrow.Arrow;
-
 public class Map {
 
 	private ArrayList<Cavern> caverns = new ArrayList<Cavern>();
-	private ArrayList<Arrow> arrows = new ArrayList<Arrow>();
 
 	public Map(int mapsize) {
 		makeCaverns(mapsize);
