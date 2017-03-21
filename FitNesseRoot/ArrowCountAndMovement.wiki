@@ -1,4 +1,12 @@
+---
+Test
+---
 !define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+
+|Import|
+|Fitnesse|
+
 ArrowCountAndMovement (parent page is .TrackArrows)
 
 Testing that the user has all arrows when the game begins:
