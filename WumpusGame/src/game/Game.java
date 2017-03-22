@@ -6,7 +6,7 @@ import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	private MapInter mapInterface;
+	public MapInter mapInterface;
 	private Map map;
 	private Player player;
 

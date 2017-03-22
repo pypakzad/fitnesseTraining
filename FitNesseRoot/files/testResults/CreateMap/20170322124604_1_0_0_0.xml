@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>CreateMap</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-03-22T12:46:05-04:00</date>
+    <runTimeInMillis>171</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;a href="CreateMap"&gt;CreateMap&lt;/a&gt; (ultimate parent page &lt;a href="HuntTheWumpus"&gt;HuntTheWumpus&lt;/a&gt;)&lt;br/&gt;&lt;br/&gt;Testing that when a new random map is created for each game that there are 50 caverns, 5 pits, 5 bats, 40 empty caverns, and 1 wumpus.&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Make Map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;size&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;50&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;pits&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;bats&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;empties&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;39&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;wumpus&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;1&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>CreateMap</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='MakeMap', args=[]}</instruction>
+        <slimResult>pass(Make Map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Make Map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='size', args=[]}</instruction>
+        <slimResult>pass(50)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>2</col>
+                              <row>1</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>50</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='pits', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='bats', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_4', instruction='call', instanceName='scriptTableActor', methodName='empties', args=[]}</instruction>
+        <slimResult>pass(39)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>39</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_5', instruction='call', instanceName='scriptTableActor', methodName='wumpus', args=[]}</instruction>
+        <slimResult>pass(1)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_5</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>1</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/aerixxon/Developer/fitnesseTraining/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>50
+49
+48
+47
+46
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>997</totalRunTimeInMillis>
+</testResults>
+

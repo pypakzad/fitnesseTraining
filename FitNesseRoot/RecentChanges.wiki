@@ -1,3 +1,4 @@
+|HuntTheWumpus.IteractionTwo.KillTheWumpus||12:56:21 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||12:27:00 Wed, Mar 22, 2017|
 <<<<<<< HEAD
@@ -16,7 +17,6 @@
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.BatsInCavern||10:28:04 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||09:45:42 Wed, Mar 22, 2017|
-|HuntTheWumpus.IteractionTwo.KillTheWumpus||09:40:18 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:37:57 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
