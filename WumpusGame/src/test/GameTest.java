@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayInputStream;
@@ -39,10 +40,11 @@ public class GameTest {
 
 	@Test
 	public void shootArrowDecreasesArrowCount() throws Exception {
+		Player player = Game.getPlayer();
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
-		game.shootArrow();
+		Game.shootArrow();
 		int arrowCount = player.getNumberOfAvailableArrows();
-		assertTrue(arrowCount == expectedArrowCount);
+		assertEquals(arrowCount, expectedArrowCount);
 	}
 
 	@Test(expected = Exception.class)

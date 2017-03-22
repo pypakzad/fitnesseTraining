@@ -127,7 +127,7 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public void shootArrow() throws Exception {
+	public static void shootArrow() throws Exception {
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		Arrow unusableArrow = new Arrow(false);
 		boolean noUsableArrows = true;
