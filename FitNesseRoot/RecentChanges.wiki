@@ -1,3 +1,5 @@
+|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement||12:21:54 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||11:42:34 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 |ArrowCountAndMovement||10:53:13 Wed, Mar 22, 2017|
 =======
@@ -14,14 +16,12 @@
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:29:48 Wed, Mar 22, 2017|
 |HuntTheWumpus.SetUp||10:15:08 Wed, Mar 22, 2017|
 |IterationOne||09:49:02 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:26:57 Wed, Mar 22, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap||09:26:29 Wed, Mar 22, 2017|
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|

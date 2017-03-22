@@ -15,3 +15,8 @@ Arrows:
 "Empty cavern, arrow continues [direction]." -> when user shoots arrow and it passes through an empty cavern
 "Dead end, arrow falls. Pick-up arrow to reclaim it." -> when arrow hits a dead end (there is not a cavern in the same direction)
 "User killed the Wumpus." -> when user shoots the Wumpus
+
+Directions:
+"User moved [direction]." [East, North, West, South]
+
+
