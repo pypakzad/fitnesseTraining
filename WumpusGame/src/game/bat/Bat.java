@@ -6,7 +6,7 @@ public class Bat {
 	}
 
 	public String eventMessage() {
-		return "You have been carried away by bats and dropped in a rondom cavern!";
+		return "You have been carried away by bats and dropped in a random cavern!";
 	}
 
 }
