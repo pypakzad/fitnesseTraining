@@ -110,6 +110,10 @@ public class Game {
 		if (message != "Bats")
 		throw new Error("You Died From" + message);
 	}
+	
+	public void wumpusDies(String message) {
+		throw new Error("You Killed Our Wumpus :(");
+	}
 
 	public void move() {
 		// TODO: return
