@@ -1,4 +1,7 @@
 package game.map;
+
+import game.Game.Direction;
+
 public class MockMap extends MapInter{
 	private String mapHazard;
 	private int[][] mockMap;
@@ -18,14 +21,21 @@ public class MockMap extends MapInter{
 			
 		}
 	@Override
-	public void checkMap(int x, int y) throws Exception{
-		if(mapHazard != null)
-		throw new Exception(mapHazard);
+	public int moveOnMap(int start, int d) throws Exception{
+		Integer endChamber = mockMap[start][d];
+		if(endChamber == null)
+			throw new Error("Wall");
+		return mockMap[start][d];
 	}
 	@Override
 	public void connect(int start,int end, int direction){
 		mockMap[start][direction]=end;
 		mockMap[end][(direction+2)%4]=start;
+	}
+	@Override
+	public void checkMap(int start, int direction) throws Exception {
+		if(mapHazard != null)
+			throw new Exception(mapHazard);
 	}
 
 }

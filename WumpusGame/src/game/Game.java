@@ -6,17 +6,28 @@ import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	private MapInter map;
+	public MapInter map;
 	private Player player;
 
 	public enum Direction {
 		N, S, E, W
 	};
 
-	public void playerMove(Direction d) throws Exception {
-		validateMove(d);
-		map.checkMap(0, 0);
-		throw new Exception("Wall");
+	public int playerMove(int startingChamber, Direction direction) throws Exception {
+		validateMove(direction);
+		int d = 0;
+		switch(direction){
+		case N:d = 0;
+		break;
+		case E:d=1;
+		break;
+		case S: d=2;
+		break;
+		case W: d=3;
+		break;
+		}
+		map.checkMap(startingChamber, d);
+		return map.moveOnMap(startingChamber, d);
 	}
 
 	private static void validateMove(Direction d) throws Exception {
