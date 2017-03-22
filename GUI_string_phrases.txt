@@ -16,6 +16,7 @@ Arrows:
 "Dead end, arrow falls. Pick-up arrow to reclaim it." -> when arrow hits a dead end (there is not a cavern in the same direction)
 "User killed the Wumpus." -> when user shoots the Wumpus
 "Arrow rebounded. User dies."
+"Pick-up arrow to reclaim it."
 
 Directions:
 "User moved [direction]." [East, North, West, South]
