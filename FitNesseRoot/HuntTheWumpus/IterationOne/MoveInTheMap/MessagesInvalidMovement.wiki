@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 ---
 Test
 ---
+>>>>>>> 028f13f8432f318ee20dceeff39c1426dab4e981
 !define TEST_SYSTEM {slim}
 !path ${WUMPUS_PATH}
 
@@ -18,6 +21,7 @@ Testing clockwise movement:
 |script| Move Map|
 |put |user |in| 1|
 |go| W|
+
 |check |message|User cannot move West.|
 
 |script |Move Map|

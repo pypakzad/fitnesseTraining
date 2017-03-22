@@ -17,10 +17,13 @@ public class BatTest {
 	private Bat bat;
 	private Map map;
 	private Player player;
+	private HashMap<Cavern, String> caverns;
 
 	@Before
 	public void init() {
-		this.bat = new Bat();
+		this.player = new Player();
+		caverns = new HashMap<Cavern, String>();
+		this.bat = new Bat(player, caverns);
 	}
 
 	@Test
@@ -37,9 +40,8 @@ public class BatTest {
 
 	@Test
 	public void getNewPlayerLocation() {
-		map = new Map(0);
-		player = new Player();
-		HashMap<Cavern, String> caverns = new HashMap<Cavern, String>();
+		// map = new Map(0);
+		map = new Map(10, 0, 0, 0);
 		Cavern cavernOne = map.new Cavern(0, 0);
 		Cavern cavernTwo = map.new Cavern(1, 0);
 		Cavern cavernThree = map.new Cavern(2, 0);
@@ -48,6 +50,9 @@ public class BatTest {
 		caverns.put(cavernTwo, "");
 		caverns.put(cavernThree, "");
 		caverns.put(cavernFour, "");
+		this.bat = new Bat(this.player, caverns);
+
+		player.setPlayerLocation(cavernOne);
 
 		Cavern newLocation = this.bat.getNewLocation();
 		Cavern playerLocation = this.bat.getOriginalLocation();
