@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-|ArrowCountAndMovement||13:58:09 Wed, Mar 22, 2017|
-=======
+|ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
+
 |RecentChanges||13:48:44 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:30:46 Wed, Mar 22, 2017|
->>>>>>> 9394b140287c143d523ad7bc8c90c230f5211532
-|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:39:07 Wed, Mar 22, 2017|
-|HuntTheWumpus.IteractionTwo.KillTheWumpus||12:56:21 Wed, Mar 22, 2017|
+
 
 
 |CreateMap||12:22:54 Wed, Mar 22, 2017|
@@ -17,12 +14,6 @@
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement||12:21:54 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||11:42:34 Wed, Mar 22, 2017|
-
-<<<<<<< HEAD
-=======
-
-|ArrowCountAndMovement||10:53:13 Wed, Mar 22, 2017|
->>>>>>> 9394b140287c143d523ad7bc8c90c230f5211532
 
 
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
