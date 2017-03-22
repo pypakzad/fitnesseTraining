@@ -5,3 +5,10 @@ WumpuS (parent page is ShootArrows)
 |shoot arrow South|
 |check arrow count is 4|
 |check message appears saying "User killed the Wumpus."|
+
+|Start game|
+|Put user in 1|
+|shoot arrow South|
+|check arrow count is 4|
+|check message appears saying "Empty cavern, arrow continues South."|
+|check message appears saying "User killed the Wumpus."|

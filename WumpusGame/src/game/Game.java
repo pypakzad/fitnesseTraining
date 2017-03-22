@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
+import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
@@ -18,17 +19,41 @@ public class Game {
 
 		String welcome = "";
 		String errorInput = "";
+		String rules = "";
 
 		System.out.println(welcome);
-		String userInput = scanner.nextLine();
-		while (!userInput.equals("y") && !userInput.equals("n")) {
+		String userStartCommand = scanner.nextLine();
+		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
 			System.out.println(welcome);
-			userInput = scanner.nextLine();
+			userStartCommand = scanner.nextLine();
 		}
-		if (userInput.equals("y")) {
+		if (userStartCommand.equals("y")) {
+			// initialization
 			createMap();
 			createPlayer();
+			boolean playerDeadOrWon = false;
+			Commands[] commands = Commands.values();
+			ArrayList<String> commandStrings = new ArrayList<String>();
+			for (Commands command : commands) {
+				commandStrings.add(command.getUserInput());
+			}
+			while (!playerDeadOrWon) {
+				// game start
+				System.out.println(rules);
+				String userInput = scanner.nextLine();
+
+				while (commandStrings.contains(userInput)) {
+					// only exit this loop for incorrect input or end condition
+					Commands command = commands[commandStrings.indexOf(userInput)];
+					userInput = scanner.nextLine();
+				}
+				if (!playerDeadOrWon) {
+					System.out.println(errorInput);
+				}
+			}
+			// if you're here game has ended
+
 		}
 	}
 
@@ -36,6 +61,7 @@ public class Game {
 	private static Map map;
 	private static HashMap<Cavern, String> caverns;
 	private static Player player;
+	private static ArrayList<String> commands = new ArrayList<String>();
 
 	public static Player getPlayer() {
 		return player;
