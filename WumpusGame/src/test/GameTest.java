@@ -51,7 +51,6 @@ public class GameTest {
 		Game.shootArrow();
 		Game.shootArrow();
 		Game.shootArrow();
-
 	}
 
 }

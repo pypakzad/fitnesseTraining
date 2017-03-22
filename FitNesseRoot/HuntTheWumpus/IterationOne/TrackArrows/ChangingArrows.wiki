@@ -2,26 +2,24 @@
 Test
 ---
 ChangingArrows (parent page .TrackArrows)
-
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
 Testing that the arrow count decreases when the user shoots an arrow:
-|user at game start|
-|User shoots arrow|
-|user arrow count is 4|
+|script | At Game Start|
+|User Shoots Arrow|
+|check|getUserArrowCount|4|
+|User Shoots Arrow|
+|check|getUserArrowCount|3|
+|User Shoots Arrow|
+|check|getUserArrowCount|2|
+|User Shoots Arrow|
+|check|getUserArrowCount|1|
+|User Shoots Arrow|
+|check|getUserArrowCount|0|
+|User Shoots Arrow|
+|check|getUserArrowCount|0|
 
-|User shoots arrow|
-|user arrow count is 3|
 
-|User shoots arrow|
-|user arrow count is 2|
-
-|User shoots arrow|
-|user arrow count is 1|
-
-|User shoots arrow|
-|user arrow count is 0|
-
-|User shoots arrow|
-|user arrow count is 0|
 
 Testing that the arrow count increases when the user picks up an arrow:
 |User picks up arrow|
