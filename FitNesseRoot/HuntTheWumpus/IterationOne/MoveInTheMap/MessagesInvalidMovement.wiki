@@ -9,20 +9,20 @@ Testing clockwise movement:
 
 |script| Move Map|
 |put |user |in|1|
-|go|E|
-|check |message appears saying "User cannot move East."|
+|go|N|
+|check |message appears saying "User cannot move North."|
 
 |script| Move Map|
-|put |user |in| 3|
-|go| S|
-|check |message appears saying "User cannot move South."|
-
-|script |Move Map|
-|put |user |in| 5|
-|go|W|
+|put |user |in| 1|
+|go| W|
 |check |message appears saying "User cannot move West."|
 
 |script |Move Map|
-|put |user |in| 7|
+|put |user |in| 6|
+|go|E|
+|check |message appears saying "User cannot move East."|
+
+|script |Move Map|
+|put |user |in| 6|
 |go| N|
-|check |message appears saying "User cannot move North."|
+|check |message appears saying "User cannot move South."|
