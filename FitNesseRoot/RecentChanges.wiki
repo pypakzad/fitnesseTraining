@@ -1,3 +1,7 @@
+|WumpuS||15:44:51 Wed, Mar 22, 2017|
+|ShootArrows||15:42:07 Wed, Mar 22, 2017|
+|BatS||15:40:21 Wed, Mar 22, 2017|
+|PitS||15:38:41 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.StartGame||15:32:18 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||14:48:29 Wed, Mar 22, 2017|
 <<<<<<< HEAD
@@ -65,10 +69,6 @@
 
 
 |DeadEnd||16:02:34 Tue, Mar 21, 2017|
-|WumpuS||15:59:13 Tue, Mar 21, 2017|
-|BatS||15:55:44 Tue, Mar 21, 2017|
-|PitS||15:49:14 Tue, Mar 21, 2017|
-|ShootArrows||15:41:37 Tue, Mar 21, 2017|
 
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |TrackArrows||15:11:51 Tue, Mar 21, 2017|
