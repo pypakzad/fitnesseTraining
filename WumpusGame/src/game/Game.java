@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
+import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
@@ -14,28 +15,53 @@ import game.player.Player;
 public class Game {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-
-		String welcome = "";
-		String errorInput = "";
-
-		System.out.println(welcome);
-		String userInput = scanner.nextLine();
-		while (!userInput.equals("y") && !userInput.equals("n")) {
-			System.out.println(errorInput);
-			System.out.println(welcome);
-			userInput = scanner.nextLine();
-		}
-		if (userInput.equals("y")) {
+//		Scanner scanner = new Scanner(System.in);
+//
+//		String welcome = "";
+//		String errorInput = "";
+//		String rules = "";
+//
+//		System.out.println(welcome);
+//		String userStartCommand = scanner.nextLine();
+//		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
+//			System.out.println(errorInput);
+//			System.out.println(welcome);
+//			userStartCommand = scanner.nextLine();
+//		}
+//		if (userStartCommand.equals("y")) {
+//			// initialization
 			createMap();
 			createPlayer();
-		}
+//			boolean playerDeadOrWon = false;
+//			Commands[] commands = Commands.values();
+//			ArrayList<String> commandStrings = new ArrayList<String>();
+//			for (Commands command : commands) {
+//				commandStrings.add(command.getUserInput());
+//			}
+//			while (!playerDeadOrWon) {
+//				// game start
+//				System.out.println(rules);
+//				String userInput = scanner.nextLine();
+//
+//				while (commandStrings.contains(userInput)) {
+//					// only exit this loop for incorrect input or end condition
+//					Commands command = commands[commandStrings.indexOf(userInput)];
+//					userInput = scanner.nextLine();
+//				}
+//				if (!playerDeadOrWon) {
+//					System.out.println(errorInput);
+//				}
+//			}
+//			// if you're here game has ended
+//
+//		}
 	}
 
 	public MapInter mapInterface;
 	private static Map map;
 	private static HashMap<Cavern, String> caverns;
 	private static Player player;
+	private static ArrayList<String> commands = new ArrayList<String>();
 
 	public static Player getPlayer() {
 		return player;
@@ -79,9 +105,10 @@ public class Game {
 			m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
 			m.message = "User moved " + m.message;
 			return m;
-		} catch (Exception e) {
-			if (e.getMessage() != "Wall")
-				playerDies(e.getMessage());
+		} catch(Exception e){
+			System.out.println(e.getLocalizedMessage());
+//			if(e.getMessage()!="Wall")
+//				playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
@@ -143,6 +170,17 @@ public class Game {
 		player.updateArrowArray(arrowArrayCopy);
 	}
 
+	public static void pickupArrow(Arrow foundArrow) {
+		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
+		for (int i = 0; i < arrowArrayCopy.size(); i++) {
+			Arrow selectedArrow = arrowArrayCopy.get(i);
+			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
+				arrowArrayCopy.set(i, foundArrow);
+			}
+		}
+		player.updateArrowArray(arrowArrayCopy);
+	}
+
 	public Game() {
 		Game.map = new Map(50, 1, 1, 1);
 	}
@@ -192,7 +230,7 @@ public class Game {
 
 	public void playerDies(String message) {
 		if (message != "Bats")
-			throw new Error("You Died From" + message);
+			throw new Error("You Died From " + message);
 	}
 
 	public void wumpusDies(String message) {
