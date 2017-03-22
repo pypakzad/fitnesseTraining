@@ -12,13 +12,13 @@ ArrowCountAndMovement (parent page is .TrackArrows)
 Testing that the user has all arrows when the game begins:
 
 |script| At Game Start|
-|check |getUserArrowCount|2|
+|check |getUserArrowCount|5|
 
 
 Testing that the arrows move with the user, when the user moves in all directions:
-|User is at start of game|
+|script| At Game Start|
 |Go North|
-|user has 5 arrows|
+|check|getUserArrowCount|5|
 
 |User is at start of game|
 |Go South|

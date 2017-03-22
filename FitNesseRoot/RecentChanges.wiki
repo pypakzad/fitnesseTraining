@@ -1,29 +1,23 @@
 |CreateMap||12:22:54 Wed, Mar 22, 2017|
-<<<<<<< HEAD
+|HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||11:51:43 Wed, Mar 22, 2017|
+
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.BatsInCavern||10:28:04 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||09:45:42 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.KillTheWumpus||09:40:18 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:37:57 Wed, Mar 22, 2017|
-|RecentChanges||16:19:20 Tue, Mar 21, 2017|
 
-|HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
-=======
-<<<<<<< HEAD
-|ArrowCountAndMovement||10:23:16 Wed, Mar 22, 2017|
-=======
+
+
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:29:48 Wed, Mar 22, 2017|
 |HuntTheWumpus.SetUp||10:15:08 Wed, Mar 22, 2017|
 |IterationOne||09:49:02 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:26:57 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||09:26:29 Wed, Mar 22, 2017|
->>>>>>> d15e34302c7f53fe55bb95cde981f5c4711ffe53
-|RecentChanges||16:19:20 Tue, Mar 21, 2017|
 
-|HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
->>>>>>> 9147d561a4d8a5754b5ad328bebe95aa0814c296
+
 |HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 

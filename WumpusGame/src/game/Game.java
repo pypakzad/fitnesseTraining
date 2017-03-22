@@ -2,20 +2,36 @@ package game;
 
 import game.map.Map;
 import game.map.Map.Cavern;
+import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	private Map map;
+	public MapInter map;
 	private Player player;
 
 	public enum Direction {
 		N, S, E, W
 	};
 
-	public void playerMove(Direction d) throws Exception {
-		validateMove(d);
-		map.checkMap(0, 0);
-		throw new Exception("Wall");
+	public int playerMove(int startingChamber, Direction direction) throws Exception {
+		validateMove(direction);
+		int d = 0;
+		switch(direction){
+		case N:d = 0;
+		break;
+		case E:d=1;
+		break;
+		case S: d=2;
+		break;
+		case W: d=3;
+		break;
+		}
+		try{
+			map.checkMap(startingChamber, d);
+		return map.moveOnMap(startingChamber, d);
+		}catch(Exception e){
+			return startingChamber;
+		}
 	}
 
 	private static void validateMove(Direction d) throws Exception {
@@ -24,14 +40,14 @@ public class Game {
 	}
 
 	public Game() {
-		this.map = new Map(50);
+//		this.map = new Map(50);
 	}
 	
-	public Game(Map map) {
-		this.map = map;
+	public Game(MapInter m) {
+		this.map = m;
 	}
 
-	public Map getMap() {
+	public MapInter getMap() {
 		return this.map;
 	}
 

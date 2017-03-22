@@ -7,6 +7,7 @@ import org.junit.Test;
 import game.Game;
 import game.Game.Direction;
 import game.map.Map;
+import game.map.MapInter;
 import game.map.MockMap;
 import game.map.MockMap.MockMapType;
 
@@ -17,7 +18,7 @@ public class MoveInMapTest {
 		Direction move = null;
 		MockMap m = new MockMap(0);
 		m.setMap(MockMapType.Wall);
-		Game g = new Game((Map) m);
+		Game g = new Game((MapInter) m);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");
@@ -31,7 +32,7 @@ public class MoveInMapTest {
 		Direction move = Direction.N;
 		MockMap m = new MockMap(0);
 		m.setMap(MockMapType.Wall);
-		Game g = new Game((Map) m);
+		Game g = new Game((MapInter) m);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");
@@ -45,7 +46,7 @@ public class MoveInMapTest {
 		Direction move = Direction.N;
 		MockMap m = new MockMap(0);
 		m.setMap(MockMapType.Bats);
-		Game g = new Game((Map) m);
+		Game g = new Game((MapInter) m);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");
@@ -59,7 +60,7 @@ public class MoveInMapTest {
 		Direction move = Direction.N;
 		MockMap m = new MockMap(0);
 		m.setMap(MockMapType.Pit);
-		Game g = new Game((Map) m);
+		Game g = new Game((MapInter) m);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");
@@ -73,7 +74,7 @@ public class MoveInMapTest {
 		Direction move = Direction.N;
 		MockMap m = new MockMap(0);
 		m.setMap(MockMapType.Wumpus);
-		Game g = new Game((Map) m);
+		Game g = new Game((MapInter) m);
 		try{
 			g.playerMove(move);
 			fail("No Exception Thrown");

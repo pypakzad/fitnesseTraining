@@ -9,15 +9,14 @@ public class InputMap {
 	int[][] inputMap;
 	int start;
 	int end;
-	int d;
+	int direction;
 	public void setStart(int start){
-	this.start=start;
+	this.start=start-1;
 	}
 	public void setEnd(int end){
-		this.end=end;
+		this.end=end-1;
 	}
 	public void setDirection(Direction d){
-		int direction = 0;
 		switch(d){
 		case N:direction = 0;
 				break;
@@ -28,9 +27,9 @@ public class InputMap {
 		case W:direction = 3;
 				break;
 		}
-		this.d=direction;
 	}
-	public void run(){
-		
+	public void execute(){
+		System.out.println(String.format("connect %d, %d, %d", start, end, direction));
+		HuntTheWumpusContext.game.map.connect(start, end, direction);
 	}
 }
