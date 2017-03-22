@@ -4,10 +4,10 @@ import game.Game.Direction;
 
 public class MockMap extends MapInter{
 	private String mapHazard;
-	private int[][] mockMap;
+	private Integer[][] mockMap;
 	public enum MockMapType{Wall,Bats,Pit,Wumpus};
 	public MockMap(int mapsize) {
-		mockMap = new int[mapsize][4];
+		mockMap = new Integer[mapsize][4];
 	}
 	public void setMap(MockMapType m) {
 			if (m == MockMapType.Wall)
@@ -23,14 +23,14 @@ public class MockMap extends MapInter{
 	@Override
 	public int moveOnMap(int start, int d) throws Exception{
 		Integer endChamber = mockMap[start][d];
-		if(endChamber == null)
+		if(endChamber == 0)
 			throw new Error("Wall");
 		return mockMap[start][d];
 	}
 	@Override
 	public void connect(int start,int end, int direction){
-		mockMap[start][direction]=end;
-		mockMap[end][(direction+2)%4]=start;
+		mockMap[start][direction]=end + 1;
+		mockMap[end][(direction+2)%4]=start + 1;
 	}
 	@Override
 	public void checkMap(int start, int direction) throws Exception {

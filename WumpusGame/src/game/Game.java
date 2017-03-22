@@ -26,8 +26,12 @@ public class Game {
 		case W: d=3;
 		break;
 		}
-		map.checkMap(startingChamber, d);
+		try{
+			map.checkMap(startingChamber, d);
 		return map.moveOnMap(startingChamber, d);
+		}catch(Exception e){
+			return startingChamber;
+		}
 	}
 
 	private static void validateMove(Direction d) throws Exception {

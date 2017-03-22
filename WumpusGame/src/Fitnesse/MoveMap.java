@@ -14,11 +14,11 @@ public class MoveMap {
 	public void putIn(String user,int chamber){
 		startingChamber = chamber-1;
 	}
-	public void go(Direction d) throws Exception{
-		endingChamber = HuntTheWumpusContext.game.playerMove(startingChamber,d);
+	public void go(Direction d) throws Exception {
+			endingChamber = HuntTheWumpusContext.game.playerMove(startingChamber,d);
 		//map.moveOnMap(startingChamber, direction);
 	}
 	public int user(String user){
-		return endingChamber+1;
+		return endingChamber + 1;
 	}
 }
