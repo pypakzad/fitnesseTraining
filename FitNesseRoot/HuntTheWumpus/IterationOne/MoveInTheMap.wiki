@@ -1,10 +1,6 @@
 ---
 Test
 ---
-!define TEST_SYSTEM {slim}
-!path ./WumpusGame/bin
-|Import|
-|Fitnesse|
 MoveInTheMap (the ultimate parent is <HuntTheWumpus)
 
 Testing that the user can move around the map.
