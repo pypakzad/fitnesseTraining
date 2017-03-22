@@ -26,6 +26,10 @@ public class Player {
 		return this.location;
 	}
 
+	public void updateArrowArray(ArrayList<Arrow> arrows) {
+		this.arrows = arrows;
+	}
+
 	public void shootArrow(Arrow arrow) {
 
 	}
@@ -47,6 +51,7 @@ public class Player {
 			if (arrow.canUseArrow())
 				availableArrowCount++;
 		}
+
 		return availableArrowCount;
 	}
 

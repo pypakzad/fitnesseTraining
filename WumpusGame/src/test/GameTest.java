@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayInputStream;
@@ -13,33 +14,44 @@ import game.map.Map;
 import game.player.Player;
 
 public class GameTest {
-
-	private Game game;
 	private Player player;
 
 	@Before
 	public void init() {
-		game = new Game();
-		player = new Player();
-		game.assignPlayer(player);
+		String[] args = null;
+		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
+		Game.main(args);
+		player = Game.getPlayer();
 	}
 
 	@Test
 	public void hasInstanceOfMap() {
-		Game newGame = new Game();
-		String[] args = null;
-		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
-		newGame.main(args);
-		Map map = newGame.getMapInstance();
+		Map map = Game.getMap();
 		assertTrue(map != null);
 	}
 
 	@Test
-	public void shootArrowDecreasesArrowCount() {
+	public void hasPlayerLocation() {
+		assertTrue(player.getPlayerLocation() != null);
+	}
+
+	@Test
+	public void shootArrowDecreasesArrowCount() throws Exception {
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
-		game.shootArrow();
+		Game.shootArrow();
 		int arrowCount = player.getNumberOfAvailableArrows();
-		assertTrue(arrowCount == expectedArrowCount);
+		assertEquals(arrowCount, expectedArrowCount);
+	}
+
+	@Test(expected = Exception.class)
+	public void errorThrownWhenNotEnoughArrows() throws Exception {
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+
 	}
 
 }
