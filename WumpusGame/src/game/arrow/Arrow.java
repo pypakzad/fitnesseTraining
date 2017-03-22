@@ -11,6 +11,10 @@ public class Arrow {
 		this.playerHasArrow = true;
 	}
 
+	public Arrow(boolean canUse) {
+		this.playerHasArrow = false;
+	}
+
 	public boolean canUseArrow() {
 		return this.playerHasArrow;
 	}

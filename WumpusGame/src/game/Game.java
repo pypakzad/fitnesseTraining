@@ -1,5 +1,6 @@
 package game;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
@@ -67,14 +68,15 @@ public class Game {
 			m.message = "User moved " + m.message;
 			return m;
 		} catch (Exception e) {
-			if(e.getMessage()!="Wall")
+			if (e.getMessage() != "Wall")
 				playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
 		}
 	}
-	public int wumpusMove(int startingChamber, Direction direction) throws Exception{
+
+	public int wumpusMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		Movement m = new Movement();
 		int d = 0;
@@ -113,12 +115,20 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public void shootArrow() {
-		for (Arrow arrow : player.getArrowArray()) {
-			if (arrow.canUseArrow()) {
-				arrow.setArrowStatus(false);
+	public void shootArrow() throws Exception {
+		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
+		Arrow unusableArrow = new Arrow(false);
+		boolean noUsableArrows = true;
+		for (int i = 0; i < arrowArrayCopy.size(); i++) {
+			if (arrowArrayCopy.get(i).canUseArrow()) {
+				arrowArrayCopy.set(i, unusableArrow);
+				noUsableArrows = false;
+				break;
 			}
 		}
+		if (noUsableArrows)
+			throw new Exception("No Usable Arrows Available");
+		player.updateArrowArray(arrowArrayCopy);
 	}
 
 	public Game() {
@@ -154,9 +164,9 @@ public class Game {
 
 	public void playerDies(String message) {
 		if (message != "Bats")
-		throw new Error("You Died From" + message);
+			throw new Error("You Died From" + message);
 	}
-	
+
 	public void wumpusDies(String message) {
 		throw new Error("You Killed Our Wumpus :(");
 	}

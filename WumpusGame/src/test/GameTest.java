@@ -35,11 +35,22 @@ public class GameTest {
 	}
 
 	@Test
-	public void shootArrowDecreasesArrowCount() {
+	public void shootArrowDecreasesArrowCount() throws Exception {
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
 		game.shootArrow();
 		int arrowCount = player.getNumberOfAvailableArrows();
 		assertTrue(arrowCount == expectedArrowCount);
+	}
+
+	@Test(expected = Exception.class)
+	public void errorThrownWhenNotEnoughArrows() throws Exception {
+		game.shootArrow();
+		game.shootArrow();
+		game.shootArrow();
+		game.shootArrow();
+		game.shootArrow();
+		game.shootArrow();
+
 	}
 
 }
