@@ -3,8 +3,6 @@ package test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.HashMap;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,15 +12,15 @@ import game.map.Map.Cavern;
 
 public class ArrowTest {
 	private Arrow newArrow;
-	private Map.Coordinate startingCavern;
+	private Cavern startingCavern;
+	private Map map;
 
 	@Before
 	public void init() {
 		newArrow = null;
-		Map map = new Map(10);
-		HashMap<Coordinate, Cavern> caverns = map.getCaverns();
-		// startingCavern = caverns.get(0);
-		// newArrow = new Arrow(startingCavern);
+		// startingCavern = map.new Cavern(0, 0);
+		newArrow = new Arrow();
+		// newArrow.setLocation(startingCavern);
 	}
 
 	@Test

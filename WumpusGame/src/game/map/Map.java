@@ -24,7 +24,7 @@ public class Map {
 		int x;
 		int y;
 
-		Cavern(int newx, int newy) {
+		public Cavern(int newx, int newy) {
 			x = newx;
 			y = newy;
 		}
