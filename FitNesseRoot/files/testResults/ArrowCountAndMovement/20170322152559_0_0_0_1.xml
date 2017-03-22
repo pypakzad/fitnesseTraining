@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>ArrowCountAndMovement</rootPath>
+    <result>
+    <counts>
+      <right></right>
+      <wrong></wrong>
+      <ignores></ignores>
+      <exceptions></exceptions>
+    </counts>
+    <date>2017-03-22T15:25:59-04:00</date>
+    <runTimeInMillis>$result.runTimeInMillis</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+∠( ᐛ 」∠)＿&lt;br/&gt;&lt;a href="ArrowCountAndMovement"&gt;ArrowCountAndMovement&lt;/a&gt; (parent page is &lt;a href="TrackArrows"&gt;.TrackArrows&lt;/a&gt;)&lt;br/&gt;&lt;br/&gt;Testing that the user has all arrows when the game begins:&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>ArrowCountAndMovement</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Parker/Desktop/Fitnesse/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>143</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+    <exception>Could not send/receive data with SUT</exception>
+    <exception>fitnesse.testsystems.slim.SlimCommunicationException: Could not send/receive data with SUT</exception>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>16665</totalRunTimeInMillis>
+</testResults>
+

@@ -14,7 +14,6 @@ import game.map.Map;
 import game.player.Player;
 
 public class GameTest {
-	private Game game;
 	private Player player;
 
 	@Before
@@ -22,8 +21,7 @@ public class GameTest {
 		String[] args = null;
 		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
 		Game.main(args);
-		game = new Game();
-		player = new Player();
+		player = Game.getPlayer();
 	}
 
 	@Test
@@ -34,13 +32,11 @@ public class GameTest {
 
 	@Test
 	public void hasPlayerLocation() {
-		Player player = Game.getPlayer();
 		assertTrue(player.getPlayerLocation() != null);
 	}
 
 	@Test
 	public void shootArrowDecreasesArrowCount() throws Exception {
-		Player player = Game.getPlayer();
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
 		Game.shootArrow();
 		int arrowCount = player.getNumberOfAvailableArrows();
@@ -49,13 +45,12 @@ public class GameTest {
 
 	@Test(expected = Exception.class)
 	public void errorThrownWhenNotEnoughArrows() throws Exception {
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
 	}
 
 }

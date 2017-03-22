@@ -2,6 +2,13 @@ BatS (parent page is ShootArrows)
 
 |Start game|
 |Put user in 6|
-|shoot arrow East|
+|shoot arrow West|
 |check arrow count is 4|
+|check message appears saying "User killed bats. Pick-up arrow to reclaim it."|
+
+|Start game|
+|Put user in 2|
+|shoot arrow South|
+|check arrow count is 4|
+|check message appears saying "Empty cavern, arrow continues East."|
 |check message appears saying "User killed bats. Pick-up arrow to reclaim it."|
