@@ -23,16 +23,16 @@ public class Game {
 		int d = 0;
 		switch(direction){
 		case N:d = 0;
-		m.message = "User moved North.";
+		m.message = "North.";
 		break;
 		case E:d=1;
-		m.message = "User moved East.";
+		m.message = "East.";
 		break;
 		case S: d=2;
-		m.message = "User moved South.";
+		m.message = "South.";
 		break;
 		case W: d=3;
-		m.message = "User moved West.";
+		m.message = "West.";
 		break;
 		}
 		
@@ -40,10 +40,11 @@ public class Game {
 			try{
 				
 				m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
+				m.message = "User moved "+m.message;
 		return m;
 		}catch(Exception e){
 			m.endingChamber = startingChamber+1;
-			m.message = e.getMessage();
+			m.message = "User cannot move "+m.message;
 			return  m;
 		}
 	}
