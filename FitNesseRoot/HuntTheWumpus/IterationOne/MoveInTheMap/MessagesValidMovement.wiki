@@ -1,0 +1,29 @@
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
+
+'''Messages for Valid Movement'''
+
+!include .HuntTheWumpus.IterationOne.MoveInTheMap
+
+Testing clockwise movement:
+
+
+|script| Move Map|
+|put |user |in|1|
+|go|E|
+|check |message appears saying "User moved East."|
+
+|script| Move Map|
+|put |user |in| 3|
+|go| S|
+|check |message appears saying "User moved South."|
+
+|script |Move Map|
+|put |user |in| 5|
+|go|W|
+|check |message appears saying "User moved West."|
+
+|script |Move Map|
+|put |user |in| 7|
+|go| N|
+|check |message appears saying "User moved North."|

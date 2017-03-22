@@ -14,10 +14,30 @@ public class Game {
 		N, S, E, W
 	};
 
-	public void playerMove(Direction d) throws Exception {
-		validateMove(d);
-		mapInterface.checkMap(0, 0);
-		throw new Exception("Wall");
+	public int playerMove(int startingChamber, Direction direction) throws Exception {
+		validateMove(direction);
+		int d = 0;
+		switch (direction) {
+		case N:
+			d = 0;
+			break;
+		case E:
+			d = 1;
+			break;
+		case S:
+			d = 2;
+			break;
+		case W:
+			d = 3;
+			break;
+		}
+
+		map.checkMap(startingChamber, d);
+		try {
+			return map.moveOnMap(startingChamber, d);
+		} catch (Exception e) {
+			return startingChamber;
+		}
 	}
 
 	private static void validateMove(Direction d) throws Exception {
@@ -26,7 +46,7 @@ public class Game {
 	}
 
 	public Game() {
-		this.map = new Map(50);
+		// this.map = new Map(50);
 	}
 
 	public Map getMapInstance() {
