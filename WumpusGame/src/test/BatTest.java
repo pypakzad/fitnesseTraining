@@ -17,7 +17,7 @@ public class BatTest {
 	private Bat bat;
 	private Map map;
 	private Player player;
-	HashMap<Cavern, String> caverns;
+	private HashMap<Cavern, String> caverns;
 
 	@Before
 	public void init() {
