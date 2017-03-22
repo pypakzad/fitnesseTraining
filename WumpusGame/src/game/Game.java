@@ -80,7 +80,9 @@ public class Game {
 		Cavern startingLocation = getStartingLocation();
 		this.player.setPlayerLocation(startingLocation);
 	}
-
+	public void playerDies(){
+		throw new Error("You are Dead");
+	}
 	public void move() {
 		// TODO: return
 	};
