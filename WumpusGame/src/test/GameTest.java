@@ -6,14 +6,13 @@ import org.junit.Test;
 
 import game.Game;
 import game.map.Map;
-import game.map.MapInter;
 
 public class GameTest {
 
 	@Test
 	public void hasInstanceOfMap() {
 		Game newGame = new Game();
-		MapInter map = newGame.getMap();
+		Map map = newGame.getMapInstance();
 		assertTrue(map != null);
 	}
 

@@ -6,7 +6,8 @@ import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	public MapInter map;
+	private MapInter mapInterface;
+	private Map map;
 	private Player player;
 
 	public enum Direction {
@@ -16,22 +17,26 @@ public class Game {
 	public int playerMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		int d = 0;
-		switch(direction){
-		case N:d = 0;
-		break;
-		case E:d=1;
-		break;
-		case S: d=2;
-		break;
-		case W: d=3;
-		break;
+		switch (direction) {
+		case N:
+			d = 0;
+			break;
+		case E:
+			d = 1;
+			break;
+		case S:
+			d = 2;
+			break;
+		case W:
+			d = 3;
+			break;
 		}
-		
-			map.checkMap(startingChamber, d);
-			try{
-		return map.moveOnMap(startingChamber, d);
-		}catch(Exception e){
-			return startingChamber+1;
+
+		map.checkMap(startingChamber, d);
+		try {
+			return map.moveOnMap(startingChamber, d);
+		} catch (Exception e) {
+			return startingChamber + 1;
 		}
 	}
 
@@ -41,15 +46,19 @@ public class Game {
 	}
 
 	public Game() {
-//		this.map = new Map(50);
+		// this.map = new Map(50);
 	}
-	
+
+	public Map getMapInstance() {
+		return this.map;
+	};
+
 	public Game(MapInter m) {
-		this.map = m;
+		this.mapInterface = m;
 	}
 
 	public MapInter getMap() {
-		return this.map;
+		return this.mapInterface;
 	}
 
 	public Cavern getStartingLocation() {
