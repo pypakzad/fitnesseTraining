@@ -24,7 +24,7 @@ public class Player {
 	private void initializeArrows() {
 		this.arrows = new ArrayList<>();
 		for (int i = 0; i < 5; i++) {
-			this.arrows.add(new Arrow(this.location));
+			// this.arrows.add(new Arrow(this.location));
 		}
 	}
 
