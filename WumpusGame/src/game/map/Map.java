@@ -16,7 +16,7 @@ public class Map {
 		return caverns;
 	}
 
-	protected HashMap<Cavern, String> getUnvisitedCaverns() {
+	public HashMap<Cavern, String> getUnvisitedCaverns() {
 		return unvisitedCaverns;
 	}
 

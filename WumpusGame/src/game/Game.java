@@ -1,18 +1,35 @@
 package game;
 
+import java.util.Scanner;
+
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		String welcome = "";
+		String errorInput = "";
+
+		System.out.println(welcome);
+		while (!scanner.nextLine().equals("y")) {
+			System.out.println(errorInput);
+		}
+	}
+
 	public MapInter mapInterface;
 	private Map map;
 	private Player player;
-	public class Movement{
+
+	public class Movement {
 		public int endingChamber;
 		public String message;
 	}
+
 	public enum Direction {
 		N, S, E, W
 	};
@@ -21,31 +38,35 @@ public class Game {
 		validateMove(direction);
 		Movement m = new Movement();
 		int d = 0;
-		switch(direction){
-		case N:d = 0;
-		m.message = "North.";
-		break;
-		case E:d=1;
-		m.message = "East.";
-		break;
-		case S: d=2;
-		m.message = "South.";
-		break;
-		case W: d=3;
-		m.message = "West.";
-		break;
+		switch (direction) {
+		case N:
+			d = 0;
+			m.message = "North.";
+			break;
+		case E:
+			d = 1;
+			m.message = "East.";
+			break;
+		case S:
+			d = 2;
+			m.message = "South.";
+			break;
+		case W:
+			d = 3;
+			m.message = "West.";
+			break;
 		}
-		
-			mapInterface.checkMap(startingChamber, d);
-			try{
-				
-				m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
-				m.message = "User moved "+m.message;
-		return m;
-		}catch(Exception e){
-			m.endingChamber = startingChamber+1;
-			m.message = "User cannot move "+m.message;
-			return  m;
+
+		mapInterface.checkMap(startingChamber, d);
+		try {
+
+			m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
+			m.message = "User moved " + m.message;
+			return m;
+		} catch (Exception e) {
+			m.endingChamber = startingChamber + 1;
+			m.message = "User cannot move " + m.message;
+			return m;
 		}
 	}
 
@@ -80,7 +101,9 @@ public class Game {
 		Cavern startingLocation = getStartingLocation();
 		this.player.setPlayerLocation(startingLocation);
 	}
-
+	public void playerDies(){
+		throw new Error("You are Dead");
+	}
 	public void move() {
 		// TODO: return
 	};
