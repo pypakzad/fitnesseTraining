@@ -30,6 +30,6 @@ public class InputMap {
 	}
 	public void execute(){
 		System.out.println(String.format("connect %d, %d, %d", start, end, direction));
-		HuntTheWumpusContext.game.map.connect(start, end, direction);
+		HuntTheWumpusContext.game.mapInterface.connect(start, end, direction);
 	}
 }

@@ -18,5 +18,5 @@ Arrows:
 
 Directions:
 "User moved [direction]." [East, North, West, South]
-
+"User cannot move [direction]." [East, North, West, South]
 
