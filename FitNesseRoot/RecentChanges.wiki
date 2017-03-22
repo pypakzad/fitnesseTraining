@@ -1,10 +1,34 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+|HuntTheWumpus.IteractionTwo||14:03:05 Wed, Mar 22, 2017|
+|HuntTheWumpus.IteractionTwo.DeathByHazard||14:00:02 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||13:34:26 Wed, Mar 22, 2017|
+=======
+|ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
+=======
+>>>>>>> 033731d5230a091a5435256847e3868fe081f7e0
+
+|IterationOne||14:06:54 Wed, Mar 22, 2017|
+|RecentChanges||14:04:45 Wed, Mar 22, 2017|
+
+|HuntTheWumpus.IterationOne.ShootArrows||13:59:33 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||13:58:46 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement||13:57:57 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows||13:57:16 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.CreateMap||13:56:59 Wed, Mar 22, 2017|
+|ArrowCountAndMovement||13:58:09 Wed, Mar 22, 2017|
+
+|HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
+>>>>>>> 0577dfaa36a171299842783c6fc4412b0067302e
+|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:30:46 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:39:07 Wed, Mar 22, 2017|
+|HuntTheWumpus.IteractionTwo.KillTheWumpus||12:56:21 Wed, Mar 22, 2017|
+
 |ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
 
-|RecentChanges||13:48:44 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:30:46 Wed, Mar 22, 2017|
-
 
 
 |CreateMap||12:22:54 Wed, Mar 22, 2017|
@@ -12,13 +36,20 @@
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement||12:21:54 Wed, Mar 22, 2017|
+<<<<<<< HEAD
+=======
+>>>>>>> 60a1b46eaf2118a4c7cb9110703c6699a98e8b12
+=======
+>>>>>>> 0577dfaa36a171299842783c6fc4412b0067302e
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||11:42:34 Wed, Mar 22, 2017|
 
 
+|ArrowCountAndMovement||10:53:13 Wed, Mar 22, 2017|
+
+
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.BatsInCavern||10:28:04 Wed, Mar 22, 2017|
-|HuntTheWumpus.IteractionTwo||09:45:42 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:37:57 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
@@ -26,11 +57,9 @@
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:29:48 Wed, Mar 22, 2017|
 |HuntTheWumpus.SetUp||10:15:08 Wed, Mar 22, 2017|
-|IterationOne||09:49:02 Wed, Mar 22, 2017|
 |HuntTheWumpus||09:26:57 Wed, Mar 22, 2017|
 
 
-|HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 
 

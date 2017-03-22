@@ -33,4 +33,12 @@ public class GameTest {
 		assertTrue(player.getPlayerLocation() != null);
 	}
 
+	@Test
+	public void shootArrowDecreasesArrowCount() {
+		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
+		game.shootArrow();
+		int arrowCount = player.getNumberOfAvailableArrows();
+		assertTrue(arrowCount == expectedArrowCount);
+	}
+
 }
