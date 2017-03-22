@@ -10,7 +10,8 @@ Test
 ArrowCountAndMovement (parent page is .TrackArrows)
 
 Testing that the user has all arrows when the game begins:
-|script | At Game Start|
+
+|script| At Game Start|
 |check |getUserArrowCount|5|
 
 

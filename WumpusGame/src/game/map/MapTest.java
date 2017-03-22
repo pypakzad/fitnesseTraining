@@ -1,12 +1,12 @@
 package game.map;
 
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.HashMap;
 
 import org.junit.Test;
 
-import game.map.Map.Cavern;
 import game.map.Map.Cavern;
 
 public class MapTest {
@@ -19,8 +19,18 @@ public class MapTest {
 	public void checkMapExists() {
 		mapsize = 1;
 		map = new Map(mapsize);
-		HashMap<Cavern, Cavern> caverns = map.getCaverns();
+		HashMap<Cavern, String> caverns = map.getCaverns();
 		assertFalse(caverns.isEmpty());
+	}
+
+	@Test
+	public void checkFirstCavernCoordinates() {
+		mapsize = 1;
+		map = new Map(mapsize);
+		HashMap<Cavern, String> caverns = map.getCaverns();
+		Cavern firstCavern = caverns.keySet().iterator().next();
+		assertTrue(firstCavern.getX() == 0);
+		assertTrue(firstCavern.getY() == 0);
 	}
 
 	/*

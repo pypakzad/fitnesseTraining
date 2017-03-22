@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>64</exceptions>
+    </counts>
+    <date>2017-03-21T16:29:48-04:00</date>
+    <runTimeInMillis>589</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;a href="HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement"&gt;ValidMovement&lt;/a&gt; (parent page is &lt;a href="HuntTheWumpus.IterationOne.MoveInTheMap"&gt;&amp;lt;MoveInTheMap&lt;/a&gt;)&lt;br/&gt;&lt;br/&gt;Testing clockwise movement:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;3 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td colspan="4"&gt;check user is in 4 &lt;span class="error"&gt;The instance scriptTableActor.checkUserIsIn4. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;5 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;6 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td colspan="4"&gt;check user is in 7 &lt;span class="error"&gt;The instance scriptTableActor.checkUserIsIn7. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;7&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td colspan="4"&gt;check user is in 8 &lt;span class="error"&gt;The instance scriptTableActor.checkUserIsIn8. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Testing counter-clockwise movement:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;8 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;8&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;7 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;7&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;6 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;6&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;5 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;5&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;4 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;4&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;3 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;2 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;moveMap &lt;span class="error"&gt;Could not invoke constructor for moveMap[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor5"&gt;
+		&lt;td&gt;put &lt;span class="error"&gt;The instance scriptTableActor.putIn. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;in&lt;/td&gt;
+		&lt;td&gt;2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go &lt;span class="error"&gt;The instance scriptTableActor.go. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td colspan="3"&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;user&lt;/td&gt;
+		&lt;td&gt;is in&lt;/td&gt;
+		&lt;td&gt;1 &lt;span class="error"&gt;The instance scriptTableActor.user. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ValidMovement</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_1_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='checkUserIsIn4', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.checkUserIsIn4. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 4]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 5]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 6]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_3', instruction='call', instanceName='scriptTableActor', methodName='checkUserIsIn7', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.checkUserIsIn7. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 7]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_3', instruction='call', instanceName='scriptTableActor', methodName='checkUserIsIn8', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.checkUserIsIn8. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_7_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 8]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_7_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_7_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_7_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_8_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_8_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_8_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_9_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 8]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_9_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_9_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_9_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_10_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 7]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_10_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_10_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_10_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_11_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 6]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_11_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_11_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_11_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_11_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_12_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 5]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_12_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_12_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_12_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_12_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_13_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 4]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_13_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_13_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_13_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_13_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_14_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_14_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_14_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 3]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_14_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_14_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_14_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_14_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_14_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_0', instruction='make', instanceName='scriptTableActor', className='moveMap', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_15_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for moveMap[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_1', instruction='call', instanceName='scriptTableActor', methodName='putIn', args=[user, 2]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_15_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.putIn. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_2', instruction='call', instanceName='scriptTableActor', methodName='go', args=[W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_15_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.go. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_15_3', instruction='call', instanceName='scriptTableActor', methodName='user', args=[is in]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_15_3</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.user. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/aerixxon/Developer/fitnesseTraining/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3069</totalRunTimeInMillis>
+</testResults>
+

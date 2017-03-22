@@ -1,15 +1,15 @@
 package Fitnesse;
 
-import game.Game;
+import game.player.Player;
 
 public class AtGameStart {
-	private Game game = new Game();
+	private Player player;
 
 	public AtGameStart() {
-
+		player = new Player();
 	}
 
 	public int getUserArrowCount() {
-		return 1;
+		return player.getNumberOfAvailableArrows();
 	}
 }
