@@ -5,9 +5,13 @@ import game.Game.Direction;
 public class MockMap extends MapInter{
 	private String mapHazard;
 	private Integer[][] mockMap;
+	private int mapSize;
+	private int hazardNumber = 4;
 	public enum MockMapType{Wall,Bats,Pit,Wumpus};
 	public MockMap(int mapsize) {
-		mockMap = new Integer[mapsize+4][4];
+		mockMap = new Integer[mapsize+hazardNumber][4];
+		this.mapSize = mapsize;
+		
 	}
 	public void setMap(MockMapType m) {
 			if (m == MockMapType.Wall)
@@ -38,7 +42,12 @@ public class MockMap extends MapInter{
 	}
 	@Override
 	public void connect(int start,String end,int direction){
-		mockMap[start][direction]=
+		if (end =="Wumpus")
+			mockMap[start][direction]=this.mapSize-hazardNumber;
+		if(end == "Pit")
+			mockMap[start][direction]=this.mapSize-hazardNumber+1;
+		if(end == "Bats")
+			mockMap[start][direction]=this.mapSize-hazardNumber+2;
 	}
 	@Override
 	public void checkMap(int start, int direction) throws Exception {

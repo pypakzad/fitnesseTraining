@@ -1,7 +1,10 @@
 package Fitnesse;
 
+import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
+import game.Game;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
@@ -18,7 +21,10 @@ public class AtGameStart {
 	private HashMap<Cavern, String> caverns;
 
 	public AtGameStart() {
-		player = new Player();
+		String[] args = null;
+		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
+		Game.main(args);
+		player = Game.getPlayer();
 		initializeCaverns();
 		player.setPlayerLocation(centralCavern);
 	}
@@ -37,6 +43,15 @@ public class AtGameStart {
 		caverns.put(southCavern, "");
 		caverns.put(northCavern, "");
 
+	}
+
+	public void UserShootsArrow() {
+		try {
+			Game.shootArrow();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+
+		}
 	}
 
 	public int getUserArrowCount() {

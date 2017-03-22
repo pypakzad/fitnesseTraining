@@ -10,7 +10,7 @@ The Wumpus runs into you or you land on him while being flown by the Bats:
 "You have been trampled by the Wumpus... Whomp, whomp :("
 
 Arrows:
-"User lost arrow in pit" -> when user shoots arrow into pit
+"User lost arrow in pit." -> when user shoots arrow into pit
 "User killed bats. Pick-up arrow to reclaim it." -> when user shoots arrow into bats
 "Empty cavern, arrow continues [direction]." -> when user shoots arrow and it passes through an empty cavern
 "Dead end, arrow falls. Pick-up arrow to reclaim it." -> when arrow hits a dead end (there is not a cavern in the same direction)
@@ -56,4 +56,6 @@ Rules for Hunt the Wumpus:
    If you are one cavern away from a pit, you will hear blustering wind.
 
 GOOD LUCK!!!
+
+Press Enter to continue
 '''
