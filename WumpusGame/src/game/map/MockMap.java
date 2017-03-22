@@ -23,8 +23,12 @@ public class MockMap extends MapInter{
 	@Override
 	public int moveOnMap(int start, int d) throws Exception{
 		Integer endChamber = mockMap[start][d];
+		
 		if(endChamber == 0)
-			throw new Error("Wall");
+		{
+			String exception = "Wall";
+			throw new Exception(exception);
+		}
 		return mockMap[start][d];
 	}
 	@Override

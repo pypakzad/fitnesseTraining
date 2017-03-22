@@ -1,3 +1,4 @@
+|HuntTheWumpus.IteractionTwo.KillTheWumpus||14:39:54 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||14:34:58 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne||14:34:37 Wed, Mar 22, 2017|
 |IterationOne||14:06:54 Wed, Mar 22, 2017|
@@ -13,7 +14,6 @@
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:30:46 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:39:07 Wed, Mar 22, 2017|
-|HuntTheWumpus.IteractionTwo.KillTheWumpus||12:56:21 Wed, Mar 22, 2017|
 
 |ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
 

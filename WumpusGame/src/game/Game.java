@@ -65,9 +65,10 @@ public class Game {
 			m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
 			m.message = "User moved " + m.message;
 			return m;
-		} catch (Exception e) {
-			if(e.getMessage()!="Wall")
-				playerDies(e.getMessage());
+		} catch(Exception e){
+			System.out.println(e.getLocalizedMessage());
+//			if(e.getMessage()!="Wall")
+//				playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
@@ -141,7 +142,7 @@ public class Game {
 
 	public void playerDies(String message) {
 		if (message != "Bats")
-		throw new Error("You Died From" + message);
+		throw new Error("You Died From " + message);
 	}
 	
 	public void wumpusDies(String message) {
