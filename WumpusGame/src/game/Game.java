@@ -1,11 +1,8 @@
 package game;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
-=======
 import java.util.HashMap;
 import java.util.Random;
->>>>>>> 2e8919e1bdac0b52eafe9ae6daf310d8e493e2ec
 import java.util.Scanner;
 
 import game.arrow.Arrow;
