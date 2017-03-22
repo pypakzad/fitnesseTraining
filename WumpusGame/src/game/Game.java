@@ -2,6 +2,7 @@ package game;
 
 import java.util.Scanner;
 
+import game.arrow.Arrow;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
@@ -77,12 +78,24 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
+	public void shootArrow() {
+		for (Arrow arrow : player.getArrowArray()) {
+			if (arrow.canUseArrow()) {
+				arrow.setArrowStatus(false);
+			}
+		}
+	}
+
 	public Game() {
-		// this.map = new Map(50);
+		Game.map = new Map(50, 1, 1, 1);
+	}
+
+	public void assignPlayer(Player player) {
+		this.player = player;
 	}
 
 	public Map getMapInstance() {
-		return this.map;
+		return Game.map;
 	};
 
 	public Game(MapInter m) {
