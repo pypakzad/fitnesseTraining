@@ -25,9 +25,9 @@ public class Game {
 	}
 
 	public Game() {
-//		this.map = new Map(50);
+		this.map = new Map(50);
 	}
-	
+
 	public Game(MapInter m) {
 		this.map = m;
 	}
