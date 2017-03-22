@@ -15,6 +15,11 @@ public class Player {
 
 	public void setPlayerLocation(Cavern location) {
 		this.location = location;
+		for (Arrow arrow : arrows) {
+			if (arrow.canUseArrow()) {
+				arrow.setLocation(location);
+			}
+		}
 	}
 
 	public Cavern getPlayerLocation() {

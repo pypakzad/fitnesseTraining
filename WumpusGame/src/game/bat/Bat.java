@@ -1,10 +1,22 @@
 package game.bat;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
+
 import game.map.Map.Cavern;
+import game.player.Player;
 
 public class Bat {
-	public Bat() {
+	private Player player;
+	private Cavern originalLocation;
+	private HashMap<Cavern, String> caverns;
 
+	public Bat(Player player, HashMap<Cavern, String> caverns) {
+		this.player = player;
+		this.originalLocation = this.player.getPlayerLocation();
+		this.caverns = caverns;
 	}
 
 	public String eventMessage() {
@@ -12,13 +24,26 @@ public class Bat {
 	}
 
 	public Cavern getNewLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		Set<Cavern> keyset = this.caverns.keySet();
+		int keysetLength = keyset.size();
+		boolean newLocationFound = false;
+		Cavern newLocation = null;
+		ArrayList<Cavern> cavernList = new ArrayList<>();
+		for (Cavern c : keyset) {
+			cavernList.add(c);
+		}
+
+		while (!newLocationFound) {
+			int randomNum = ThreadLocalRandom.current().nextInt(0, keysetLength);
+			newLocation = cavernList.get(randomNum);
+			if (newLocation != this.originalLocation)
+				newLocationFound = true;
+		}
+		return newLocation;
 	}
 
 	public Cavern getOriginalLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.originalLocation;
 	}
 
 }
