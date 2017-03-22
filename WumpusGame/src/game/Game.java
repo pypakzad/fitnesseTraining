@@ -170,6 +170,17 @@ public class Game {
 		player.updateArrowArray(arrowArrayCopy);
 	}
 
+	public static void pickupArrow(Arrow foundArrow) {
+		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
+		for (int i = 0; i < arrowArrayCopy.size(); i++) {
+			Arrow selectedArrow = arrowArrayCopy.get(i);
+			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
+				arrowArrayCopy.set(i, foundArrow);
+			}
+		}
+		player.updateArrowArray(arrowArrayCopy);
+	}
+
 	public Game() {
 		Game.map = new Map(50, 1, 1, 1);
 	}

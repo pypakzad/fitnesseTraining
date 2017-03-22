@@ -30,10 +30,6 @@ public class Player {
 		this.arrows = arrows;
 	}
 
-	public void shootArrow(Arrow arrow) {
-
-	}
-
 	private void initializeArrows() {
 		this.arrows = new ArrayList<>();
 		for (int i = 0; i < 5; i++) {
