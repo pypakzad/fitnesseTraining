@@ -5,20 +5,32 @@ import static org.junit.Assert.assertTrue;
 import java.io.ByteArrayInputStream;
 import java.nio.charset.StandardCharsets;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import game.Game;
 import game.map.Map;
+import game.player.Player;
 
 public class GameTest {
-	@Test
-	public void hasInstanceOfMap() {
-		Game newGame = new Game();
+
+	@Before
+	public void init() {
 		String[] args = null;
 		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
-		newGame.main(args);
-		Map map = newGame.getMapInstance();
+		Game.main(args);
+	}
+
+	@Test
+	public void hasInstanceOfMap() {
+		Map map = Game.getMap();
 		assertTrue(map != null);
+	}
+
+	@Test
+	public void hasPlayerLocation() {
+		Player player = Game.getPlayer();
+		assertTrue(player.getPlayerLocation() != null);
 	}
 
 }

@@ -87,10 +87,19 @@ public class Map {
 	}
 
 	private void addNeighborsToVisitList(Cavern cavern) {
-		unvisitedCaverns.put(new Cavern(cavern.getX(), cavern.getY() + 1), "Empty");
-		unvisitedCaverns.put(new Cavern(cavern.getX() - 1, cavern.getY()), "Empty");
-		unvisitedCaverns.put(new Cavern(cavern.getX(), cavern.getY() - 1), "Empty");
-		unvisitedCaverns.put(new Cavern(cavern.getX() + 1, cavern.getY()), "Empty");
+		ArrayList<Cavern> neighbors = getNeighbors(cavern);
+		for (Cavern neighbor : neighbors) {
+			unvisitedCaverns.put(neighbor, "Empty");
+		}
+	}
+
+	public ArrayList<Cavern> getNeighbors(Cavern cavern) {
+		ArrayList<Cavern> neighbors = new ArrayList<Cavern>();
+		neighbors.add(new Cavern(cavern.getX(), cavern.getY() + 1));
+		neighbors.add(new Cavern(cavern.getX() - 1, cavern.getY()));
+		neighbors.add(new Cavern(cavern.getX(), cavern.getY() - 1));
+		neighbors.add(new Cavern(cavern.getX() + 1, cavern.getY()));
+		return neighbors;
 	}
 
 	private void removeVisitedCaverns() {
@@ -105,7 +114,7 @@ public class Map {
 		}
 	}
 
-	private ArrayList<Cavern> getEmptyCaverns() {
+	public ArrayList<Cavern> getEmptyCaverns() {
 		ArrayList<Cavern> empty = new ArrayList<Cavern>();
 		caverns.forEach((key, state) -> {
 			if (state.equals("Empty")) {
