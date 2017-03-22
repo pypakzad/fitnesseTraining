@@ -1,3 +1,4 @@
+|CreateMap||12:22:54 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.BatsInCavern||10:28:04 Wed, Mar 22, 2017|
@@ -39,7 +40,6 @@
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
 |MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
 |TrackArrows||14:45:11 Tue, Mar 21, 2017|
-|CreateMap||14:27:08 Tue, Mar 21, 2017|
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
