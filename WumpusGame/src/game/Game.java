@@ -2,10 +2,11 @@ package game;
 
 import game.map.Map;
 import game.map.Map.Cavern;
+import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	private Map map;
+	private MapInter map;
 	private Player player;
 
 	public enum Direction {
@@ -24,14 +25,14 @@ public class Game {
 	}
 
 	public Game() {
-		this.map = new Map(50);
+//		this.map = new Map(50);
 	}
 	
-	public Game(Map map) {
-		this.map = map;
+	public Game(MapInter m) {
+		this.map = m;
 	}
 
-	public Map getMap() {
+	public MapInter getMap() {
 		return this.map;
 	}
 
