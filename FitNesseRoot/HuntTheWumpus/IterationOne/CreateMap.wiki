@@ -1,0 +1,19 @@
+---
+Test
+---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+
+|Import|
+|Fitnesse|
+
+CreateMap (ultimate parent page .HuntTheWumpus)
+
+Testing that when a new random map is created for each game that there are 50 caverns, 5 pits, 5 bats, 40 empty caverns, and 1 wumpus.
+
+|script| Make Map |
+|check | size | 50 |
+|check | pits | 5  |
+|check | bats | 5  |
+|check |empties| 39 |
+|check |wumpus| 1  |

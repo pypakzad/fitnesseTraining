@@ -26,11 +26,19 @@ public class Player {
 		return this.location;
 	}
 
+	public void shootArrow(Arrow arrow) {
+
+	}
+
 	private void initializeArrows() {
 		this.arrows = new ArrayList<>();
 		for (int i = 0; i < 5; i++) {
 			this.arrows.add(new Arrow());
 		}
+	}
+
+	public ArrayList<Arrow> getArrowArray() {
+		return this.arrows;
 	}
 
 	public int getNumberOfAvailableArrows() {
