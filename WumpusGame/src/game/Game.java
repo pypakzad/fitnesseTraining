@@ -6,7 +6,8 @@ import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	private MapInter map;
+	private MapInter mapInterface;
+	private Map map;
 	private Player player;
 
 	public enum Direction {
@@ -15,7 +16,7 @@ public class Game {
 
 	public void playerMove(Direction d) throws Exception {
 		validateMove(d);
-		map.checkMap(0, 0);
+		mapInterface.checkMap(0, 0);
 		throw new Exception("Wall");
 	}
 
@@ -28,12 +29,16 @@ public class Game {
 		this.map = new Map(50);
 	}
 
+	public Map getMapInstance() {
+		return this.map;
+	};
+
 	public Game(MapInter m) {
-		this.map = m;
+		this.mapInterface = m;
 	}
 
 	public MapInter getMap() {
-		return this.map;
+		return this.mapInterface;
 	}
 
 	public Cavern getStartingLocation() {
