@@ -74,6 +74,39 @@ public class Game {
 			return m;
 		}
 	}
+	public int wumpusMove(int startingChamber, Direction direction) throws Exception{
+		validateMove(direction);
+		Movement m = new Movement();
+		int d = 0;
+		switch (direction) {
+		case N:
+			d = 0;
+			m.message = "North.";
+			break;
+		case E:
+			d = 1;
+			m.message = "East.";
+			break;
+		case S:
+			d = 2;
+			m.message = "South.";
+			break;
+		case W:
+			d = 3;
+			m.message = "West.";
+			break;
+		}
+
+		mapInterface.checkMap(startingChamber, d);
+		try {
+
+			int endingChamber = mapInterface.moveOnMap(startingChamber, d);
+			return endingChamber;
+		} catch (Exception e) {
+			int endingChamber = startingChamber + 1;
+			return endingChamber;
+		}
+	}
 
 	private static void validateMove(Direction d) throws Exception {
 		if (d == null)

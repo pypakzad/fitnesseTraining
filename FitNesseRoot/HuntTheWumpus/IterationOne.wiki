@@ -1,3 +1,6 @@
+---
+Suite
+---
 >MoveInTheMap
 >CreateMap
 >TrackArrows
