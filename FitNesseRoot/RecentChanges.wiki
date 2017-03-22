@@ -1,3 +1,4 @@
+|ArrowCountAndMovement||10:23:16 Wed, Mar 22, 2017|
 |RecentChanges||16:19:20 Tue, Mar 21, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
@@ -6,9 +7,7 @@
 |HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
-|ArrowCountAndMovement||15:38:02 Tue, Mar 21, 2017|
 
-|ArrowCountAndMovement||16:01:48 Tue, Mar 21, 2017|
 
 |EmptyCavern||16:06:14 Tue, Mar 21, 2017|
 |DeadEnd||16:02:34 Tue, Mar 21, 2017|
@@ -17,7 +16,6 @@
 |PitS||15:49:14 Tue, Mar 21, 2017|
 |ShootArrows||15:41:37 Tue, Mar 21, 2017|
 
-|ArrowCountAndMovement||15:42:03 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |TrackArrows||15:11:51 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
