@@ -1,5 +1,8 @@
 package game;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
@@ -17,16 +20,26 @@ public class Game {
 		String errorInput = "";
 
 		System.out.println(welcome);
-		while (!scanner.nextLine().equals("y")) {
+		String userInput = scanner.nextLine();
+		while (!userInput.equals("y") && !userInput.equals("n")) {
 			System.out.println(errorInput);
+			System.out.println(welcome);
+			userInput = scanner.nextLine();
 		}
-
-		map = new Map(50, 5, 5, 1);
+		if (userInput.equals("y")) {
+			createMap();
+			createPlayer();
+		}
 	}
 
 	public MapInter mapInterface;
 	private static Map map;
-	private Player player;
+	private static HashMap<Cavern, String> caverns;
+	private static Player player;
+
+	public static Player getPlayer() {
+		return player;
+	}
 
 	public class Movement {
 		public int endingChamber;
@@ -75,7 +88,8 @@ public class Game {
 			return m;
 		}
 	}
-	public int wumpusMove(int startingChamber, Direction direction) throws Exception{
+
+	public int wumpusMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		Movement m = new Movement();
 		int d = 0;
@@ -114,12 +128,20 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public void shootArrow() {
-		for (Arrow arrow : player.getArrowArray()) {
-			if (arrow.canUseArrow()) {
-				arrow.setArrowStatus(false);
+	public static void shootArrow() throws Exception {
+		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
+		Arrow unusableArrow = new Arrow(false);
+		boolean noUsableArrows = true;
+		for (int i = 0; i < arrowArrayCopy.size(); i++) {
+			if (arrowArrayCopy.get(i).canUseArrow()) {
+				arrowArrayCopy.set(i, unusableArrow);
+				noUsableArrows = false;
+				break;
 			}
 		}
+		if (noUsableArrows)
+			throw new Exception("No Usable Arrows Available");
+		player.updateArrowArray(arrowArrayCopy);
 	}
 
 	public Game() {
@@ -130,34 +152,50 @@ public class Game {
 		this.player = player;
 	}
 
-	public Map getMapInstance() {
-		return Game.map;
+	public static Map getMap() {
+		return map;
 	};
 
 	public Game(MapInter m) {
 		this.mapInterface = m;
 	}
 
-	public MapInter getMap() {
+	public MapInter getMapInterface() {
 		return this.mapInterface;
 	}
 
-	public Cavern getStartingLocation() {
-		// TODO:implement method to return starting location
-		return null;
+	private static Cavern getStartingLocation() {
+		ArrayList<Cavern> emptyCaverns = map.getEmptyCaverns();
+		ArrayList<Cavern> possibleStartingPositions = new ArrayList<Cavern>();
+		for (Cavern cavern : emptyCaverns) {
+			ArrayList<Cavern> neighbors = map.getNeighbors(cavern);
+			for (Cavern neighbor : neighbors) {
+				if (emptyCaverns.contains(neighbor)
+						|| (!emptyCaverns.contains(neighbor) && !caverns.containsKey(neighbor))) {
+					possibleStartingPositions.add(cavern);
+				}
+			}
+		}
+		Random picker = new Random(System.currentTimeMillis());
+		return possibleStartingPositions.get(picker.nextInt(possibleStartingPositions.size()));
 	}
 
-	public void createPlayer() {
-		this.player = new Player();
+	private static void createMap() {
+		map = new Map(50, 5, 5, 1);
+		caverns = map.getCaverns();
+	}
+
+	private static void createPlayer() {
+		player = new Player();
 		Cavern startingLocation = getStartingLocation();
-		this.player.setPlayerLocation(startingLocation);
+		player.setPlayerLocation(startingLocation);
 	}
 
 	public void playerDies(String message) {
 		if (message != "Bats")
-		throw new Error("You Died From " + message);
+			throw new Error("You Died From " + message);
 	}
-	
+
 	public void wumpusDies(String message) {
 		throw new Error("You Killed Our Wumpus :(");
 	}
