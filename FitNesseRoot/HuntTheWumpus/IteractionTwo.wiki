@@ -1,0 +1,7 @@
+Iteration Two
+
+Iteration Two will focus on completing the stories in iteration one and then implementing Bats, Killing the Wumpus, and Dying.
+
+>BatsInCavern
+>KillTheWumpus
+>DeathByHazard
