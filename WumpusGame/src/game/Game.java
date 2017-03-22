@@ -26,8 +26,9 @@ public class Game {
 		case W: d=3;
 		break;
 		}
-		try{
+		
 			map.checkMap(startingChamber, d);
+			try{
 		return map.moveOnMap(startingChamber, d);
 		}catch(Exception e){
 			return startingChamber;
