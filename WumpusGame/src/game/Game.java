@@ -66,6 +66,8 @@ public class Game {
 			m.message = "User moved " + m.message;
 			return m;
 		} catch (Exception e) {
+			if(e.getMessage()!="Wall")
+				playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
@@ -104,8 +106,9 @@ public class Game {
 		this.player.setPlayerLocation(startingLocation);
 	}
 
-	public void playerDies() {
-		throw new Error("You are Dead");
+	public void playerDies(String message) {
+		if (message != "Bats")
+		throw new Error("You Died From" + message);
 	}
 
 	public void move() {

@@ -1,9 +1,5 @@
 !contents
 
-MoveInTheMap
-
-CreateMap
-
 TrackArrows
 
 ShootArrows
