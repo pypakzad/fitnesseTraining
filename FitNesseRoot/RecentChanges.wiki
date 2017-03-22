@@ -1,6 +1,7 @@
+|HuntTheWumpus.IteractionTwo.StartGame||15:32:18 Wed, Mar 22, 2017|
+|HuntTheWumpus.IteractionTwo||14:48:29 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 <<<<<<< HEAD
-|HuntTheWumpus.IteractionTwo||14:03:05 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.DeathByHazard||14:00:02 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:26 Wed, Mar 22, 2017|
 =======

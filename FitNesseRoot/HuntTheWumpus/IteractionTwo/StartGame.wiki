@@ -1,0 +1,17 @@
+Start Game
+
+Testing the functionality of starting a game
+
+|start game|
+|check message appears saying "welcome"|
+|user inputs "y"|
+|check message appears saying "rules"|
+|user inputs enter key|
+|check game starts|
+
+
+
+|start game|
+|check message appears saying "welcome"|
+|user inputs "n"|
+|check game does not start|

@@ -56,4 +56,6 @@ Rules for Hunt the Wumpus:
    If you are one cavern away from a pit, you will hear blustering wind.
 
 GOOD LUCK!!!
+
+Press Enter to continue
 '''
