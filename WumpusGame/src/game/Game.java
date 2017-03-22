@@ -127,11 +127,12 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public void shootArrow() {
+	public static void shootArrow() {
 		for (Arrow arrow : player.getArrowArray()) {
 			if (arrow.canUseArrow()) {
 				arrow.setArrowStatus(false);
 			}
+			break;
 		}
 	}
 
