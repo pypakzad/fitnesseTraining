@@ -15,46 +15,46 @@ import game.player.Player;
 public class Game {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-
-		String welcome = "";
-		String errorInput = "";
-		String rules = "";
-
-		System.out.println(welcome);
-		String userStartCommand = scanner.nextLine();
-		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
-			System.out.println(errorInput);
-			System.out.println(welcome);
-			userStartCommand = scanner.nextLine();
-		}
-		if (userStartCommand.equals("y")) {
-			// initialization
+//		Scanner scanner = new Scanner(System.in);
+//
+//		String welcome = "";
+//		String errorInput = "";
+//		String rules = "";
+//
+//		System.out.println(welcome);
+//		String userStartCommand = scanner.nextLine();
+//		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
+//			System.out.println(errorInput);
+//			System.out.println(welcome);
+//			userStartCommand = scanner.nextLine();
+//		}
+//		if (userStartCommand.equals("y")) {
+//			// initialization
 			createMap();
 			createPlayer();
-			boolean playerDeadOrWon = false;
-			Commands[] commands = Commands.values();
-			ArrayList<String> commandStrings = new ArrayList<String>();
-			for (Commands command : commands) {
-				commandStrings.add(command.getUserInput());
-			}
-			while (!playerDeadOrWon) {
-				// game start
-				System.out.println(rules);
-				String userInput = scanner.nextLine();
-
-				while (commandStrings.contains(userInput)) {
-					// only exit this loop for incorrect input or end condition
-					Commands command = commands[commandStrings.indexOf(userInput)];
-					userInput = scanner.nextLine();
-				}
-				if (!playerDeadOrWon) {
-					System.out.println(errorInput);
-				}
-			}
-			// if you're here game has ended
-
-		}
+//			boolean playerDeadOrWon = false;
+//			Commands[] commands = Commands.values();
+//			ArrayList<String> commandStrings = new ArrayList<String>();
+//			for (Commands command : commands) {
+//				commandStrings.add(command.getUserInput());
+//			}
+//			while (!playerDeadOrWon) {
+//				// game start
+//				System.out.println(rules);
+//				String userInput = scanner.nextLine();
+//
+//				while (commandStrings.contains(userInput)) {
+//					// only exit this loop for incorrect input or end condition
+//					Commands command = commands[commandStrings.indexOf(userInput)];
+//					userInput = scanner.nextLine();
+//				}
+//				if (!playerDeadOrWon) {
+//					System.out.println(errorInput);
+//				}
+//			}
+//			// if you're here game has ended
+//
+//		}
 	}
 
 	public MapInter mapInterface;
