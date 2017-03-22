@@ -49,12 +49,12 @@ public class GameTest {
 
 	@Test(expected = Exception.class)
 	public void errorThrownWhenNotEnoughArrows() throws Exception {
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
-		game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
+		Game.shootArrow();
 
 	}
 
