@@ -13,25 +13,28 @@ import game.map.Map;
 import game.player.Player;
 
 public class GameTest {
-
 	private Game game;
 	private Player player;
 
 	@Before
 	public void init() {
+		String[] args = null;
+		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
+		Game.main(args);
 		game = new Game();
 		player = new Player();
-		game.assignPlayer(player);
 	}
 
 	@Test
 	public void hasInstanceOfMap() {
-		Game newGame = new Game();
-		String[] args = null;
-		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
-		newGame.main(args);
-		Map map = newGame.getMapInstance();
+		Map map = Game.getMap();
 		assertTrue(map != null);
+	}
+
+	@Test
+	public void hasPlayerLocation() {
+		Player player = Game.getPlayer();
+		assertTrue(player.getPlayerLocation() != null);
 	}
 
 	@Test
