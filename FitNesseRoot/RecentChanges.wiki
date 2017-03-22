@@ -1,3 +1,4 @@
+|HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 |WumpuS||15:44:51 Wed, Mar 22, 2017|
 |ShootArrows||15:42:07 Wed, Mar 22, 2017|
@@ -8,7 +9,6 @@
 |HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||15:20:51 Wed, Mar 22, 2017|
 
 >>>>>>> 98930e827eb90f86b0d228f0ca49e175cf0cb704
-|HuntTheWumpus.IteractionTwo.StartGame||15:32:18 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||14:48:29 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IteractionTwo.DeathByHazard||14:00:02 Wed, Mar 22, 2017|

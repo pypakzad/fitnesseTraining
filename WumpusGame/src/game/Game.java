@@ -21,11 +21,11 @@ public class Game {
 		String errorInput = "";
 		String rules = "";
 
-		System.out.println(welcome);
+		System.out.println(sendWelcome());
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
-			System.out.println(welcome);
+			System.out.println(sendWelcome());
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -39,13 +39,15 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			while (!playerDeadOrWon) {
-				// game start
-				System.out.println(rules);
+				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
-
+				System.out.print(userInput);
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					Commands command = commands[commandStrings.indexOf(userInput)];
+					if (userInput.equals("testExit")) {
+						playerDeadOrWon = true;
+					}
 					userInput = scanner.nextLine();
 				}
 				if (!playerDeadOrWon) {
@@ -55,6 +57,14 @@ public class Game {
 			// if you're here game has ended
 
 		}
+	}
+
+	public static String sendWelcome() {
+		return "welcome";
+	}
+
+	public static String sendRules() {
+		return "rules";
 	}
 
 	public MapInter mapInterface;
