@@ -1,12 +1,16 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+|Import|
+|Fitnesse|
 ValidMovement (parent page is <MoveInTheMap)
 
 Testing clockwise movement:
 
 
-|script| moveMap|
+|script| Move Map|
 |put |user |in|1|
 |go|E|
 |check |user |is in| 2|

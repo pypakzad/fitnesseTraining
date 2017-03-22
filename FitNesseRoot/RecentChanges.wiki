@@ -1,9 +1,9 @@
+|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||08:59:16 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||08:59:00 Wed, Mar 22, 2017|
+|HuntTheWumpus||08:51:49 Wed, Mar 22, 2017|
 |RecentChanges||16:19:20 Tue, Mar 21, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
-|HuntTheWumpus||16:08:17 Tue, Mar 21, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 |ArrowCountAndMovement||15:38:02 Tue, Mar 21, 2017|

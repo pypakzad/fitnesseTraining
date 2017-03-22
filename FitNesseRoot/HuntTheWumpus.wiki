@@ -1,5 +1,5 @@
 !define TEST_SYSTEM {slim}
-!path ./WumpusGame/bin
+!path ./WumpusGame/bin/
 |Import|
 |Fitnesse|
 
