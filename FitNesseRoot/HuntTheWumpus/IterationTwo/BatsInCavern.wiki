@@ -1,0 +1,58 @@
+---
+Test
+---
+Test: Bats In Cavern
+
+Input Map:
+|Start| Direction | End|
+|Bat1|E|2|
+|2|E|Pit|
+|3|E|4|
+|4|E|5|
+|Wumpus|E|6|
+|6|E|Bat2|
+|Bat1|S|3|
+|3|S|Wumpus|
+|2|S|4|
+|4|S|6|
+|Pit|S|Bat2|
+
+Testing user teleportation funtion when user meets bats.
+
+Test when bats take user to an empty cavern:
+|put user in 3|
+|go North|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in 6|
+
+
+Test when bats take user to another Bat Cavern:
+|put user in 3|
+|go North|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in Bat2|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in 2|
+
+Test when bats take user to a Pit:
+|put user in 3|
+|go North|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in Pit|
+|check message saying "You have fallen into a pit and died."|
+
+Test when bats take user to Wumpus:
+|put user in 3|
+|go North|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in Wumpus|
+|check message saying "You have been trampled by the Wumpus... Whomp, whomp :("|
+
+Test when bats take user to a cavern that has a dropped arrow:
+|put user in 3|
+|go North|
+|check message saying "You have encountered bats! You are being flown to another location..."|
+|user is in 5|
+|there is an arrow in 5|
+|check message saying "You have been trampled by the Wumpus... Whomp, whomp :("|
+

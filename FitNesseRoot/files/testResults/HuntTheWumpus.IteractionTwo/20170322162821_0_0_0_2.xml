@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IteractionTwo</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IteractionTwo.DeathByHazard</name>
+    <date>2017-03-22T16:28:21-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IteractionTwo.DeathByHazard?pageHistory&amp;resultDate=20170322162821</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>19</exceptions>
+    </counts>
+    <runTimeInMillis>115</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IteractionTwo.KillTheWumpus</name>
+    <date>2017-03-22T16:28:22-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IteractionTwo.KillTheWumpus?pageHistory&amp;resultDate=20170322162822</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>13</exceptions>
+    </counts>
+    <runTimeInMillis>23</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/aerixxon/Developer/fitnesseTraining/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 0, 0
+connect 0, 1, 1
+connect 1, 1, 2
+connect 1, 0, 3
+connect 1, 0, 3
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>2</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>432</totalRunTimeInMillis>
+</suiteResults>
+
