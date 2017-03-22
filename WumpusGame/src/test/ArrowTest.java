@@ -18,9 +18,7 @@ public class ArrowTest {
 	@Before
 	public void init() {
 		newArrow = null;
-		// startingCavern = map.new Cavern(0, 0);
 		newArrow = new Arrow();
-		// newArrow.setLocation(startingCavern);
 	}
 
 	@Test

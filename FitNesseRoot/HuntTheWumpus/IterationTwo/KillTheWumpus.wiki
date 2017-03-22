@@ -1,0 +1,24 @@
+---
+Test
+---
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
+Kill The Wumpus
+
+Testing that when user shoots arrow in direction of Wumpus, Wumpus dies.
+
+Input Map:
+|Start|Direction|End|
+|1|E|2|
+|2|E|Wumpus|
+
+|script|Kill Wumpus|
+|put user | 1|
+|shoot arrow East|
+|check |message| Empty cavern, arrow continues East.|
+|check |message| User killed the Wumpus.|
+
+|script|Kill Wumpus|
+|put user | 2|
+|shoot | East|
+|check |message|User killed the Wumpus.|

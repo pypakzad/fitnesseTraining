@@ -10,11 +10,26 @@ public class InputMap {
 	int start;
 	int end;
 	int direction;
-	public void setStart(int start){
-	this.start=start-1;
+//	public void setStart(int start){
+//	this.start=start-1;
+//	}
+	public void setStart(String start){
+		if (start =="Wumpus")
+			this.start=8;
+		if(start == "Pit")
+			this.start=9;
+		if(start == "Bats")
+			this.start=10;
+		this.start =  Integer.parseInt(start) - 1;
 	}
-	public void setEnd(int end){
-		this.end=end-1;
+	public void setEnd(String end){
+		if (end =="Wumpus")
+			this.end=8;
+		if(end == "Pit")
+			this.end=9;
+		if(end == "Bats")
+			this.end=10;
+		this.end =  Integer.parseInt(end) - 1;
 	}
 	public void setDirection(Direction d){
 		switch(d){

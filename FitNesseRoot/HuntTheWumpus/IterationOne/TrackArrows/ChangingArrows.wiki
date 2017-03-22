@@ -22,6 +22,8 @@ Testing that the arrow count decreases when the user shoots an arrow:
 
 
 Testing that the arrow count increases when the user picks up an arrow:
-|User picks up arrow|
-|check user arrow count|
-|user arrow count increases by 1|
+|script | At Game Start|
+|User Shoots Arrow|
+|check|getUserArrowCount|4|
+|User Picks Up Arrow|
+|check|getUserArrowCount|5|
