@@ -68,7 +68,6 @@ public class Map {
 		}
 		for (int i = 0; i < bats; i++) {
 			ArrayList<Cavern> options = getEmptyCaverns();
-			System.out.println(options.size());
 			Double newIndex = Double.valueOf(Math.floor(Math.random() * options.size()));
 			Cavern newCavern = options.get(newIndex.intValue());
 			caverns.replace(newCavern, "Bats");
