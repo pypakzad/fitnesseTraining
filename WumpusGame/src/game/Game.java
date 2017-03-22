@@ -127,13 +127,20 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public static void shootArrow() {
-		for (Arrow arrow : player.getArrowArray()) {
-			if (arrow.canUseArrow()) {
-				arrow.setArrowStatus(false);
+	public static void shootArrow() throws Exception {
+		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
+		Arrow unusableArrow = new Arrow(false);
+		boolean noUsableArrows = true;
+		for (int i = 0; i < arrowArrayCopy.size(); i++) {
+			if (arrowArrayCopy.get(i).canUseArrow()) {
+				arrowArrayCopy.set(i, unusableArrow);
+				noUsableArrows = false;
+				break;
 			}
-			break;
 		}
+		if (noUsableArrows)
+			throw new Exception("No Usable Arrows Available");
+		player.updateArrowArray(arrowArrayCopy);
 	}
 
 	public Game() {
