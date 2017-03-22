@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 |ArrowCountAndMovement||10:23:16 Wed, Mar 22, 2017|
+=======
+|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:29:48 Wed, Mar 22, 2017|
+|HuntTheWumpus.SetUp||10:15:08 Wed, Mar 22, 2017|
+|IterationOne||09:49:02 Wed, Mar 22, 2017|
+|HuntTheWumpus||09:26:57 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||09:26:29 Wed, Mar 22, 2017|
+>>>>>>> d15e34302c7f53fe55bb95cde981f5c4711ffe53
 |RecentChanges||16:19:20 Tue, Mar 21, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||16:14:24 Tue, Mar 21, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||16:10:05 Tue, Mar 21, 2017|
-|HuntTheWumpus||16:08:17 Tue, Mar 21, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap||16:05:11 Tue, Mar 21, 2017|
 |HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 
@@ -24,7 +29,6 @@
 |TrackArrows||14:45:11 Tue, Mar 21, 2017|
 |CreateMap||14:27:08 Tue, Mar 21, 2017|
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
-|IterationOne||13:22:44 Tue, Mar 21, 2017|
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
 |ExampleTest||10:47:38 Tue, Mar 21, 2017|
