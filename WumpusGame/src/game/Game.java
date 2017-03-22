@@ -19,10 +19,12 @@ public class Game {
 		while (!scanner.nextLine().equals("y")) {
 			System.out.println(errorInput);
 		}
+
+		map = new Map(50, 5, 5, 1);
 	}
 
 	public MapInter mapInterface;
-	private Map map;
+	private static Map map;
 	private Player player;
 
 	public class Movement {
@@ -101,9 +103,11 @@ public class Game {
 		Cavern startingLocation = getStartingLocation();
 		this.player.setPlayerLocation(startingLocation);
 	}
-	public void playerDies(){
+
+	public void playerDies() {
 		throw new Error("You are Dead");
 	}
+
 	public void move() {
 		// TODO: return
 	};
