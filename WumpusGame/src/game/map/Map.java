@@ -116,4 +116,9 @@ public class Map {
 		return empty;
 	}
 
+	public int moveOnMap(int startingChamber, int d) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

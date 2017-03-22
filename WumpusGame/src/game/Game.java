@@ -6,7 +6,8 @@ import game.map.MapInter;
 import game.player.Player;
 
 public class Game {
-	public MapInter map;
+	public MapInter mapInterface;
+	private Map map;
 	private Player player;
 	public class Movement{
 		public int endingChamber;
@@ -35,10 +36,10 @@ public class Game {
 		break;
 		}
 		
-			map.checkMap(startingChamber, d);
+			mapInterface.checkMap(startingChamber, d);
 			try{
 				
-				m.endingChamber = map.moveOnMap(startingChamber, d);
+				m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
 		return m;
 		}catch(Exception e){
 			m.endingChamber = startingChamber+1;
@@ -53,15 +54,19 @@ public class Game {
 	}
 
 	public Game() {
-//		this.map = new Map(50);
+		// this.map = new Map(50);
 	}
-	
+
+	public Map getMapInstance() {
+		return this.map;
+	};
+
 	public Game(MapInter m) {
-		this.map = m;
+		this.mapInterface = m;
 	}
 
 	public MapInter getMap() {
-		return this.map;
+		return this.mapInterface;
 	}
 
 	public Cavern getStartingLocation() {
