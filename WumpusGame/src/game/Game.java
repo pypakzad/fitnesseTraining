@@ -9,34 +9,42 @@ public class Game {
 	public MapInter mapInterface;
 	private Map map;
 	private Player player;
-
+	public class Movement{
+		public int endingChamber;
+		public String message;
+	}
 	public enum Direction {
 		N, S, E, W
 	};
 
-	public int playerMove(int startingChamber, Direction direction) throws Exception {
+	public Movement playerMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
+		Movement m = new Movement();
 		int d = 0;
-		switch (direction) {
-		case N:
-			d = 0;
-			break;
-		case E:
-			d = 1;
-			break;
-		case S:
-			d = 2;
-			break;
-		case W:
-			d = 3;
-			break;
+		switch(direction){
+		case N:d = 0;
+		m.message = "User moved North.";
+		break;
+		case E:d=1;
+		m.message = "User moved East.";
+		break;
+		case S: d=2;
+		m.message = "User moved South.";
+		break;
+		case W: d=3;
+		m.message = "User moved West.";
+		break;
 		}
-
-		map.checkMap(startingChamber, d);
-		try {
-			return map.moveOnMap(startingChamber, d);
-		} catch (Exception e) {
-			return startingChamber + 1;
+		
+			mapInterface.checkMap(startingChamber, d);
+			try{
+				
+				m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
+		return m;
+		}catch(Exception e){
+			m.endingChamber = startingChamber+1;
+			m.message = e.getMessage();
+			return  m;
 		}
 	}
 
