@@ -31,7 +31,7 @@ public class Game {
 			try{
 		return map.moveOnMap(startingChamber, d);
 		}catch(Exception e){
-			return startingChamber;
+			return startingChamber+1;
 		}
 	}
 
