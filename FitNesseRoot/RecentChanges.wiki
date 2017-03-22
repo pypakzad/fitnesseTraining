@@ -1,3 +1,9 @@
+|HuntTheWumpus.IterationOne.ShootArrows||13:59:33 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||13:58:46 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement||13:57:57 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.TrackArrows||13:57:16 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne.CreateMap||13:56:59 Wed, Mar 22, 2017|
+|HuntTheWumpus.IterationOne||13:55:26 Wed, Mar 22, 2017|
 |RecentChanges||13:48:44 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
@@ -32,7 +38,6 @@
 |HuntTheWumpus||09:26:57 Wed, Mar 22, 2017|
 
 
-|HuntTheWumpus.IterationOne||16:02:30 Tue, Mar 21, 2017|
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 
 

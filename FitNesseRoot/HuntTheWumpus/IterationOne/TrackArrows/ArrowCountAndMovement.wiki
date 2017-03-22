@@ -1,0 +1,34 @@
+---
+Test
+---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+
+|Import|
+|Fitnesse|
+
+ArrowCountAndMovement (parent page is <TrackArrows)
+
+Testing that the user has all arrows when the game begins:
+
+|script| At Game Start|
+|check |getUserArrowCount|5|
+
+
+Testing that the arrows move with the user, when the user moves in all directions:
+|script| At Game Start|
+|Go North|
+|check|getUserArrowCount|5|
+
+|User is at start of game|
+|Go South|
+|user has 5 arrows|
+
+|User is at start of game|
+|Go East|
+|user has 5 arrows|
+
+|User is at start of game|
+|Go West|
+|user has 5 arrows|
+
