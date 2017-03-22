@@ -1,4 +1,4 @@
-package game.map;
+package test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,6 +10,7 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+import game.map.Map;
 import game.map.Map.Cavern;
 
 public class MapTest {
