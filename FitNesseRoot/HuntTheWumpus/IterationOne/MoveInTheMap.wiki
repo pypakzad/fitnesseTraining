@@ -19,3 +19,7 @@ Testing that the user can move around the map.
 Testing '''valid''' movements: >ValidMovement
 
 Testing '''invalid''' movements: >InvalidMovement
+
+Testing ''string messages'' that appear for '''valid''' movements: >MessagesValidMovement
+
+Testing ''string messages'' that appear for '''valid''' movements: >MessagesInvalidMovement
