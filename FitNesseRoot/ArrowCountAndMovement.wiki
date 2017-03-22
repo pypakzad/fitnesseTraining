@@ -17,18 +17,19 @@ Testing that the user has all arrows when the game begins:
 
 Testing that the arrows move with the user, when the user moves in all directions:
 |script| At Game Start|
-|Go North|
+|Move North|
 |check|getUserArrowCount|5|
 
-|User is at start of game|
-|Go South|
-|user has 5 arrows|
+|script| At Game Start|
+|Move South|
+|check|getUserArrowCount|5|
 
-|User is at start of game|
-|Go East|
-|user has 5 arrows|
+|script| At Game Start|
+|Move East|
+|check|getUserArrowCount|5|
 
-|User is at start of game|
-|Go West|
-|user has 5 arrows|
+|script| At Game Start|
+|Move West|
+|check|getUserArrowCount|5|
+
 
