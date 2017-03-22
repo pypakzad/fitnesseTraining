@@ -19,6 +19,6 @@ public class MoveMap {
 		//map.moveOnMap(startingChamber, direction);
 	}
 	public int user(String user){
-		return endingChamber+1;
+		return endingChamber;
 	}
 }
