@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||12:27:00 Wed, Mar 22, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement||12:21:54 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||11:42:34 Wed, Mar 22, 2017|
