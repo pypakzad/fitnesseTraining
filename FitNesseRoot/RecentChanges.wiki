@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.PickUpArrow||16:30:28 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationTwo.StartGame||16:30:19 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationTwo.BatsInCavern||16:30:05 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||16:28:19 Wed, Mar 22, 2017|
+=======
+|HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||16:26:29 Wed, Mar 22, 2017|
+>>>>>>> 66ce67e5e441ce5763c6c9dccf44ec267915b9dd
 <<<<<<< HEAD
 |HuntTheWumpus.IteractionTwo.PickUpArrow||16:17:27 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationThree||16:04:04 Wed, Mar 22, 2017|
@@ -26,7 +30,6 @@
 |ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement||15:22:40 Wed, Mar 22, 2017|
 >>>>>>> 664be35b9a548d7caa1da64132ea8cccf486a490
-|HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||15:20:51 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IteractionTwo.StartGame||15:32:18 Wed, Mar 22, 2017|
 

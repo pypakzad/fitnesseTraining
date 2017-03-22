@@ -5,6 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
 import game.Game;
+import game.arrow.Arrow;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
@@ -52,6 +53,15 @@ public class AtGameStart {
 			// TODO Auto-generated catch block
 
 		}
+	}
+
+	public void UserPicksUpArrow() {
+		Map map = new Map(10, 0, 0, 0);
+		Cavern arrowLocation = map.new Cavern(4, 3);
+		player.setPlayerLocation(arrowLocation);
+		Arrow arrow = new Arrow();
+		arrow.setLocation(arrowLocation);
+		Game.pickupArrow(arrow);
 	}
 
 	public int getUserArrowCount() {
