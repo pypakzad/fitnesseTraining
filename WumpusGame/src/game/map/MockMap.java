@@ -4,10 +4,10 @@ public class MockMap extends Map{
 		super(mapsize);
 		// TODO Auto-generated constructor stub
 	}
-	String mapHazard;
-		private String message;
-		public enum MockMapType{Wall,Bats,Pit,Wumpus};
-		public void setMap(MockMapType m) {
+	private String mapHazard;
+	private int[][] mockMap;
+	public enum MockMapType{Wall,Bats,Pit,Wumpus};
+	public void setMap(MockMapType m) {
 			if (m == MockMapType.Wall)
 				this.mapHazard = "Wall";
 			if (m==MockMapType.Bats)
@@ -23,6 +23,12 @@ public class MockMap extends Map{
 			if(mapHazard != null)
 			throw new Exception(mapHazard);
 		}
-		
+		public void MockMap(int size){
+		mockMap = new int[size][4];
+		}
+		public void connect(int start,int end, int direction){
+		mockMap[start][direction]=end;
+		mockMap[end][(direction+2)%4]=start;
+		}
 
 }
