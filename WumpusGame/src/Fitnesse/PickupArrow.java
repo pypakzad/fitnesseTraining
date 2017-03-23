@@ -63,7 +63,7 @@ public class PickupArrow {
 
 	public void UserShootsArrow() {
 		try {
-			Game.shootArrow(Direction.values()[0]);
+			Game.shootArrow(Direction.N);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 
