@@ -31,10 +31,12 @@ public class Game {
 		String rules = "";
 
 		System.out.println(sendWelcome());
+		System.out.println("enter y to continue to the game.");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
 			System.out.println(sendWelcome());
+			System.out.println("enter y to continue to the game.");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -52,9 +54,10 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
+			System.out.println("enter w, s, a or d to move around. Good Luck :)");
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
-				System.out.println(userInput + " is the User Input");
+//				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					int commandNumber = commandStrings.indexOf(userInput);
@@ -62,10 +65,15 @@ public class Game {
 					if (commandNumber < 4) {
 						Movement m = playerCavernMove(command);
 						System.out.println(m.message);
+						if(m.onHazard == true)
+						{
+							playerDeadOrWon = true;
+							break;
+						}
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
-						System.out.print(player.getPlayerLocation().getX() + ",");
-						System.out.println(player.getPlayerLocation().getY());
+//						System.out.print(player.getPlayerLocation().getX() + ",");
+//						System.out.println(player.getPlayerLocation().getY());
 					}
 					if (command.toString().equals("up")) {
 						playerDeadOrWon = shootArrow(command);
@@ -135,6 +143,7 @@ public class Game {
 
 	public static Movement playerCavernMove(Commands direction) {
 		Movement m = new Movement();
+		m.onHazard = false;
 		Cavern startingCavern = player.getPlayerLocation();
 		int playerX = startingCavern.getX();
 		int playerY = startingCavern.getY();
@@ -165,16 +174,25 @@ public class Game {
 		}
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
-
+		if (endingCavernType.equals("Pit"))
+		{
+			m.message = "You have fallen into a pit and died.";
+			m.onHazard = true;
+		}
+		if (endingCavernType.equals("Bats"))
+			m.message = "You have encountered bats! You are being flown to another location...";
+		if (endingCavernType.equals("Wumpus"))
+		{
+			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
+			m.onHazard = true;
+		}
 		return senseDanger(m, endingCavern);
 	}
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
-		String hazardSense;
 		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
-			hazardSense = null;
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")

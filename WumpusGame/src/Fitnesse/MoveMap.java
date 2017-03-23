@@ -20,7 +20,6 @@ public class MoveMap {
 		Movement m = HuntTheWumpusContext.game.playerMove(startingChamber,d);
 			endingChamber = m.endingChamber;
 			message = m.message;
-		//map.moveOnMap(startingChamber, direction);
 	}
 	public int user(String user){
 		return endingChamber;
