@@ -16,7 +16,7 @@ Arrows:
 "Dead end, arrow falls. Pick-up arrow to reclaim it." -> when arrow hits a dead end (there is not a cavern in the same direction)
 "User killed the Wumpus." -> when user shoots the Wumpus
 "Arrow rebounded. User dies."
-"Pick-up arrow to reclaim it."
+"Congrats, you have found one of your arrows."
 
 Directions:
 "User moved [direction]." [East, North, West, South]
@@ -43,7 +43,7 @@ Rules for Hunt the Wumpus:
 
 3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
    An arrow continues in the direction it was shot until it hits a wall or other object.
-   When an arrow hits a wall, you can then walk to pick it up by pressing "p" in the cavern. You only have 5 arrows after all.
+   If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
    If you shoot an arrow into a wall directly next to you, you will DIE.
 
 4. There are Bats in these caverns...
