@@ -12,6 +12,13 @@ public class Map {
 		makeCaverns(mapsize, bats, pits, wumpus);
 	}
 
+	public Map() {
+	}
+
+	public void setMap(HashMap<Cavern, String> inputCaverns) {
+		caverns = inputCaverns;
+	}
+
 	public HashMap<Cavern, String> getCaverns() {
 		return caverns;
 	}
@@ -19,9 +26,8 @@ public class Map {
 	public HashMap<Cavern, String> getUnvisitedCaverns() {
 		return unvisitedCaverns;
 	}
-
-	public void checkMap(int x, int y) throws Exception {
-
+	public String near(int x, int y){
+		return null;
 	}
 
 	public class Cavern {
@@ -52,6 +58,10 @@ public class Map {
 		public int hashCode() {
 			return x * 100 + y;
 		}
+	}
+
+	public Cavern makeCavern(int x, int y) {
+		return new Cavern(x, y);
 	}
 
 	private void makeCaverns(int mapsize, int bats, int pits, int wumpus) {

@@ -1,7 +1,7 @@
 package Fitnesse;
 
-import java.io.ByteArrayInputStream;
-import java.nio.charset.StandardCharsets;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 import game.Game;
@@ -21,9 +21,9 @@ public class AtGameStart {
 
 	private HashMap<Cavern, String> caverns;
 
-	public AtGameStart() {
+	public AtGameStart() throws FileNotFoundException {
 		String[] args = null;
-		System.setIn(new ByteArrayInputStream(new String("y").getBytes(StandardCharsets.UTF_8)));
+		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
 		player = Game.getPlayer();
 		initializeCaverns();
@@ -46,9 +46,23 @@ public class AtGameStart {
 
 	}
 
+	public void initializeArrowPickupTest() {
+		caverns = new HashMap<Cavern, String>();
+		map = new Map(10, 0, 0, 0);
+		centralCavern = map.new Cavern(0, 0);
+		eastCavern = map.new Cavern(1, 0);
+		westCavern = map.new Cavern(2, 0);
+		southCavern = map.new Cavern(2, -1);
+		caverns.put(centralCavern, "");
+		caverns.put(eastCavern, "arrow");
+		caverns.put(westCavern, "");
+		caverns.put(southCavern, "");
+		player.setPlayerLocation(centralCavern);
+	}
+
 	public void UserShootsArrow() {
 		try {
-			Game.shootArrow();
+			// Game.shootArrow();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 
@@ -62,6 +76,15 @@ public class AtGameStart {
 		Arrow arrow = new Arrow();
 		arrow.setLocation(arrowLocation);
 		Game.pickupArrow(arrow);
+	}
+
+	public void PutUserAtLocationOne() {
+		initializeArrowPickupTest();
+	}
+
+	public void SetArrowCountToThree() {
+		UserShootsArrow();
+		UserShootsArrow();
 	}
 
 	public int getUserArrowCount() {
