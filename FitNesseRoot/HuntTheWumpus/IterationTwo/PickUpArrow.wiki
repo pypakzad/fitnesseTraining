@@ -5,17 +5,21 @@ Pick-up Arrow
 
 Testing the ability to pick-up arrows.
 
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+
 Input Map:
 |Start|Direction|End|
 |1|East|Arrow(2)|
 |Arrow(2)|East|3|
 |3|South|Arrow(4)|
-
 Testing arrow retrival ability:
-|Put user at 1|
-|Check user has 3 arrows|
-|Go East|
-|Check that message appears saying "Pick-up arrow to reclaim it."|
+|script|At Game Start|
+|Put User At Location One|
+|Set Arrow Count To Three|
+|check|getUserArrowCount|3|
+|check| Move East| "You have found an arrow!"|
+|check|getUserArrowCount|4|
 |Press "p" key|
 |Check that arrow count is 4|
 |Go East|

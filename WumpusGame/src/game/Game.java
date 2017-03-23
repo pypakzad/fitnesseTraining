@@ -223,7 +223,7 @@ public class Game {
 		player.updateArrowArray(arrowArrayCopy);
 	}
 
-	public static void pickupArrow(Arrow foundArrow) {
+	public static String pickupArrow(Arrow foundArrow) {
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		for (int i = 0; i < arrowArrayCopy.size(); i++) {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
@@ -232,6 +232,7 @@ public class Game {
 			}
 		}
 		player.updateArrowArray(arrowArrayCopy);
+		return "You have found an arrow!";
 	}
 
 	public Game() {

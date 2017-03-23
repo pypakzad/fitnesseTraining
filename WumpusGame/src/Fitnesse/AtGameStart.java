@@ -46,6 +46,20 @@ public class AtGameStart {
 
 	}
 
+	public void initializeArrowPickupTest() {
+		caverns = new HashMap<Cavern, String>();
+		map = new Map(10, 0, 0, 0);
+		Cavern centralCavern = map.new Cavern(0, 0);
+		Cavern eastCavern = map.new Cavern(1, 0);
+		Cavern westCavern = map.new Cavern(2, 0);
+		Cavern southCavern = map.new Cavern(2, -1);
+		caverns.put(centralCavern, "");
+		caverns.put(eastCavern, "arrow");
+		caverns.put(westCavern, "");
+		caverns.put(southCavern, "");
+		player.setPlayerLocation(centralCavern);
+	}
+
 	public void UserShootsArrow() {
 		try {
 			Game.shootArrow();
@@ -64,6 +78,15 @@ public class AtGameStart {
 		Game.pickupArrow(arrow);
 	}
 
+	public void PutUserAtLocationOne() {
+		initializeArrowPickupTest();
+	}
+
+	public void SetArrowCountToThree() {
+		UserShootsArrow();
+		UserShootsArrow();
+	}
+
 	public int getUserArrowCount() {
 		return player.getNumberOfAvailableArrows();
 	}
@@ -78,6 +101,10 @@ public class AtGameStart {
 
 	public void MoveEast() {
 		player.setPlayerLocation(eastCavern);
+		if (caverns.get(eastCavern).equals("arrow")) {
+			Arrow arrow = new Arrow();
+			Game.pickupArrow(arrow);
+		}
 	}
 
 	public void MoveWest() {
