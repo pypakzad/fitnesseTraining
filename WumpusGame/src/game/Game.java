@@ -326,7 +326,7 @@ public class Game {
 			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
 				String arrows = getArrowsString(startingCavern);
 				caverns.replace(startingCavern, arrows);
-				eventList.add("Your arrow ended up in an empty cavern");
+				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim.");
 				return false;
 			}
 			if (cavernType.equals("Bats")) {
@@ -390,7 +390,7 @@ public class Game {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
 			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
 				arrowArrayCopy.set(i, foundArrow);
-				returnMessage = "You have found an arrow!";
+				returnMessage = "Congrats, you found one of your arrows.";
 				break;
 			}
 		}

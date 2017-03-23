@@ -1,5 +1,7 @@
 PitS (parent page is ShootArrows)
 
+!include .HuntTheWumpus.IterationTwo.ShootArrow
+
 |Start game|
 |Put user in 2|
 |shoot arrow East|
