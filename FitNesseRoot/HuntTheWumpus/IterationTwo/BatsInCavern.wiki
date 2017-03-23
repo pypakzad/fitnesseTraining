@@ -2,7 +2,8 @@
 Test
 ---
 Test: Bats In Cavern
-
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
 Input Map:
 |script|Generate Bat Map|
 |make|Empty1|map|N|
@@ -17,7 +18,8 @@ Input Map:
 Testing user teleportation funtion when user meets bats.
 
 Test when bats take user to an empty cavern:
-|put user in origin|
+|script|Start Bat Test|
+|check|check User Init|true|
 |go West|
 |go North|
 |check message appears saying "You have encountered bats! You are being flown to another location..."|
