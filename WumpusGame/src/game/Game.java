@@ -65,6 +65,11 @@ public class Game {
 					if (commandNumber < 4) {
 						Movement m = playerCavernMove(command);
 						System.out.println(m.message);
+						if(m.onHazard == true)
+						{
+							playerDeadOrWon = true;
+							break;
+						}
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
 //						System.out.print(player.getPlayerLocation().getX() + ",");
@@ -138,6 +143,7 @@ public class Game {
 
 	public static Movement playerCavernMove(Commands direction) {
 		Movement m = new Movement();
+		m.onHazard = false;
 		Cavern startingCavern = player.getPlayerLocation();
 		int playerX = startingCavern.getX();
 		int playerY = startingCavern.getY();
@@ -169,20 +175,24 @@ public class Game {
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
 		if (endingCavernType.equals("Pit"))
-			m.message = m.message + "\nWow, you are floating above a pit. That's neat.";
+		{
+			m.message = "You have fallen into a pit and died.";
+			m.onHazard = true;
+		}
 		if (endingCavernType.equals("Bats"))
 			m.message = m.message + "\nHmm, there are a lot of bats in here. They are pretty fuzzy :D.";
 		if (endingCavernType.equals("Wumpus"))
-			m.message = m.message + "\nOh, why would you come in here? I guess the wumpus is sleeping or something. I don't know.";
+		{
+			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
+			m.onHazard = true;
+		}
 		return senseDanger(m, endingCavern);
 	}
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
-		String hazardSense;
 		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
-			hazardSense = null;
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
