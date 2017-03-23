@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
+import game.bat.Bat;
 import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
@@ -91,13 +92,13 @@ public class Game {
 	}
 
 	public static String sendRules() {
-		return "Rules for Hunt the Wumpus: \n1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys\n"
+		return "Rules for Hunt the Wumpus: \n1. You can move North (w), South (s), East (d), or West (a) using the wasd letter keys.\n"
 				+"\n"
 				+ "2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.\n"
 				+ "If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)\n"
 				+ "If the Wumpus walks into you or you walk into the Wumpus, then you DIE.\n"
 				+"\n"
-				+"3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.\n"
+				+"3. You start with 5 arrows. You shoot them North(i), South(k), East(l), or West(j) using the ijkl letter keys.\n"
 				+"An arrow continues in the direction it was shot until it hits a wall or other object.\n"
 				+"If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.\n"
 				+"If you shoot an arrow into a wall directly next to you, you will DIE.\n"
@@ -192,8 +193,11 @@ public class Game {
 			m.message = "You have fallen into a pit and died.";
 			m.onHazard = true;
 		}
-		if (endingCavernType.equals("Bats"))
+		if (endingCavernType.equals("Bats")){
 			m.message = "You have encountered bats! You are being flown to another location...";
+			Bat bat = new Bat(player, caverns);
+			player.setPlayerLocation(bat.getNewLocation());
+		}
 		if (endingCavernType.equals("Wumpus"))
 		{
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
