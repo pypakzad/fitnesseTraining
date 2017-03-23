@@ -6,6 +6,7 @@ import java.util.HashMap;
 
 import game.Game;
 import game.arrow.Arrow;
+import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
@@ -61,7 +62,7 @@ public class AtGameStart {
 
 	public void UserShootsArrow() {
 		try {
-			// Game.shootArrow();
+			Game.shootArrow(Commands.up);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 
