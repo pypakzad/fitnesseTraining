@@ -21,6 +21,7 @@ public class Game {
 	public static Player player;
 	public static ArrayList<String> commands = new ArrayList<String>();
 	public static ArrayList<String> eventList = new ArrayList<String>();
+	public static boolean testMapAndPlayerLoaded = false;
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -38,33 +39,42 @@ public class Game {
 		}
 		if (userStartCommand.equals("y")) {
 			// initialization
-			createMap();
-			createPlayer();
+			if (!testMapAndPlayerLoaded) {
+				createMap();
+				populateCaverns();
+				createPlayer();
+			}
+
 			boolean playerDeadOrWon = false;
 			Commands[] commands = Commands.values();
 			ArrayList<String> commandStrings = new ArrayList<String>();
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
-
+			System.out.println(sendRules());
 			while (!playerDeadOrWon) {
-				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
-//				System.out.print(userInput);
+				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
-					Commands command = commands[commandStrings.indexOf(userInput)];
+					int commandNumber = commandStrings.indexOf(userInput);
+					Commands command = commands[commandNumber];
+					if (commandNumber < 4) {
 						Movement m = playerCavernMove(command);
-						
+						System.out.println(m.message);
+						if (m.hazardSense != null)
+							System.out.println(m.hazardSense);
 						System.out.print(player.getPlayerLocation().getX() + ",");
 						System.out.println(player.getPlayerLocation().getY());
+					}
+					if (command.toString().equals("up")) {
+						playerDeadOrWon = shootArrow(command);
+						break;
+					}
 					if (userInput.equals("testExit")) {
 						playerDeadOrWon = true;
 						break;
 					}
-					System.out.println(m.message);
-					if (m.hazardSense!=null)
-					System.out.println(m.hazardSense);
 					userInput = scanner.nextLine();
 				}
 				if (!playerDeadOrWon) {
@@ -88,10 +98,21 @@ public class Game {
 		return player;
 	}
 
+	public static void setMap(Map map) {
+		Game.map = map;
+	}
+
+	public static void setPlayer(Player player) {
+		Game.player = player;
+	}
+
 	public static ArrayList<String> getEventList() {
 		return eventList;
 	}
 
+	public static void populateCaverns() {
+		caverns = map.getCaverns();
+	}
 
 	public enum Direction {
 		N("North.", 0), E("East.", 1), S("South.", 2), W("West", 3);
@@ -150,27 +171,38 @@ public class Game {
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
-		String hazardSense = m.hazardSense;
+		String hazardSense;
+		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
+			hazardSense = null;
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
-					hazardSense = "You can hear a breeze.\n";
+					hazard[0] = "You can feel a Breeze.";
 				if (neighborType == "Bats")
-					hazardSense = "You can hear chirping.\n";
+					hazard[1] = "You can hear Chirping.";
 				if (neighborType == "Wumpus")
-					hazardSense = "You can smell a Wumpus.\n";
+					hazard[2] = "You can smell a Wumpus.";
 			}
-			if (m.hazardSense == null)
-			{
-				if (hazardSense != null)
-					m.hazardSense =  hazardSense;
+			// if (m.hazardSense == null)
+			// {
+			// if (hazardSense != null)
+			// m.hazardSense = hazardSense;
+			// }
+			// else{
+			// if (hazardSense != null)
+			// m.hazardSense = m.hazardSense + hazardSense;
+			// }
+
+		}
+		for (int i = 0; i < hazard.length; i++) {
+			if (hazard[i] != null) {
+				if (m.hazardSense == null) {
+					m.hazardSense = hazard[i];
+				} else {
+					m.hazardSense = m.hazardSense + "\n" + hazard[i];
+				}
 			}
-			else{
-				if (hazardSense != null)
-					m.hazardSense = m.hazardSense + hazardSense;
-			}
-				
 		}
 		return m;
 	}
@@ -248,25 +280,25 @@ public class Game {
 		}
 	}
 
-	private static void arrowMove(Arrow shotArrow, Commands direction) throws Exception {
+	private static boolean arrowMove(Arrow shotArrow, Commands direction) {
 		Movement m = new Movement();
 		Cavern startingCavern = shotArrow.getLocation();
 		int playerX = startingCavern.getX();
 		int playerY = startingCavern.getY();
 		switch (direction) {
-		case w:
+		case up:
 			playerY = playerY + 1;
 			m.message = "North.";
 			break;
-		case s:
+		case dwn:
 			playerY = playerY - 1;
 			m.message = "South.";
 			break;
-		case d:
+		case rt:
 			playerX = playerX + 1;
 			m.message = "East.";
 			break;
-		case a:
+		case lft:
 			playerX = playerX - 1;
 			m.message = "West.";
 			break;
@@ -276,11 +308,44 @@ public class Game {
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);
 			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
-
+				eventList.add("Arrow rebounded and hit you :(");
+				return true;
+			}
+			String cavernType = caverns.get(startingCavern);
+			System.out.println(caverns.size());
+			if (cavernType.equals("Empty")) {
+				caverns.replace(startingCavern, "Arrow|1|");
+				eventList.add("Your arrow ended up in an empty cavern");
+				return false;
+			}
+			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
+				String arrows = getArrowsString(startingCavern);
+				caverns.replace(startingCavern, arrows);
+				eventList.add("Your arrow ended up in an empty cavern");
+				return false;
+			}
+			if (cavernType.equals("Bats")) {
+				caverns.replace(startingCavern, "Arrow|1|");
+				eventList.add("Your arrow killed some bats! :(");
+				return false;
+			}
+			if (cavernType.equals("Pit")) {
+				eventList.add("Your arrow was lost in a pit :(");
+				return false;
+			}
+			if (cavernType.equals("Wumpus")) {
+				eventList.add("You killed the Wumpus!");
+				return true;
 			}
 		}
 		shotArrow.setLocation(endingCavern);
-		arrowMove(shotArrow, direction);
+		return arrowMove(shotArrow, direction);
+	}
+
+	private static String getArrowsString(Cavern cavern) {
+		String currentState = caverns.get(cavern);
+		int arrowNumber = Integer.valueOf(currentState.substring(6, 7));
+		return "Arrow|" + String.valueOf(arrowNumber) + "|";
 	}
 
 	private static void validateMove(Direction d) throws Exception {
@@ -288,12 +353,15 @@ public class Game {
 			throw new Exception("Input Null Move");
 	}
 
-	public static void shootArrow(Direction direction) throws Exception {
+	public static boolean shootArrow(Commands direction) {
 		Arrow shotArrow = loseArrow();
-		if (shotArrow == null)
-			throw new Exception("No Usable Arrows Available");
+		if (shotArrow == null) {
+			eventList.add("No Usable Arrows Available :(");
+			return false;
+		}
 		Cavern location = player.getPlayerLocation();
-		arrowMove(shotArrow, Commands.values()[0]);
+		shotArrow.setLocation(location);
+		return arrowMove(shotArrow, direction);
 	}
 
 	private static Arrow loseArrow() {
@@ -364,7 +432,6 @@ public class Game {
 
 	private static void createMap() {
 		map = new Map(50, 5, 5, 1);
-		caverns = map.getCaverns();
 	}
 
 	private static void createPlayer() {

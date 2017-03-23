@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||13:19:59 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern||13:19:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||13:15:49 Thu, Mar 23, 2017|
@@ -7,6 +8,11 @@
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||12:52:08 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows||12:44:30 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||12:40:01 Thu, Mar 23, 2017|
+=======
+|HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
+|ShootArrows||11:46:27 Thu, Mar 23, 2017|
+>>>>>>> 9c81ae35cc5d052623aae5b7995c42235b46efee
 <<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.StartGame||11:38:53 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
