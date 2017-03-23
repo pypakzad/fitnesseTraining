@@ -10,8 +10,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import game.Game;
-import game.Game.Direction;
 import game.arrow.Arrow;
+import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
@@ -41,19 +41,20 @@ public class GameTest {
 	@Test
 	public void shootArrowDecreasesArrowCount() throws Exception {
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
-		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Commands.up);
 		int arrowCount = player.getNumberOfAvailableArrows();
 		assertEquals(arrowCount, expectedArrowCount);
 	}
 
-	@Test(expected = Exception.class)
-	public void errorThrownWhenNotEnoughArrows() throws Exception {
-		Game.shootArrow(Direction.values()[0]);
-		Game.shootArrow(Direction.values()[0]);
-		Game.shootArrow(Direction.values()[0]);
-		Game.shootArrow(Direction.values()[0]);
-		Game.shootArrow(Direction.values()[0]);
-		Game.shootArrow(Direction.values()[0]);
+	@Test
+	public void errorThrownWhenNotEnoughArrows() {
+		Game.shootArrow(Commands.up);
+		Game.shootArrow(Commands.up);
+		Game.shootArrow(Commands.up);
+		Game.shootArrow(Commands.up);
+		Game.shootArrow(Commands.up);
+		Game.shootArrow(Commands.up);
+		assertTrue(Game.getEventList().get(Game.getEventList().size() - 1).equals("No Usable Arrows Available :("));
 	}
 
 	@Test
@@ -65,19 +66,12 @@ public class GameTest {
 		arrow.setLocation(arrowLocation);
 		int arrowShotCount = 4;
 		int arrowPickedUpcount = 5;
-		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Commands.up);
 		int afterShot = player.getNumberOfAvailableArrows();
 		assertTrue(afterShot == arrowShotCount);
 		Game.pickupArrow(arrow);
 		int afterPickup = player.getNumberOfAvailableArrows();
 		assertTrue(afterPickup == arrowPickedUpcount);
-	}
-
-	@Test
-	public void shootingArrowIntoWall() {
-		String[] args = null;
-		System.setIn(new FileInputStream("GameTest3.txt"));
-		Game.main(args);
 	}
 
 }
