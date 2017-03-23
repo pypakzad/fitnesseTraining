@@ -28,7 +28,7 @@ public class StartGame {
 
 	public boolean userInputNGameEnds() throws FileNotFoundException {
 		String[] args = null;
-		System.setIn(new FileInputStream("C:/Users/rapha/fitnesseTraining/WumpusGame/GameTest2.txt"));
+		System.setIn(new FileInputStream(System.getProperty("user.dir") + "GameTest2.txt"));
 		Game.main(args);
 		return true;
 	}
