@@ -9,12 +9,22 @@ Testing the ability to pick-up arrows.
 !path ./WumpusGame/bin
 
 Input Map:
-|Start|Direction|End|
-|1|East|Arrow(2)|
-|Arrow(2)|East|3|
-|3|South|Arrow(4)|
+|script|generate map|
+|make|Arrow1|map|E|
+|make|Arrow2|map|S|
+|make|Empty|map|W|
 
 Testing arrow retrival ability:
+<<<<<<< HEAD
+|Put user at origin|
+|Check user has 3 arrows|
+|Go E|
+|Check that message appears saying "Pick-up arrow to reclaim it."|
+|Check that arrow count is 4|
+|Go S|
+|Check that message appears saying "Pick-up arrow to reclaim it."|
+|Check that arrow count is 5|
+=======
 |script|Pickup Arrow|
 |Put User At Location One|
 |Set Arrow Count To Three|
@@ -24,4 +34,5 @@ Testing arrow retrival ability:
 |check|Move East||
 |check|Move South|You have found an arrow!|
 |check|getUserArrowCount|5|
+>>>>>>> dc3d723a221fbc322789517a4b396b3a0a0cf7f6
 

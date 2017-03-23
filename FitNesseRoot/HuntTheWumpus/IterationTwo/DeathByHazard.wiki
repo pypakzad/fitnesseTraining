@@ -8,31 +8,30 @@ Death by Hazard
 
 Testing that you when you meet a hazard you die: 
 
-|Input Map|
-|Start|Direction|End|
-| 1|N|Pit|
-|Pit|E|2|
-|2|S|Wumpus|
-|Wumpus|W|1|
+Input Map:
+|script|generate map|
+|make|Pit|map|N|
+|make|Empty|map|E|
+|make|Wumpus|map|S|
 
 Testing that when user meets Pit they die: 
 |script| Time To Die|
-|Put |user |at| 1|
-|move |North|
+|Put |user |at| origin|
+|move |N|
 |Check |message|You have fallen into a pit and died.|
 |Check |game| ends|
 
 Testing that when user meets Wumpus they die:
 |script| Time To Die|
-|Put |user | 1|
-|Move |East|
+|Put |user | at| origin|
+|Move |E|
 |Check |message|You have been trampled by the Wumpus... Whomp, whomp :(|
 |Check | game |ends|
 
 Testing that when user shoots arrow while directly next to dead-end that arrow rebounds and kills user:
 |script| Time To Die|
-|Put |user |at| 1|
-|Shoot arrow| West|
+|Put |user |at| origin|
+|Shoot arrow| W|
 |Check|message |Arrow rebounded. User dies.|
 |Check |game |ends|
 

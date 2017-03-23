@@ -16,13 +16,13 @@ Testing clockwise movement:
 |go|E|
 |check |user |is in| 2|
 
-|script |Move Map|
+|script| Move Map|
 |put |user |in| 2|
 |go| E|
 |check |user| is in| 3|
 
 |script| Move Map|
-|put |user |in| 3|
+|put |user |in |3|
 |go| S|
 |check |user |is in| 4|
 
