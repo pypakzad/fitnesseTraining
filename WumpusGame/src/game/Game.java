@@ -171,7 +171,7 @@ public class Game {
 		if (endingCavernType.equals("Pit"))
 			m.message = m.message + "\nWow, you are floating above a pit. That's neat.";
 		if (endingCavernType.equals("Bats"))
-			m.message = m.message + "\nHmm, there a lot of bats in here. They're pretty fuzzy :D.";
+			m.message = m.message + "\nHmm, there are a lot of bats in here. They are pretty fuzzy :D.";
 		if (endingCavernType.equals("Wumpus"))
 			m.message = m.message + "\nOh, why would you come in here? I guess the wumpus is sleeping or something. I don't know.";
 		return senseDanger(m, endingCavern);
