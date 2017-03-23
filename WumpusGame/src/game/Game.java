@@ -330,31 +330,37 @@ public class Game {
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);
 			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
+				System.out.println("Arrow rebounded. User dies");
 				eventList.add("Arrow rebounded. User dies.");
 				return true;
 			}
 			String cavernType = caverns.get(startingCavern);
 			if (cavernType.equals("Empty")) {
 				caverns.replace(startingCavern, "Arrow|1|");
+				System.out.println("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
 				String arrows = getArrowsString(startingCavern);
 				caverns.replace(startingCavern, arrows);
+				System.out.println("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.equals("Bats")) {
 				caverns.replace(startingCavern, "Arrow|1|");
+				System.out.println("User killed bats. Pick-up arrow to reclaim it.");
 				eventList.add("User killed bats. Pick-up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.equals("Pit")) {
+				System.out.println("User lost arrow in pit.");
 				eventList.add("User lost arrow in pit.");
 				return false;
 			}
 			if (cavernType.equals("Wumpus")) {
+				System.out.println("User killed the Wumpus.");
 				eventList.add("User killed the Wumpus.");
 				return true;
 			}
@@ -378,6 +384,7 @@ public class Game {
 	public static boolean shootArrow(Commands direction) {
 		Arrow shotArrow = loseArrow();
 		if (shotArrow == null) {
+			System.out.println("No Usable Arrows Available :(");
 			eventList.add("No Usable Arrows Available :(");
 			return false;
 		}
