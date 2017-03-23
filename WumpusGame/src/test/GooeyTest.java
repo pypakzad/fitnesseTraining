@@ -19,17 +19,9 @@ import game.player.Player;
 
 public class GooeyTest {
 	private Game game;
-//	private Cavern northCavern;
-//	private Cavern centralCavern;
-//	private Cavern southCavern;
-//	private Cavern westCavern;
-//	private Cavern eastCavern;
 	
 	@Before
 	public void init() throws FileNotFoundException {
-//		String[] args = null;
-//		System.setIn(new FileInputStream("GameNorthTwice.txt"));
-//		Game.main(args);
 		game = new Game();
 		game.player = new Player();//Game.getPlayer();
 		initializeCaverns();

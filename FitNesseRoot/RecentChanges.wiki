@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.BatsInCavern||14:03:19 Thu, Mar 23, 2017|
 =======
@@ -30,7 +31,6 @@
 |HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationTwo.StartGame||11:38:53 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
 
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||10:38:44 Thu, Mar 23, 2017|
@@ -98,5 +98,3 @@
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
 |ExampleTest||10:47:38 Tue, Mar 21, 2017|
-|ExampleTestFolder||10:17:45 Tue, Mar 21, 2017|
-|MyFirstFitNesseSuite||10:59:22 Tue, Mar 21, 2017|

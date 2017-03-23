@@ -31,12 +31,12 @@ public class Game {
 		String rules = "";
 
 		System.out.println(sendWelcome());
-		System.out.println("enter y to continue to the game.");
+		System.out.println("Do you wish to continue to the game (y/n)?");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
 			System.out.println(sendWelcome());
-			System.out.println("enter y to continue to the game.");
+			System.out.println("Do you wish to continue to the game (y/n)?");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -54,7 +54,6 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
-			System.out.println("enter w, s, a or d to move around. Good Luck :)");
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
 //				System.out.println(userInput + " is the User Input");
@@ -89,17 +88,36 @@ public class Game {
 					System.out.println(errorInput);
 				}
 			}
-			// if you're here game has ended
-
 		}
 	}
 
 	public static String sendWelcome() {
-		return "welcome";
+		return "Welcome to Hunt The Wumpus!!\n\nyou wish to continue to the game (y/n)?";
 	}
 
 	public static String sendRules() {
-		return "rules";
+		return "Rules for Hunt the Wumpus: \n1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys\n"
+				+"\n"
+				+ "2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.\n"
+				+ "If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)\n"
+				+ "If the Wumpus walks into you or you walk into the Wumpus, then you DIE.\n"
+				+"\n"
+				+"3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.\n"
+				+"An arrow continues in the direction it was shot until it hits a wall or other object.\n"
+				+"If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.\n"
+				+"If you shoot an arrow into a wall directly next to you, you will DIE.\n"
+				+"\n"
+				+"4. There are Bats in these caverns...\n"
+				+"If you walk into a cavern with bats, you will be flown to random location.\n"
+				+"If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.\n"
+				+"If you are one cavern away from bats, you will hear screaching noises.\n"
+				+"\n"
+				+"5. There are Pits in these caverns...\n"
+				+"If you walk into a cavern with pits, you will fall into the pit and DIE.\n"
+				+"If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.\n"
+				+"If you are one cavern away from a pit, you will hear blustering wind.\n"
+				+"\n"
+				+"GOOD LUCK!!!\n";
 	}
 
 	public static Player getPlayer() {
@@ -196,22 +214,12 @@ public class Game {
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
-					hazard[0] = "You can feel a Breeze.";
+					hazard[0] = "You feel blustering wind.";
 				if (neighborType == "Bats")
-					hazard[1] = "You can hear Chirping.";
+					hazard[1] = "You hear screeching noises.";
 				if (neighborType == "Wumpus")
-					hazard[2] = "You can smell a Wumpus.";
+					hazard[2] = "You smell something really bad.";
 			}
-			// if (m.hazardSense == null)
-			// {
-			// if (hazardSense != null)
-			// m.hazardSense = hazardSense;
-			// }
-			// else{
-			// if (hazardSense != null)
-			// m.hazardSense = m.hazardSense + hazardSense;
-			// }
-
 		}
 		for (int i = 0; i < hazard.length; i++) {
 			if (hazard[i] != null) {
@@ -256,8 +264,6 @@ public class Game {
 			return m;
 		} catch (Exception e) {
 			System.out.println(e.getLocalizedMessage());
-			// if(e.getMessage()!="Wall")
-			// playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
