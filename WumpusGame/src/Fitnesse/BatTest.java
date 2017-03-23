@@ -24,19 +24,20 @@ public class BatTest {
 	private Cavern NW;
 	private Cavern SE;
 	private Cavern SW;
-	private HashMap<Cavern, String> caverns;
+	private Game game;
 
 	public BatTest() throws FileNotFoundException {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
-		player = Game.getPlayer();
+		game = new Game();
+		game.player = new Player();
 		initializeMap();
-		player.setPlayerLocation(origin);
+		game.player.setPlayerLocation(origin);
 	}
 
 	public void initializeMap() {
-		caverns = new HashMap<Cavern, String>();
+		game.caverns = new HashMap<Cavern, String>();
 		map = new Map(10, 0, 0, 0);
 		origin = map.new Cavern(0, 0);
 		N = map.new Cavern(0, 1);
@@ -48,19 +49,19 @@ public class BatTest {
 		SW = map.new Cavern(-1, -1);
 		NW = map.new Cavern(-1, 1);
 
-		caverns.put(origin, "");
-		caverns.put(N, "");
-		caverns.put(E, "Arrow");
-		caverns.put(S, "");
-		caverns.put(W, "");
-		caverns.put(NE, "Pit");
-		caverns.put(NW, "Bats");
-		caverns.put(SW, "Whompus");
-		caverns.put(SE, "Bats");
+		game.caverns.put(origin, "");
+		game.caverns.put(N, "");
+		game.caverns.put(E, "Arrow");
+		game.caverns.put(S, "");
+		game.caverns.put(W, "");
+		game.caverns.put(NE, "Pit");
+		game.caverns.put(NW, "Bats");
+		game.caverns.put(SW, "Whompus");
+		game.caverns.put(SE, "Bats");
 	}
 
-	public String checkUserInit() {
-		if (player.getPlayerLocation() == origin) {
+	public String PutPlayerAtOrigin() {
+		if (game.player.getPlayerLocation() == origin) {
 			return "true";
 		} else
 			return "false";
@@ -71,7 +72,7 @@ public class BatTest {
 		int newY = player.getPlayerLocation().getY() - 1;
 		Cavern newLocation = map.new Cavern(newX, newY);
 		player.setPlayerLocation(newLocation);
-		if (caverns.get(newLocation).equals("arrow")) {
+		if (game.caverns.get(newLocation).equals("arrow")) {
 			Arrow arrow = new Arrow();
 			arrow.setLocation(newLocation);
 			return Game.pickupArrow(arrow);
@@ -79,8 +80,14 @@ public class BatTest {
 			return "";
 	}
 
+	public void handleMessage(String m) {
+		if (m.equals("You have encountered bats! You are being flown to another location..."))
+			;
+	}
+
 	public String MoveNorth() {
 		Movement m = Game.playerCavernMove(Commands.w);
+		handleMessage(m.message);
 		return m.message;
 	}
 
@@ -94,7 +101,7 @@ public class BatTest {
 		int newY = player.getPlayerLocation().getY();
 		Cavern newLocation = map.new Cavern(newX, newY);
 		player.setPlayerLocation(newLocation);
-		if (caverns.get(newLocation).equals("arrow")) {
+		if (game.caverns.get(newLocation).equals("arrow")) {
 			Arrow arrow = new Arrow();
 			arrow.setLocation(newLocation);
 			return Game.pickupArrow(arrow);
