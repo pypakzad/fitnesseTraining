@@ -31,12 +31,10 @@ public class Game {
 		String rules = "";
 
 		System.out.println(sendWelcome());
-		System.out.println("Do you wish to continue to the game (y/n)?");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
-			System.out.println(errorInput);
+			System.out.println("What did you mean by " + userStartCommand + "?");
 			System.out.println(sendWelcome());
-			System.out.println("Do you wish to continue to the game (y/n)?");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -56,7 +54,6 @@ public class Game {
 			System.out.println(sendRules());
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
-//				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					int commandNumber = commandStrings.indexOf(userInput);
@@ -71,8 +68,6 @@ public class Game {
 						}
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
-//						System.out.print(player.getPlayerLocation().getX() + ",");
-//						System.out.println(player.getPlayerLocation().getY());
 					}
 					if (command.toString().equals("up")) {
 						playerDeadOrWon = shootArrow(command);

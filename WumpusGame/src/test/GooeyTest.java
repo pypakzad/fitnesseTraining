@@ -23,7 +23,7 @@ public class GooeyTest {
 	@Before
 	public void init() throws FileNotFoundException {
 		game = new Game();
-		game.player = new Player();//Game.getPlayer();
+		game.player = new Player();
 		initializeCaverns();
 			
 		}

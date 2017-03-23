@@ -2,7 +2,8 @@
 Test
 ---
 Sensing All Hazards at Once
-
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
 Input Map:
 |script|generate map|
 |make|Wumpus|map|W|

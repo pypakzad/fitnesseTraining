@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||15:03:51 Thu, Mar 23, 2017|
 |RecentChanges||14:52:39 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGameLoop||14:43:12 Thu, Mar 23, 2017|
@@ -8,7 +9,6 @@
 |HuntTheWumpus.IterationThree||14:15:11 Thu, Mar 23, 2017|
 |HuntTheWumpus||14:12:32 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface||13:59:28 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||13:46:21 Thu, Mar 23, 2017|
 
 
 |PitS||13:22:14 Thu, Mar 23, 2017|
