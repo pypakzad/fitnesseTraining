@@ -10,16 +10,17 @@ import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
+import game.map.Movement;
 import game.player.Player;
 
 public class Game {
 
 	public MapInter mapInterface;
-	private static Map map;
-	private static HashMap<Cavern, String> caverns;
-	private static Player player;
-	private static ArrayList<String> commands = new ArrayList<String>();
-	private static ArrayList<String> eventList = new ArrayList<String>();
+	public static Map map;
+	public static HashMap<Cavern, String> caverns;
+	public static Player player;
+	public static ArrayList<String> commands = new ArrayList<String>();
+	public static ArrayList<String> eventList = new ArrayList<String>();
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -62,6 +63,8 @@ public class Game {
 						break;
 					}
 					System.out.println(m.message);
+					if (m.hazardSense!=null)
+					System.out.println(m.hazardSense);
 					userInput = scanner.nextLine();
 				}
 				if (!playerDeadOrWon) {
@@ -89,12 +92,6 @@ public class Game {
 		return eventList;
 	}
 
-	public static class Movement {
-		public int endingChamber;
-		public Cavern endingCavern;
-		public String message;
-		public String hazardSense;
-	}
 
 	public enum Direction {
 		N("North.", 0), E("East.", 1), S("South.", 2), W("West", 3);
@@ -148,16 +145,32 @@ public class Game {
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
 
-		return m;// senseDanger(m, endingCavern);
+		return senseDanger(m, endingCavern);
 	}
 
-	public Movement senseDanger(Movement m, Cavern endingCavern) {
+	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
+		String hazardSense = m.hazardSense;
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-			if (neighborType != "empty") {
-				m.hazardSense = "Something Is There";
+			if (neighborType != "Empty") {
+				if (neighborType == "Pit")
+					hazardSense = "You can hear a breeze.\n";
+				if (neighborType == "Bats")
+					hazardSense = "You can hear chirping.\n";
+				if (neighborType == "Wumpus")
+					hazardSense = "You can smell the Wumpus.\n";
 			}
+			if (m.hazardSense == null)
+			{
+				if (hazardSense != null)
+					m.hazardSense =  hazardSense;
+			}
+			else{
+				if (hazardSense != null)
+					m.hazardSense = m.hazardSense + hazardSense;
+			}
+				
 		}
 		return m;
 	}
