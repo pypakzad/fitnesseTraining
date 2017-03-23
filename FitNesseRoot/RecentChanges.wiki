@@ -1,8 +1,8 @@
 |ShootArrows||10:54:29 Thu, Mar 23, 2017|
+
 |HuntTheWumpus.IterationTwo.StartGame||16:41:25 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
 
-|HuntTheWumpus.IterationTwo.PickUpArrow||16:30:28 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationTwo.BatsInCavern||16:30:05 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo||16:28:19 Wed, Mar 22, 2017|
 
@@ -16,19 +16,16 @@
 |HuntTheWumpus.IteractionTwo.DeathByHazard||14:00:02 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:26 Wed, Mar 22, 2017|
 
-|ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
 
 |IterationOne||14:06:54 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.ShootArrows||13:59:33 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.CreateMap||13:56:59 Wed, Mar 22, 2017|
-|ArrowCountAndMovement||13:58:09 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:30:46 Wed, Mar 22, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||13:39:07 Wed, Mar 22, 2017|
 
-|ArrowCountAndMovement||14:01:33 Wed, Mar 22, 2017|
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap||13:34:13 Wed, Mar 22, 2017|
@@ -44,7 +41,6 @@
 |HuntTheWumpus.IterationOne.MoveInTheMap||11:42:34 Wed, Mar 22, 2017|
 
 
-|ArrowCountAndMovement||10:53:13 Wed, Mar 22, 2017|
 
 
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|

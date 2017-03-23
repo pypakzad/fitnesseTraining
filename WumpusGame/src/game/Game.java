@@ -204,15 +204,20 @@ public class Game {
 		return true;
 	}
 
-	public static void pickupArrow(Arrow foundArrow) {
+	public static String pickupArrow(Arrow foundArrow) {
+		String returnMessage = "";
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		for (int i = 0; i < arrowArrayCopy.size(); i++) {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
 			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
 				arrowArrayCopy.set(i, foundArrow);
+				returnMessage = "You have found an arrow!";
+				break;
 			}
 		}
+
 		player.updateArrowArray(arrowArrayCopy);
+		return returnMessage;
 	}
 
 	public Game() {
