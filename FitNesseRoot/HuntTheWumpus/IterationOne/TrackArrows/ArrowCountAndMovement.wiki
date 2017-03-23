@@ -3,6 +3,8 @@ Test
 ---
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.TrackArrows
+
 
 |Import|
 |Fitnesse|

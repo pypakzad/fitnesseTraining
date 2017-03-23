@@ -1,71 +1,28 @@
 package Fitnesse;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-
 import game.Game;
 import game.arrow.Arrow;
+import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
 
 public class AtGameStart {
-	private Player player;
-	private Map map;
-	private Cavern northCavern;
-	private Cavern centralCavern;
-	private Cavern southCavern;
-	private Cavern westCavern;
-	private Cavern eastCavern;
+	private Player player = new Player();
 
-	private HashMap<Cavern, String> caverns;
+	private Map map = new Map(0, 0, 0, 0);
 
-	public AtGameStart() throws FileNotFoundException {
-		String[] args = null;
-		System.setIn(new FileInputStream("GameTest.txt"));
-		Game.main(args);
-		player = Game.getPlayer();
-		initializeCaverns();
-		player.setPlayerLocation(centralCavern);
-	}
-
-	public void initializeCaverns() {
-		caverns = new HashMap<Cavern, String>();
-		map = new Map(10, 0, 0, 0);
-		Cavern centralCavern = map.new Cavern(0, 0);
-		Cavern eastCavern = map.new Cavern(1, 0);
-		Cavern westCavern = map.new Cavern(-1, 0);
-		Cavern southCavern = map.new Cavern(0, -1);
-		Cavern northCavern = map.new Cavern(0, 1);
-		caverns.put(centralCavern, "");
-		caverns.put(eastCavern, "");
-		caverns.put(westCavern, "");
-		caverns.put(southCavern, "");
-		caverns.put(northCavern, "");
-	}
-
-	public void initializeArrowPickupTest() {
-		caverns = new HashMap<Cavern, String>();
-		map = new Map(10, 0, 0, 0);
-		centralCavern = map.new Cavern(0, 0);
-		eastCavern = map.new Cavern(1, 0);
-		westCavern = map.new Cavern(2, 0);
-		southCavern = map.new Cavern(2, -1);
-		caverns.put(centralCavern, "");
-		caverns.put(eastCavern, "arrow");
-		caverns.put(westCavern, "");
-		caverns.put(southCavern, "");
-		player.setPlayerLocation(centralCavern);
+	public AtGameStart() {
+		map.setMap(GenerateMapContext.caverns);
+		Game.setMap(map);
+		Game.populateCaverns();
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.setPlayer(player);
 	}
 
 	public void UserShootsArrow() {
-		try {
-			// Game.shootArrow();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-
-		}
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.shootArrow(Commands.up);
 	}
 
 	public void UserPicksUpArrow() {
@@ -77,32 +34,36 @@ public class AtGameStart {
 		Game.pickupArrow(arrow);
 	}
 
-	public void PutUserAtLocationOne() {
-		initializeArrowPickupTest();
-	}
-
 	public void SetArrowCountToThree() {
 		UserShootsArrow();
 		UserShootsArrow();
 	}
 
 	public int getUserArrowCount() {
-		return player.getNumberOfAvailableArrows();
+		return Game.getPlayer().getNumberOfAvailableArrows();
+	}
+
+	public void PlaceArrow() {
+		map.getCaverns().replace(map.makeCavern(0, 0), "Arrow|1|");
 	}
 
 	public void MoveNorth() {
-		player.setPlayerLocation(northCavern);
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.playerCavernMove(Commands.w);
 	}
 
 	public void MoveSouth() {
-		player.setPlayerLocation(southCavern);
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.playerCavernMove(Commands.s);
 	}
 
 	public void MoveEast() {
-		player.setPlayerLocation(eastCavern);
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.playerCavernMove(Commands.d);
 	}
 
 	public void MoveWest() {
-		player.setPlayerLocation(westCavern);
+		player.setPlayerLocation(map.makeCavern(0, -1));
+		Game.playerCavernMove(Commands.a);
 	}
 }

@@ -23,7 +23,7 @@ public class Bat {
 		return "You have encountered bats! You are being flown to another location...";
 	}
 
-	public Cavern getNewLocation() {
+	public  Cavern getNewLocation() {
 		Set<Cavern> keyset = this.caverns.keySet();
 		int keysetLength = keyset.size();
 		boolean newLocationFound = false;

@@ -12,11 +12,8 @@ Start Game
 Testing the functionality of starting a game
 
 |script| Start Game |
-|check | welcomeMessage | welcome |
-|check | userInputY | rules |
 |check | userInputYEnterGameStart | true |
 
 
 |script| Start Game |
-|check | welcomeMessage | welcome |
 |check | userInputNGameEnds | true |

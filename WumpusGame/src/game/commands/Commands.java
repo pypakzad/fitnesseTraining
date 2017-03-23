@@ -2,7 +2,7 @@ package game.commands;
 
 public enum Commands {
 
-	w("w"), a("a"), s("s"), d("d"), up("^[[A", "North"), dwn("^[[B", "South"), lft("^[[D", "West"), rt("^[[C",
+	w("w"), a("a"), s("s"), d("d"), up("i", "North"), dwn("k", "South"), lft("j", "West"), rt("l",
 			"East"), textExit("testExit");
 
 	String userInput;

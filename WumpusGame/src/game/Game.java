@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import game.arrow.Arrow;
+import game.bat.Bat;
 import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
@@ -26,17 +27,13 @@ public class Game {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		String welcome = "";
 		String errorInput = "";
-		String rules = "";
 
 		System.out.println(sendWelcome());
-		System.out.println("enter y to continue to the game.");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
-			System.out.println(errorInput);
+			System.out.println("What did you mean by " + userStartCommand + "?");
 			System.out.println(sendWelcome());
-			System.out.println("enter y to continue to the game.");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -54,10 +51,8 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
-			System.out.println("enter w, s, a or d to move around. Good Luck :)");
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
-//				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					int commandNumber = commandStrings.indexOf(userInput);
@@ -65,15 +60,12 @@ public class Game {
 					if (commandNumber < 4) {
 						Movement m = playerCavernMove(command);
 						System.out.println(m.message);
-						if(m.onHazard == true)
-						{
+						if (m.onHazard == true) {
 							playerDeadOrWon = true;
 							break;
 						}
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
-//						System.out.print(player.getPlayerLocation().getX() + ",");
-//						System.out.println(player.getPlayerLocation().getY());
 					}
 					if (command.toString().equals("up")) {
 						playerDeadOrWon = shootArrow(command);
@@ -90,16 +82,32 @@ public class Game {
 				}
 			}
 			// if you're here game has ended
-
+			scanner.close();
 		}
 	}
 
 	public static String sendWelcome() {
-		return "welcome";
+		return "Welcome to Hunt The Wumpus!!\n\nyou wish to continue to the game (y/n)?";
 	}
 
 	public static String sendRules() {
-		return "rules";
+		return "Rules for Hunt the Wumpus: \n1. You can move North (w), South (s), East (d), or West (a) using the wasd letter keys.\n"
+				+ "\n"
+				+ "2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.\n"
+				+ "If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)\n"
+				+ "If the Wumpus walks into you or you walk into the Wumpus, then you DIE.\n" + "\n"
+				+ "3. You start with 5 arrows. You shoot them North(i), South(k), East(l), or West(j) using the ijkl letter keys.\n"
+				+ "An arrow continues in the direction it was shot until it hits a wall or other object.\n"
+				+ "If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.\n"
+				+ "If you shoot an arrow into a wall directly next to you, you will DIE.\n" + "\n"
+				+ "4. There are Bats in these caverns...\n"
+				+ "If you walk into a cavern with bats, you will be flown to random location.\n"
+				+ "If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.\n"
+				+ "If you are one cavern away from bats, you will hear screaching noises.\n" + "\n"
+				+ "5. There are Pits in these caverns...\n"
+				+ "If you walk into a cavern with pits, you will fall into the pit and DIE.\n"
+				+ "If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.\n"
+				+ "If you are one cavern away from a pit, you will hear blustering wind.\n" + "\n" + "GOOD LUCK!!!\n";
 	}
 
 	public static Player getPlayer() {
@@ -174,17 +182,25 @@ public class Game {
 		}
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
-		if (endingCavernType.equals("Pit"))
-		{
+		if (endingCavernType.equals("Pit")) {
 			m.message = "You have fallen into a pit and died.";
 			m.onHazard = true;
 		}
-		if (endingCavernType.equals("Bats"))
+		if (endingCavernType.equals("Bats")) {
 			m.message = "You have encountered bats! You are being flown to another location...";
-		if (endingCavernType.equals("Wumpus"))
-		{
+			Bat bat = new Bat(player, caverns);
+			player.setPlayerLocation(bat.getNewLocation());
+		}
+		if (endingCavernType.equals("Wumpus")) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
+		}
+		if (endingCavernType.substring(0, 5).equals("Arrow")) {
+			eventList.add("We Got Here");
+			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
+			for (; arrowNumber > 0; arrowNumber--) {
+				pickupArrow(new Arrow());
+			}
 		}
 		return senseDanger(m, endingCavern);
 	}
@@ -196,22 +212,12 @@ public class Game {
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
-					hazard[0] = "You can feel a Breeze.";
+					hazard[0] = "You feel blustering wind.";
 				if (neighborType == "Bats")
-					hazard[1] = "You can hear Chirping.";
+					hazard[1] = "You hear screeching noises.";
 				if (neighborType == "Wumpus")
-					hazard[2] = "You can smell a Wumpus.";
+					hazard[2] = "You smell something really bad.";
 			}
-			// if (m.hazardSense == null)
-			// {
-			// if (hazardSense != null)
-			// m.hazardSense = hazardSense;
-			// }
-			// else{
-			// if (hazardSense != null)
-			// m.hazardSense = m.hazardSense + hazardSense;
-			// }
-
 		}
 		for (int i = 0; i < hazard.length; i++) {
 			if (hazard[i] != null) {
@@ -256,8 +262,6 @@ public class Game {
 			return m;
 		} catch (Exception e) {
 			System.out.println(e.getLocalizedMessage());
-			// if(e.getMessage()!="Wall")
-			// playerDies(e.getMessage());
 			m.endingChamber = startingChamber + 1;
 			m.message = "User cannot move " + m.message;
 			return m;
@@ -326,32 +330,37 @@ public class Game {
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);
 			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
+				System.out.println("Arrow rebounded. User dies");
 				eventList.add("Arrow rebounded. User dies.");
 				return true;
 			}
 			String cavernType = caverns.get(startingCavern);
-			System.out.println(caverns.size());
 			if (cavernType.equals("Empty")) {
 				caverns.replace(startingCavern, "Arrow|1|");
+				System.out.println("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
 				String arrows = getArrowsString(startingCavern);
 				caverns.replace(startingCavern, arrows);
+				System.out.println("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.equals("Bats")) {
 				caverns.replace(startingCavern, "Arrow|1|");
+				System.out.println("User killed bats. Pick-up arrow to reclaim it.");
 				eventList.add("User killed bats. Pick-up arrow to reclaim it.");
 				return false;
 			}
 			if (cavernType.equals("Pit")) {
+				System.out.println("User lost arrow in pit.");
 				eventList.add("User lost arrow in pit.");
 				return false;
 			}
 			if (cavernType.equals("Wumpus")) {
+				System.out.println("User killed the Wumpus.");
 				eventList.add("User killed the Wumpus.");
 				return true;
 			}
@@ -375,6 +384,7 @@ public class Game {
 	public static boolean shootArrow(Commands direction) {
 		Arrow shotArrow = loseArrow();
 		if (shotArrow == null) {
+			System.out.println("No Usable Arrows Available :(");
 			eventList.add("No Usable Arrows Available :(");
 			return false;
 		}
@@ -402,7 +412,7 @@ public class Game {
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		for (int i = 0; i < arrowArrayCopy.size(); i++) {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
-			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
+			if (!selectedArrow.canUseArrow()) {
 				arrowArrayCopy.set(i, foundArrow);
 				returnMessage = "Congrats, you found one of your arrows.";
 				break;
