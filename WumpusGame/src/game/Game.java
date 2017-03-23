@@ -46,9 +46,8 @@ public class Game {
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
-
+			System.out.println(sendRules());
 			while (!playerDeadOrWon) {
-				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
 //				System.out.print(userInput);
 				while (commandStrings.contains(userInput)) {
@@ -56,8 +55,8 @@ public class Game {
 					Commands command = commands[commandStrings.indexOf(userInput)];
 						Movement m = playerCavernMove(command);
 						
-						System.out.print(player.getPlayerLocation().getX() + ",");
-						System.out.println(player.getPlayerLocation().getY());
+//						System.out.print(player.getPlayerLocation().getX() + ",");
+//						System.out.println(player.getPlayerLocation().getY());
 					if (userInput.equals("testExit")) {
 						playerDeadOrWon = true;
 						break;
@@ -150,27 +149,40 @@ public class Game {
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
-		String hazardSense = m.hazardSense;
+		String hazardSense;
+		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
+			hazardSense = null;
 			String neighborType = caverns.get(neighbor);
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
-					hazardSense = "You can hear a breeze.\n";
+					hazard[0]="You can feel a Breeze.";
 				if (neighborType == "Bats")
-					hazardSense = "You can hear chirping.\n";
+					hazard[1]="You can hear Chirping.";
 				if (neighborType == "Wumpus")
-					hazardSense = "You can smell a Wumpus.\n";
+					hazard[2]="You can smell a Wumpus.";
 			}
-			if (m.hazardSense == null)
-			{
-				if (hazardSense != null)
-					m.hazardSense =  hazardSense;
-			}
-			else{
-				if (hazardSense != null)
-					m.hazardSense = m.hazardSense + hazardSense;
-			}
+//			if (m.hazardSense == null)
+//			{
+//				if (hazardSense != null)
+//					m.hazardSense =  hazardSense;
+//			}
+//			else{
+//				if (hazardSense != null)
+//					m.hazardSense = m.hazardSense + hazardSense;
+//			}
 				
+		}
+		for (int i = 0; i < hazard.length;i++){
+			if (hazard[i] != null){
+				if (m.hazardSense == null)
+					{
+						m.hazardSense = hazard[i];
+					}
+					else{
+							m.hazardSense = m.hazardSense + "\n" + hazard[i];
+					}
+			}
 		}
 		return m;
 	}
