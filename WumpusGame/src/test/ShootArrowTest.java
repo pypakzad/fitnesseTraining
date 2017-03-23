@@ -25,7 +25,7 @@ public class ShootArrowTest {
 		Game.setPlayer(player2);
 		Game.testMapAndPlayerLoaded = true;
 		Game.main(args);
-		assertTrue(Game.getEventList().get(0).equals("Arrow rebounded. User dies"));
+		assertTrue(Game.getEventList().get(0).equals("Arrow rebounded. User dies."));
 	}
 
 }

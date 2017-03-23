@@ -67,7 +67,7 @@ public class Game {
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
 					}
-					if (command.toString().equals("up")) {
+					if (commandNumber > 3&& (!userInput.equals("testExit"))) {
 						playerDeadOrWon = shootArrow(command);
 						break;
 					}
@@ -348,23 +348,24 @@ public class Game {
 				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim it.");
 				return false;
 			}
-			if (cavernType.equals("Bats")) {
-				caverns.replace(startingCavern, "Arrow|1|");
-				System.out.println("User killed bats. Pick-up arrow to reclaim it.");
-				eventList.add("User killed bats. Pick-up arrow to reclaim it.");
-				return false;
-			}
-			if (cavernType.equals("Pit")) {
-				System.out.println("User lost arrow in pit.");
-				eventList.add("User lost arrow in pit.");
-				return false;
-			}
-			if (cavernType.equals("Wumpus")) {
-				System.out.println("User killed the Wumpus.");
-				eventList.add("User killed the Wumpus.");
-				return true;
-			}
 		}
+		if (endingCavernType.equals("Bats")) {
+			caverns.replace(startingCavern, "Arrow|1|");
+			System.out.println("User killed bats. Pick-up arrow to reclaim it.");
+			eventList.add("User killed bats. Pick-up arrow to reclaim it.");
+			return false;
+		}
+		if (endingCavernType.equals("Pit")) {
+			System.out.println("User lost arrow in pit.");
+			eventList.add("User lost arrow in pit.");
+			return false;
+		}
+		if (endingCavernType.equals("Wumpus")) {
+			System.out.println("User killed the Wumpus.");
+			eventList.add("User killed the Wumpus.");
+			return true;
+		}
+		System.out.println("Empty cavern, arrow continues " + direction.getDirection() + ".");
 		eventList.add("Empty cavern, arrow continues " + direction.getDirection() + ".");
 		shotArrow.setLocation(endingCavern);
 		return arrowMove(shotArrow, direction);
