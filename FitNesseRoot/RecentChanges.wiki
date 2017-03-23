@@ -1,15 +1,23 @@
-|HuntTheWumpus.IterationOne.CreateMap||15:35:20 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||15:35:01 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement||15:34:51 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement||15:34:38 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||15:34:12 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.MoveInTheMap||15:33:53 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne||15:33:02 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows||15:31:46 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.TrackArrows||15:16:28 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement||14:58:32 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationOne.ShootArrows||14:40:38 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||15:03:51 Thu, Mar 23, 2017|
+|RecentChanges||14:52:39 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGameLoop||14:43:12 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.MoveTheWumpus||14:22:10 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.PitHazards||14:16:29 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||14:15:41 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||14:15:31 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree||14:15:11 Thu, Mar 23, 2017|
+|HuntTheWumpus||14:12:32 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface||13:59:28 Thu, Mar 23, 2017|
+
+
+|PitS||13:22:14 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
+
+|HuntTheWumpus.IterationTwo.BatsInCavern||13:22:10 Thu, Mar 23, 2017|
+
+
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||14:40:22 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||14:37:42 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||14:35:34 Thu, Mar 23, 2017|
@@ -22,7 +30,21 @@
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||13:15:49 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||13:14:21 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationThree.MoveTheWumpus||10:17:30 Thu, Mar 23, 2017|
+|TrackArrows||12:53:37 Thu, Mar 23, 2017|
+|ShootArrows||12:53:16 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.PitS||12:52:08 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows||12:44:30 Thu, Mar 23, 2017|
+
+|HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
+|ShootArrows||11:46:27 Thu, Mar 23, 2017|
+
+|HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
+
+
+|HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||10:34:49 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:33:16 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.MoveInTheMap||10:30:38 Thu, Mar 23, 2017|
+
 |HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IteractionTwo||16:28:19 Wed, Mar 22, 2017|
@@ -71,6 +93,5 @@
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
+
 |ExampleTest||10:47:38 Tue, Mar 21, 2017|
-|ExampleTestFolder||10:17:45 Tue, Mar 21, 2017|
-|MyFirstFitNesseSuite||10:59:22 Tue, Mar 21, 2017|

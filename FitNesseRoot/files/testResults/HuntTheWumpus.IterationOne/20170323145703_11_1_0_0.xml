@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.CreateMap</name>
+    <date>2017-03-23T14:57:03-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.CreateMap?pageHistory&amp;resultDate=20170323145703</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>292</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>218</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>48</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>48</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>112</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.BatS</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.BatS?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>61</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>30</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>27</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.PitS</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.PitS?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.WumpuS</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.WumpuS?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>69</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows</name>
+    <date>2017-03-23T14:57:04-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows?pageHistory&amp;resultDate=20170323145704</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>7</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>29</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Paimon/Downloads/FitNesseRoot/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+9
+9
+9
+9
+9
+9
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (a), or West (d) using the aswd letter keys
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them using the arrow keys on your keyboard.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>11</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1686</totalRunTimeInMillis>
+</suiteResults>
+
