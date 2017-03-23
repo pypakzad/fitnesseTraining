@@ -3,6 +3,15 @@ Suite
 ---
 TrackArrows (the ultimate parent page is .HuntTheWumpus)
 
+Input Map:
+|script| Generate Map|
+|make|Empty|map|S|
+|make|Empty|map|S|
+|make|Empty|map|N|
+|make|Empty|map|W|
+|make|Empty|map|E|
+|make|Empty|map|E|
+
 We are testing how we track arrows throughout HTW.
 
 Test Cases for intial arrow count and movement: >ArrowCountAndMovement

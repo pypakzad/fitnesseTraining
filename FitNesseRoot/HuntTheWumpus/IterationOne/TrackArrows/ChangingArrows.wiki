@@ -1,9 +1,18 @@
 ---
 Test
 ---
-ChangingArrows (parent page .TrackArrows)
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.TrackArrows
+
+
+|Import|
+|Fitnesse|
+---
+Test
+---
+ChangingArrows (parent page .TrackArrows)
+
 Testing that the arrow count decreases when the user shoots an arrow:
 |script | At Game Start|
 |User Shoots Arrow|
@@ -25,5 +34,6 @@ Testing that the arrow count increases when the user picks up an arrow:
 |script | At Game Start|
 |User Shoots Arrow|
 |check|getUserArrowCount|4|
-|User Picks Up Arrow|
+|Place Arrow|
+|Move North|
 |check|getUserArrowCount|5|

@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.CreateMap</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.CreateMap?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>145</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>93</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>55</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>53</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>89</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.BatS</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.BatS?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>35</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>23</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern</name>
+    <date>2017-03-23T15:35:25-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern?pageHistory&amp;resultDate=20170323153525</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.PitS</name>
+    <date>2017-03-23T15:35:26-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.PitS?pageHistory&amp;resultDate=20170323153526</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>21</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.WumpuS</name>
+    <date>2017-03-23T15:35:26-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.WumpuS?pageHistory&amp;resultDate=20170323153526</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement</name>
+    <date>2017-03-23T15:35:26-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement?pageHistory&amp;resultDate=20170323153526</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>27</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows</name>
+    <date>2017-03-23T15:35:26-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows?pageHistory&amp;resultDate=20170323153526</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>28</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\rapha\fitnesseTraining\fitnesse-standalone.jar;./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>12</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>970</totalRunTimeInMillis>
+</suiteResults>
+

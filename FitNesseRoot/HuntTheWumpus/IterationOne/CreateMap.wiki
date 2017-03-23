@@ -1,6 +1,9 @@
 ---
 Test
 ---
+---
+Test
+---
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
 

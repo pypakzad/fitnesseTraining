@@ -1,6 +1,9 @@
 ---
 Test
 ---
+---
+Test
+---
 !define TEST_SYSTEM {slim}
 !path ${WUMPUS_PATH}
 InvalidMovement (parent page is <MoveInTheMap)
