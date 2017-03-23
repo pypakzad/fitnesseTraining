@@ -48,18 +48,19 @@ public class Game {
 			while (!playerDeadOrWon) {
 				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
-				System.out.print(userInput);
+//				System.out.print(userInput);
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					Commands command = commands[commandStrings.indexOf(userInput)];
 						Movement m = playerCavernMove(command);
-						System.out.println(m.message);
+						
 						System.out.print(player.getPlayerLocation().getX() + ",");
 						System.out.println(player.getPlayerLocation().getY());
 					if (userInput.equals("testExit")) {
 						playerDeadOrWon = true;
 						break;
 					}
+					System.out.println(m.message);
 					userInput = scanner.nextLine();
 				}
 				if (!playerDeadOrWon) {
