@@ -321,7 +321,7 @@ public class Game {
 			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
 				String arrows = getArrowsString(startingCavern);
 				caverns.replace(startingCavern, arrows);
-				eventList.add("Your arrow ended up in an empty cavern");
+				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim.");
 				return false;
 			}
 			if (cavernType.equals("Bats")) {
