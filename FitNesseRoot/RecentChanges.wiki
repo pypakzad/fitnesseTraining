@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.BatsInCavern||13:41:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||13:31:19 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+|PitS||13:22:14 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
+
+|HuntTheWumpus.IterationTwo.BatsInCavern||13:22:10 Thu, Mar 23, 2017|
+
+>>>>>>> 1f2b57387542e9eb8987c031308feedda9bf31e6
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||13:19:59 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern||13:19:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||13:15:49 Thu, Mar 23, 2017|
@@ -11,37 +19,32 @@
 |ShootArrows||12:53:16 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||12:52:08 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows||12:44:30 Thu, Mar 23, 2017|
-=======
->>>>>>> 5398a584a086a4085f730c12d8df4aecd6ba60b4
+
 |HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
->>>>>>> 9c81ae35cc5d052623aae5b7995c42235b46efee
-<<<<<<< HEAD
+
 |HuntTheWumpus.IterationTwo.StartGame||11:38:53 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
-<<<<<<< HEAD
+
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||10:38:44 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||10:36:37 Thu, Mar 23, 2017|
+<<<<<<< HEAD
 =======
 >>>>>>> 5398a584a086a4085f730c12d8df4aecd6ba60b4
+=======
+
+>>>>>>> 1f2b57387542e9eb8987c031308feedda9bf31e6
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||10:34:49 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:33:16 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||10:30:38 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus||10:17:30 Thu, Mar 23, 2017|
 |HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
 
-=======
-
-|HuntTheWumpus.IterationTwo.StartGame||16:41:25 Wed, Mar 22, 2017|
-|HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
-
->>>>>>> dc3d723a221fbc322789517a4b396b3a0a0cf7f6
 |HuntTheWumpus.IteractionTwo||16:28:19 Wed, Mar 22, 2017|
 
 
 |WumpuS||15:44:51 Wed, Mar 22, 2017|
 |BatS||15:40:21 Wed, Mar 22, 2017|
-|PitS||15:38:41 Wed, Mar 22, 2017|
 
 |HuntTheWumpus.IteractionTwo||14:48:29 Wed, Mar 22, 2017|
 
