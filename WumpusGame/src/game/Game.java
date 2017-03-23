@@ -54,7 +54,7 @@ public class Game {
 			System.out.println(sendRules());
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
-				System.out.println(userInput + " is the User Input");
+//				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					int commandNumber = commandStrings.indexOf(userInput);
@@ -64,8 +64,8 @@ public class Game {
 						System.out.println(m.message);
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
-						System.out.print(player.getPlayerLocation().getX() + ",");
-						System.out.println(player.getPlayerLocation().getY());
+//						System.out.print(player.getPlayerLocation().getX() + ",");
+//						System.out.println(player.getPlayerLocation().getY());
 					}
 					if (command.toString().equals("up")) {
 						playerDeadOrWon = shootArrow(command);
@@ -87,11 +87,11 @@ public class Game {
 	}
 
 	public static String sendWelcome() {
-		return "welcome";
+		return "welcome, press y to continue to the game :)";
 	}
 
 	public static String sendRules() {
-		return "rules";
+		return "enter w a s or d and hit enter to move";
 	}
 
 	public static Player getPlayer() {
@@ -165,7 +165,12 @@ public class Game {
 		}
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
-
+		if (endingCavernType.equals("Pit"))
+			m.message = m.message + "\nWow, you are floating above a pit. That's neat.";
+		if (endingCavernType.equals("Bats"))
+			m.message = m.message + "\nHmm, there a lot of bats in here. They're pretty fuzzy :D.";
+		if (endingCavernType.equals("Wumpus"))
+			m.message = m.message + "\nOh, why would you come in here? I guess the wumpus is sleeping or something. I don't know.";
 		return senseDanger(m, endingCavern);
 	}
 
