@@ -385,7 +385,7 @@ public class Game {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
 			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
 				arrowArrayCopy.set(i, foundArrow);
-				returnMessage = "You have found an arrow!";
+				returnMessage = "Congrats, you found one of your arrows.";
 				break;
 			}
 		}
