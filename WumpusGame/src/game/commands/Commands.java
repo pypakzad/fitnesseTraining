@@ -1,24 +1,28 @@
 package game.commands;
 
-import game.Game.Direction;
-
 public enum Commands {
 
-	w("w"), a("a"), s("s"), d("d"), up("^[[A"), dwn("^[[B"), lft("^[[D"), rt("^[[C"), textExit("testExit");
+	w("w"), a("a"), s("s"), d("d"), up("^[[A", "North"), dwn("^[[B", "South"), lft("^[[D", "West"), rt("^[[C",
+			"East"), textExit("testExit");
 
 	String userInput;
+	String direction;
 
 	Commands(String key) {
 		userInput = key;
 	}
 
+	Commands(String key, String cardinality) {
+		userInput = key;
+		direction = cardinality;
+	}
+
 	public String getUserInput() {
 		return userInput;
 	}
-//	public Direction getDirection(){
-//		switch()
-//		return null;
-//		
-//	}
+
+	public String getDirection() {
+		return direction;
+	}
 
 }

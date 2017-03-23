@@ -1,13 +1,17 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.ShootArrows
+
+
+|Import|
+|Fitnesse|
+
 Dead End
 
-|Start game|
-|Put user at origin|
-|user moves S|
-|user moves E|
-|user moves E|
-|shoot arrow East|
-|check arrow count is 4|
-|check message appears saying "Arrow rebounded. User dies."|
+|script|Shoot Arrow|
+|shoot|up|from|0|at|0|
+|check|arrowCount|4|
+|check|event|Arrow rebounded. User dies.|

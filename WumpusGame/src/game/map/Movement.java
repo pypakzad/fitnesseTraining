@@ -7,4 +7,5 @@ public class Movement {
 		public Cavern endingCavern;
 		public String message;
 		public String hazardSense;
+		public boolean onHazard;
 }

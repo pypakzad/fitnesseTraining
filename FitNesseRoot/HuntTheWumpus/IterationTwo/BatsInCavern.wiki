@@ -18,12 +18,11 @@ Input Map:
 Testing user teleportation funtion when user meets bats.
 
 Test when bats take user to an empty cavern:
-|script|Start Bat Test|
+|script|Bat Test|
 |check|check User Init|true|
-|go West|
-|go North|
-|check message appears saying "You have encountered bats! You are being flown to another location..."|
-|user is in Empty3|
+|Move West|
+|check| Move North|You have encountered bats! You are being flown to another location...|
+|check| getUserLocation|Empty3|
 
 
 Test when bats take user to another Bat Cavern:
