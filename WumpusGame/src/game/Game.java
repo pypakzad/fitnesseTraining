@@ -44,14 +44,21 @@ public class Game {
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
+			
 			while (!playerDeadOrWon) {
 				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
+				System.out.print(userInput);
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					Commands command = commands[commandStrings.indexOf(userInput)];
+						Movement m = playerCavernMove(command);
+						System.out.println(m.message);
+						System.out.print(player.getPlayerLocation().getX() + ",");
+						System.out.println(player.getPlayerLocation().getY());
 					if (userInput.equals("testExit")) {
 						playerDeadOrWon = true;
+						break;
 					}
 					userInput = scanner.nextLine();
 				}
@@ -76,9 +83,11 @@ public class Game {
 		return player;
 	}
 
-	public class Movement {
+	public static class Movement {
 		public int endingChamber;
+		public Cavern endingCavern;
 		public String message;
+		public String hazardSense;
 	}
 
 	public enum Direction {
@@ -99,7 +108,49 @@ public class Game {
 			return directionTest;
 		}
 	};
+	public static Movement playerCavernMove(Commands direction){
+		Movement m = new Movement();
+		Cavern startingCavern = player.getPlayerLocation();
+		int playerX = startingCavern.getX();
+		int playerY = startingCavern.getY();
+		switch (direction){
+		case w: playerY = playerY+1;
+		m.message = "North.";
+		break;
+		case s: playerY = playerY-1;
+		m.message = "South.";
+		break;
+		case d: playerX = playerX+1;
+		m.message = "East.";
+		break;
+		case a: playerX = playerX-1;
+		m.message = "West.";
+		break;
+		}
+		Cavern endingCavern = map.new Cavern(playerX,playerY);
+		String endingCavernType = caverns.get(endingCavern);
+		if (endingCavernType==null){
+			player.setPlayerLocation(startingCavern);
+			m.message = "User cannot move "+ m.message;
+			return m;
+		}
+		player.setPlayerLocation(endingCavern);
+		m.message = "User moved " + m.message;
+		
+		return m;//senseDanger(m, endingCavern);
+	}
 
+	public Movement senseDanger(Movement m, Cavern endingCavern) {
+		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
+		for(Cavern neighbor: cavernNeighbors){
+			String neighborType = caverns.get(neighbor);
+			if (neighborType != "empty")
+			{
+				m.hazardSense = "Something Is There";
+			}
+		}
+		return m;
+	}
 	public Movement playerMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		Movement m = new Movement();
