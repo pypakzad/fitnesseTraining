@@ -3,4 +3,5 @@
 
 !|HuntTheWumpusContext|
 
+!|GenerateMapContext|
 

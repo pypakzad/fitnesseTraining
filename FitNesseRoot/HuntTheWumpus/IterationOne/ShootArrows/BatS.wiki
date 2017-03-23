@@ -1,20 +1,23 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.ShootArrows
+
+
+|Import|
+|Fitnesse|
+
 Bats
 
-|Start game|
-|Put user at origin|
-|user moves E|
-|user moves S|
-|shoot arrow S|
-|check arrow count is 4|
-|check message appears saying "User killed bats. Pick-up arrow to reclaim it."|
+|script|Shoot Arrow|
+|shoot|dwn|from|1|at|-1|
+|check|arrowCount|4|
+|check|event|User killed bats. Pick-up arrow to reclaim it.|
 
-|Start game|
-|Put user at origin|
-|user moves E|
-|shoot arrow S|
-|check arrow count is 4|
-|check message appears saying "Empty cavern, arrow continues East."|
-|check message appears saying "User killed bats. Pick-up arrow to reclaim it."|
+|script|Shoot Arrow|
+|shoot|dwn|from|1|at|0|
+|check|arrowCount|4|
+|check|event|Dead end, arrow falls. Pick up arrow to reclaim it.|
+|check|event|Empty cavern, arrow continues South.|
