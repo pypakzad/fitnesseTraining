@@ -1,18 +1,18 @@
+---
+Suite
+---
 Shoot Arrows
 
 Input Map:
-|Start| Direction | End|
-|1|E|2|
-|2|E|Pit|
-|3|E|4|
-|4|E|5|
-|Wumpus|E|6|
-|6|E|Bat|
-|1|S|3|
-|3|S|Wumpus|
-|2|S|4|
-|4|S|6|
-|Pit|S|Bat|
+|script| Generate Map|
+|make|Empty|map|E|
+|make|Pit|map|E|
+|make|Empty|map|S|
+|make|Empty|map|W|
+|make|Empty|map|W|
+|make|Wumpus|map|S|
+|make|Bats|map|E|
+|make|Empty|map|E|
 
 We are going to separate the tests depending on where each arrow lands on the Input Map:
 >PitS

@@ -4,7 +4,7 @@ Test
 Test: Bats In Cavern
 
 Input Map:
-|script|generate map|
+|script|Generate Bat Map|
 |make|Empty1|map|N|
 |make|Pit|map|E|
 |make|Arrow|map|S|

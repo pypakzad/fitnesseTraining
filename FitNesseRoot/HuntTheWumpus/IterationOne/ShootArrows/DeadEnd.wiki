@@ -1,0 +1,13 @@
+---
+Test
+---
+Dead End
+
+|Start game|
+|Put user at origin|
+|user moves S|
+|user moves E|
+|user moves E|
+|shoot arrow East|
+|check arrow count is 4|
+|check message appears saying "Arrow rebounded. User dies."|
