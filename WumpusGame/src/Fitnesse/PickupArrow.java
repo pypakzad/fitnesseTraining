@@ -10,7 +10,7 @@ import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
 
-public class AtGameStart {
+public class PickupArrow {
 	private Player player;
 	private Map map;
 	private Cavern northCavern;
@@ -21,7 +21,7 @@ public class AtGameStart {
 
 	private HashMap<Cavern, String> caverns;
 
-	public AtGameStart() throws FileNotFoundException {
+	public PickupArrow() throws FileNotFoundException {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
@@ -56,13 +56,13 @@ public class AtGameStart {
 		caverns.put(centralCavern, "");
 		caverns.put(eastCavern, "arrow");
 		caverns.put(westCavern, "");
-		caverns.put(southCavern, "");
+		caverns.put(southCavern, "arrow");
 		player.setPlayerLocation(centralCavern);
 	}
 
 	public void UserShootsArrow() {
 		try {
-			// Game.shootArrow();
+			Game.shootArrow();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 
@@ -95,12 +95,30 @@ public class AtGameStart {
 		player.setPlayerLocation(northCavern);
 	}
 
-	public void MoveSouth() {
-		player.setPlayerLocation(southCavern);
+	public String MoveSouth() {
+		int newX = player.getPlayerLocation().getX();
+		int newY = player.getPlayerLocation().getY() - 1;
+		Cavern newLocation = map.new Cavern(newX, newY);
+		player.setPlayerLocation(newLocation);
+		if (caverns.get(newLocation).equals("arrow")) {
+			Arrow arrow = new Arrow();
+			arrow.setLocation(newLocation);
+			return Game.pickupArrow(arrow);
+		} else
+			return "";
 	}
 
-	public void MoveEast() {
-		player.setPlayerLocation(eastCavern);
+	public String MoveEast() {
+		int newX = player.getPlayerLocation().getX() + 1;
+		int newY = player.getPlayerLocation().getY();
+		Cavern newLocation = map.new Cavern(newX, newY);
+		player.setPlayerLocation(newLocation);
+		if (caverns.get(newLocation).equals("arrow")) {
+			Arrow arrow = new Arrow();
+			arrow.setLocation(newLocation);
+			return Game.pickupArrow(arrow);
+		} else
+			return "";
 	}
 
 	public void MoveWest() {
