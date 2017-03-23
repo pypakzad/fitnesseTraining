@@ -1,4 +1,4 @@
-|HuntTheWumpus.IterationTwo.PickUpArrow||09:40:31 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationTwo.PickUpArrow||10:22:06 Thu, Mar 23, 2017|
 |ArrowCountAndMovement||09:24:22 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.StartGame||16:41:25 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|

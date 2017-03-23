@@ -224,15 +224,19 @@ public class Game {
 	}
 
 	public static String pickupArrow(Arrow foundArrow) {
+		String returnMessage = "";
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		for (int i = 0; i < arrowArrayCopy.size(); i++) {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
 			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
 				arrowArrayCopy.set(i, foundArrow);
+				returnMessage = "You have found an arrow!";
+				break;
 			}
 		}
+
 		player.updateArrowArray(arrowArrayCopy);
-		return "You have found an arrow!";
+		return returnMessage;
 	}
 
 	public Game() {
