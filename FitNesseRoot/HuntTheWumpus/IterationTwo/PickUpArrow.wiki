@@ -15,24 +15,12 @@ Input Map:
 |make|Empty|map|W|
 
 Testing arrow retrival ability:
-<<<<<<< HEAD
-|Put user at origin|
-|Check user has 3 arrows|
-|Go E|
-|Check that message appears saying "Pick-up arrow to reclaim it."|
-|Check that arrow count is 4|
-|Go S|
-|Check that message appears saying "Pick-up arrow to reclaim it."|
-|Check that arrow count is 5|
-=======
 |script|Pickup Arrow|
-|Put User At Location One|
+|Put User At origin|
 |Set Arrow Count To Three|
 |check|getUserArrowCount|3|
-|check| Move East| You have found an arrow!|
+|check| Move E| Congrats, you found one of your arrows.|
 |check|getUserArrowCount|4|
-|check|Move East||
-|check|Move South|You have found an arrow!|
+|check|Move S|Congrats, you found one of your arrows.|
 |check|getUserArrowCount|5|
->>>>>>> dc3d723a221fbc322789517a4b396b3a0a0cf7f6
 
