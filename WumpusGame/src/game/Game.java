@@ -350,7 +350,7 @@ public class Game {
 			}
 		}
 		if (endingCavernType.equals("Bats")) {
-			caverns.replace(startingCavern, "Arrow|1|");
+			caverns.replace(endingCavern, "Arrow|1|");
 			System.out.println("User killed bats. Pick-up arrow to reclaim it.");
 			eventList.add("User killed bats. Pick-up arrow to reclaim it.");
 			return false;
