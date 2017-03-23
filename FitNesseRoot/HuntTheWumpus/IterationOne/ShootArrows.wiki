@@ -1,4 +1,4 @@
-ShootArrows (the ultimate parent page is .HuntTheWumpus)
+Shoot Arrows
 
 Input Map:
 |Start| Direction | End|

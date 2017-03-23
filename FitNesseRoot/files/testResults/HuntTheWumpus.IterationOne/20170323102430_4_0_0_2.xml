@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.CreateMap</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.CreateMap?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>216</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>98</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>40</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>65</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>14</exceptions>
+    </counts>
+    <runTimeInMillis>95</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows</name>
+    <date>2017-03-23T10:24:30-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows?pageHistory&amp;resultDate=20170323102430</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>18</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/aerixxon/Developer/fitnesseTraining/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+welcome
+rules
+welcome
+rules
+welcome
+rules
+welcome
+rules
+welcome
+rules
+welcome
+rules
+welcome
+rules
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>4</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>2</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1855</totalRunTimeInMillis>
+</suiteResults>
+

@@ -10,16 +10,17 @@ import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
 import game.map.MapInter;
+import game.map.Movement;
 import game.player.Player;
 
 public class Game {
 
 	public MapInter mapInterface;
-	private static Map map;
-	private static HashMap<Cavern, String> caverns;
-	private static Player player;
-	private static ArrayList<String> commands = new ArrayList<String>();
-	private static ArrayList<String> eventList = new ArrayList<String>();
+	public static Map map;
+	public static HashMap<Cavern, String> caverns;
+	public static Player player;
+	public static ArrayList<String> commands = new ArrayList<String>();
+	public static ArrayList<String> eventList = new ArrayList<String>();
 	public static boolean testMapAndPlayerLoaded = false;
 
 	public static void main(String[] args) {
@@ -50,9 +51,8 @@ public class Game {
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
-
+			System.out.println(sendRules());
 			while (!playerDeadOrWon) {
-				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
 				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
@@ -62,6 +62,8 @@ public class Game {
 					if (commandNumber < 4) {
 						Movement m = playerCavernMove(command);
 						System.out.println(m.message);
+						if (m.hazardSense != null)
+							System.out.println(m.hazardSense);
 						System.out.print(player.getPlayerLocation().getX() + ",");
 						System.out.println(player.getPlayerLocation().getY());
 					}
@@ -110,13 +112,6 @@ public class Game {
 
 	public static void populateCaverns() {
 		caverns = map.getCaverns();
-	}
-
-	public static class Movement {
-		public int endingChamber;
-		public Cavern endingCavern;
-		public String message;
-		public String hazardSense;
 	}
 
 	public enum Direction {
@@ -171,15 +166,42 @@ public class Game {
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
 
-		return m;// senseDanger(m, endingCavern);
+		return senseDanger(m, endingCavern);
 	}
 
-	public Movement senseDanger(Movement m, Cavern endingCavern) {
+	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
+		String hazardSense;
+		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
+			hazardSense = null;
 			String neighborType = caverns.get(neighbor);
-			if (neighborType != "empty") {
-				m.hazardSense = "Something Is There";
+			if (neighborType != "Empty") {
+				if (neighborType == "Pit")
+					hazard[0] = "You can feel a Breeze.";
+				if (neighborType == "Bats")
+					hazard[1] = "You can hear Chirping.";
+				if (neighborType == "Wumpus")
+					hazard[2] = "You can smell a Wumpus.";
+			}
+			// if (m.hazardSense == null)
+			// {
+			// if (hazardSense != null)
+			// m.hazardSense = hazardSense;
+			// }
+			// else{
+			// if (hazardSense != null)
+			// m.hazardSense = m.hazardSense + hazardSense;
+			// }
+
+		}
+		for (int i = 0; i < hazard.length; i++) {
+			if (hazard[i] != null) {
+				if (m.hazardSense == null) {
+					m.hazardSense = hazard[i];
+				} else {
+					m.hazardSense = m.hazardSense + "\n" + hazard[i];
+				}
 			}
 		}
 		return m;

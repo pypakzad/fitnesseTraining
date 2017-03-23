@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationTwo</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.BatsInCavern</name>
+    <date>2017-03-23T12:15:08-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.BatsInCavern?pageHistory&amp;resultDate=20170323121508</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>52</exceptions>
+    </counts>
+    <runTimeInMillis>194</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.DeathByHazard</name>
+    <date>2017-03-23T12:15:08-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.DeathByHazard?pageHistory&amp;resultDate=20170323121508</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>19</exceptions>
+    </counts>
+    <runTimeInMillis>135</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.KillTheWumpus</name>
+    <date>2017-03-23T12:15:08-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.KillTheWumpus?pageHistory&amp;resultDate=20170323121508</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>13</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.PickUpArrow</name>
+    <date>2017-03-23T12:15:08-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.PickUpArrow?pageHistory&amp;resultDate=20170323121508</pageHistoryLink>
+    <counts>
+      <right>3</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>8</exceptions>
+    </counts>
+    <runTimeInMillis>172</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.StartGame</name>
+    <date>2017-03-23T12:15:08-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.StartGame?pageHistory&amp;resultDate=20170323121508</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Paimon/Downloads/FitNesseRoot/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 0, 0
+connect 0, 1, 1
+connect 1, 1, 2
+connect 1, 0, 3
+connect 1, 0, 3
+connect 1, 0, 3
+connect 1, 0, 3
+welcome
+rules
+-2,
+-3
+welcome
+rules
+3,
+-6
+welcome
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>3</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>819</totalRunTimeInMillis>
+</suiteResults>
+

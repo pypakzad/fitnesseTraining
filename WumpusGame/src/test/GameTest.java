@@ -73,5 +73,4 @@ public class GameTest {
 		int afterPickup = player.getNumberOfAvailableArrows();
 		assertTrue(afterPickup == arrowPickedUpcount);
 	}
-
 }
