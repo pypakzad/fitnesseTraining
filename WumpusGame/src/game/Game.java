@@ -195,7 +195,7 @@ public class Game {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
 		}
-		if (endingCavernType.substring(0, 5).equals("Arrow")) {
+		if (endingCavernType.length()>4&&endingCavernType.substring(0, 5).equals("Arrow")) {
 			eventList.add("We Got Here");
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			for (; arrowNumber > 0; arrowNumber--) {
