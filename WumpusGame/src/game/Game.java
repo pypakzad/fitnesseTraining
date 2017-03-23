@@ -31,10 +31,12 @@ public class Game {
 		String rules = "";
 
 		System.out.println(sendWelcome());
+		System.out.println("enter y to continue to the game.");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
 			System.out.println(sendWelcome());
+			System.out.println("enter y to continue to the game.");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -52,6 +54,7 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
+			System.out.println("enter w, s, a or d to move around. Good Luck :)");
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
 //				System.out.println(userInput + " is the User Input");
@@ -87,11 +90,11 @@ public class Game {
 	}
 
 	public static String sendWelcome() {
-		return "welcome, press y to continue to the game :)";
+		return "welcome";
 	}
 
 	public static String sendRules() {
-		return "enter w a s or d and hit enter to move";
+		return "rules";
 	}
 
 	public static Player getPlayer() {
