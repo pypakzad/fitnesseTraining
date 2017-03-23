@@ -73,4 +73,11 @@ public class GameTest {
 		assertTrue(afterPickup == arrowPickedUpcount);
 	}
 
+	@Test
+	public void shootingArrowIntoWall() {
+		String[] args = null;
+		System.setIn(new FileInputStream("GameTest3.txt"));
+		Game.main(args);
+	}
+
 }
