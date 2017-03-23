@@ -1,0 +1,24 @@
+Sensing One Hazard
+
+|script|generate map|
+|make|Empty|map|E|
+|make|Pit|map|E|
+|make|Empty|map|S|
+|make|Empty|map|W|
+|make|Empty|map|W|
+|make|Bats|map|S|
+|make|Wumpus|map|E|
+|make|Empty|map|E|
+
+|put user at origin|
+|user moves S|
+|check message appears saying "You hear screeching noises."|
+
+|put user at origin|
+|user moves E|
+|check message appears saying "You feel blustering wind."|
+
+|put user at origin|
+|user moves E|
+|user moves S|
+|check message appears saying "You smell something really bad."|

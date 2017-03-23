@@ -1,3 +1,8 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||14:05:13 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface||13:59:28 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||13:58:59 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||13:46:21 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationThree||13:24:29 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.BatsInCavern||13:41:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||13:31:19 Thu, Mar 23, 2017|
