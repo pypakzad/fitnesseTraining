@@ -19,6 +19,7 @@ public class Game {
 	private static HashMap<Cavern, String> caverns;
 	private static Player player;
 	private static ArrayList<String> commands = new ArrayList<String>();
+	private static ArrayList<String> eventList = new ArrayList<String>();
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -44,7 +45,7 @@ public class Game {
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
-			
+
 			while (!playerDeadOrWon) {
 				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
@@ -84,6 +85,10 @@ public class Game {
 		return player;
 	}
 
+	public static ArrayList<String> getEventList() {
+		return eventList;
+	}
+
 	public static class Movement {
 		public int endingChamber;
 		public Cavern endingCavern;
@@ -109,54 +114,76 @@ public class Game {
 			return directionTest;
 		}
 	};
-	public static Movement playerCavernMove(Commands direction){
+
+	public static Movement playerCavernMove(Commands direction) {
 		Movement m = new Movement();
 		Cavern startingCavern = player.getPlayerLocation();
 		int playerX = startingCavern.getX();
 		int playerY = startingCavern.getY();
-		switch (direction){
-		case w: playerY = playerY+1;
-		m.message = "North.";
-		break;
-		case s: playerY = playerY-1;
-		m.message = "South.";
-		break;
-		case d: playerX = playerX+1;
-		m.message = "East.";
-		break;
-		case a: playerX = playerX-1;
-		m.message = "West.";
-		break;
+		switch (direction) {
+		case w:
+			playerY = playerY + 1;
+			m.message = "North.";
+			break;
+		case s:
+			playerY = playerY - 1;
+			m.message = "South.";
+			break;
+		case d:
+			playerX = playerX + 1;
+			m.message = "East.";
+			break;
+		case a:
+			playerX = playerX - 1;
+			m.message = "West.";
+			break;
 		}
-		Cavern endingCavern = map.new Cavern(playerX,playerY);
+		Cavern endingCavern = map.new Cavern(playerX, playerY);
 		String endingCavernType = caverns.get(endingCavern);
-		if (endingCavernType==null){
+		if (endingCavernType == null) {
 			player.setPlayerLocation(startingCavern);
-			m.message = "User cannot move "+ m.message;
+			m.message = "User cannot move " + m.message;
 			return m;
 		}
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
-		
-		return m;//senseDanger(m, endingCavern);
+
+		return m;// senseDanger(m, endingCavern);
 	}
 
 	public Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
-		for(Cavern neighbor: cavernNeighbors){
+		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-			if (neighborType != "empty")
-			{
+			if (neighborType != "empty") {
 				m.hazardSense = "Something Is There";
 			}
 		}
 		return m;
 	}
+
 	public Movement playerMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		Movement m = new Movement();
-		int d = direction.getDirectionTest();
-		m.message = direction.getDirection();
+		int d = 0;
+		switch (direction) {
+		case N:
+			d = 0;
+			m.message = "North.";
+			break;
+		case E:
+			d = 1;
+			m.message = "East.";
+			break;
+		case S:
+			d = 2;
+			m.message = "South.";
+			break;
+		case W:
+			d = 3;
+			m.message = "West.";
+			break;
+		}
 
 		mapInterface.checkMap(startingChamber, d);
 		try {
@@ -208,26 +235,39 @@ public class Game {
 		}
 	}
 
-	public void arrowMove(int startingChamber, Direction direction) throws Exception {
-		validateMove(direction);
+	private static void arrowMove(Arrow shotArrow, Commands direction) throws Exception {
 		Movement m = new Movement();
-		int d = direction.getDirectionTest();
-		m.message = direction.getDirection();
-
-		mapInterface.checkMap(startingChamber, d);
-		try {
-
-			m.endingChamber = mapInterface.moveOnMap(startingChamber, d);
-			m.message = "User moved " + m.message;
-			// return m;
-		} catch (Exception e) {
-			System.out.println(e.getLocalizedMessage());
-			// if(e.getMessage()!="Wall")
-			// playerDies(e.getMessage());
-			m.endingChamber = startingChamber + 1;
-			m.message = "User cannot move " + m.message;
-			// return m;
+		Cavern startingCavern = shotArrow.getLocation();
+		int playerX = startingCavern.getX();
+		int playerY = startingCavern.getY();
+		switch (direction) {
+		case w:
+			playerY = playerY + 1;
+			m.message = "North.";
+			break;
+		case s:
+			playerY = playerY - 1;
+			m.message = "South.";
+			break;
+		case d:
+			playerX = playerX + 1;
+			m.message = "East.";
+			break;
+		case a:
+			playerX = playerX - 1;
+			m.message = "West.";
+			break;
 		}
+		Cavern endingCavern = map.new Cavern(playerX, playerY);
+		String endingCavernType = caverns.get(endingCavern);
+		if (endingCavernType == null) {
+			shotArrow.setLocation(startingCavern);
+			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
+
+			}
+		}
+		shotArrow.setLocation(endingCavern);
+		arrowMove(shotArrow, direction);
 	}
 
 	private static void validateMove(Direction d) throws Exception {
@@ -236,24 +276,25 @@ public class Game {
 	}
 
 	public static void shootArrow(Direction direction) throws Exception {
-		boolean noUsableArrows = loseArrow();
-		if (noUsableArrows)
+		Arrow shotArrow = loseArrow();
+		if (shotArrow == null)
 			throw new Exception("No Usable Arrows Available");
 		Cavern location = player.getPlayerLocation();
-
+		arrowMove(shotArrow, Commands.values()[0]);
 	}
 
-	private static boolean loseArrow() {
+	private static Arrow loseArrow() {
 		ArrayList<Arrow> arrowArrayCopy = player.getArrowArray();
 		Arrow unusableArrow = new Arrow(false);
 		for (int i = 0; i < arrowArrayCopy.size(); i++) {
 			if (arrowArrayCopy.get(i).canUseArrow()) {
+				Arrow shotArrow = arrowArrayCopy.get(i);
 				arrowArrayCopy.set(i, unusableArrow);
 				player.updateArrowArray(arrowArrayCopy);
-				return false;
+				return shotArrow;
 			}
 		}
-		return true;
+		return null;
 	}
 
 	public static String pickupArrow(Arrow foundArrow) {
