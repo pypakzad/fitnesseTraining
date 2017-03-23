@@ -21,6 +21,7 @@ Testing arrow retrival ability:
 |check|getUserArrowCount|3|
 |check| Move East| Congrats, you found one of your arrows.|
 |check|getUserArrowCount|4|
+|Move East|
 |check|Move South|Congrats, you found one of your arrows.|
 |check|getUserArrowCount|5|
 
