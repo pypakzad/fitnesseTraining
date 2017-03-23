@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 import game.Game;
+import game.Game.Direction;
 import game.arrow.Arrow;
 import game.map.Map;
 import game.map.Map.Cavern;
@@ -62,7 +63,7 @@ public class PickupArrow {
 
 	public void UserShootsArrow() {
 		try {
-			Game.shootArrow();
+			Game.shootArrow(Direction.N);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 
