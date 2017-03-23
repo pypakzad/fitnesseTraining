@@ -1,0 +1,12 @@
+---
+Suite
+---
+Graphical User Interface
+
+Testing the GUI
+
+>SensingAllHazardsAtOnce
+>SensingOneOrMoreHazards
+>SensingOneHazard
+>EndGameLoop
+>InvalidInput
