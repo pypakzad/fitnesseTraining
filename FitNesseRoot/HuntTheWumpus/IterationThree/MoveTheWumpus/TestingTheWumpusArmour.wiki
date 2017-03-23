@@ -1,0 +1,27 @@
+Testing The Wumpus Armour
+
+Input Map:
+|script|generate map|
+|make|Empty1|map|W|
+|make|Wumpus|map|N|
+|make|Pit|map|E|
+|make|Bats|map|E|
+|make|Empty5|map|S|
+|make|Empty4|map|S|
+|make|Empty3|map|W|
+|make|Empty2|map|W|
+
+Wumpus Movement:
+|random wumpus direction|
+|E|
+|E|
+
+Testing Wumpus Armour:
+|put player at origin|
+|user moves W|
+|Wumpus moves|
+|Check Wumpus is at Pit|
+|Check Wumpus does not fall into pit|
+|user moves E|
+|Check Wumpus is at Bats|
+|Check Wumpus is not moved to another location by Bats|

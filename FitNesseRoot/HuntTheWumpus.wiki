@@ -6,7 +6,6 @@ Suite
 |Import|
 |Fitnesse|
 
-IterationOne
 >IterationOne
 >IterationTwo
 >IterationThree

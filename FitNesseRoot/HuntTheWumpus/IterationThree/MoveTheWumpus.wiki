@@ -1,40 +1,7 @@
 ---
 Test
 ---
-Move the Wumpus
+>TestingTheMovementOfTheWumpus
 
-Testing the movement of the Wumpus
+>TestingTheWumpusArmour
 
-Input Map:
-|script|generate map|
-|make|Empty1|map|E|
-|make|Empty2|map|E|
-|make|Empty5|map|S|
-|make|Empty4|map|W|
-|make|Empty3|map|W|
-|make|Empty6|map|S|
-|make|Empty7|map|E|
-|make|Empty8|map|E|
-
-Random directions chosen by User and Wumpus:
-|Wumpus direction|
-|S|
-|W|
-|N|
-|E|
-
-*these test locations need to be updated*
-|put user in 4|
-|put Wumpus at 3|
-|user moves N|
-|check Wumpus moves|
-|check Wumpus is in 6|
-|user moves E|
-|check Wumpus moves|
-|check wumpus is in 5|
-|user moves E|
-|check Wumpus moves|
-|check Wumpus is in 2|
-|user moves S|
-|check Wumpus moves|
-|check Wumpus is in 3|
