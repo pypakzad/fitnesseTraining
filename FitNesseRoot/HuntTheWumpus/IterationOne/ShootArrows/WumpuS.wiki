@@ -1,0 +1,18 @@
+---
+Test
+---
+Wumpus
+
+|Start game|
+|Put user at origin|
+|user moves S|
+|shoot arrow South|
+|check arrow count is 4|
+|check message appears saying "User killed the Wumpus."|
+
+|Start game|
+|Put user at origin|
+|shoot arrow S|
+|check arrow count is 4|
+|check message appears saying "Empty cavern, arrow continues South."|
+|check message appears saying "User killed the Wumpus."|

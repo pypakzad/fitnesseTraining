@@ -4,14 +4,15 @@ Test
 Pits
 
 |Start game|
-|Put user in 2|
-|shoot arrow East|
+|Put user in origin|
+|user moves E|
+|shoot arrow E|
 |check arrow count is 4|
 |check message appears saying "User lost arrow in pit."|
 
 |Start game|
-|Put user in 1|
-|shoot arrow East|
+|Put user in origin|
+|shoot arrow E|
 |check arrow count is 4|
 |check message appears saying "Empty cavern, arrow continues East."|
 |check message appears saying "User lost arrow in pit."|

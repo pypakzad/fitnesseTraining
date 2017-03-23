@@ -1,0 +1,13 @@
+---
+Test
+---
+Empty Cavern
+
+|Start game|
+|Put user at origin|
+|user moves S|
+|shoot arrow East|
+|check arrow count is 4|
+|check message appears saying "Empty cavern, arrow continues East."|
+|check message appears saying "Empty cavern, arrow continues East."|
+|check message appears saying "Dead end, arrow falls. Pick-up arrow to reclaim it."|

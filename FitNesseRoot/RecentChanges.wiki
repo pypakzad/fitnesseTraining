@@ -1,12 +1,32 @@
+<<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.BatsInCavern||13:22:10 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||13:17:58 Thu, Mar 23, 2017|
+=======
+<<<<<<< HEAD
+|HuntTheWumpus.IterationOne.ShootArrows.WumpuS||13:19:59 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern||13:19:11 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||13:15:49 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.BatS||13:14:21 Thu, Mar 23, 2017|
+|TrackArrows||12:53:37 Thu, Mar 23, 2017|
+|ShootArrows||12:53:16 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.PitS||12:52:08 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows||12:44:30 Thu, Mar 23, 2017|
+|HuntTheWumpus.IterationTwo.PickUpArrow||12:40:01 Thu, Mar 23, 2017|
+=======
+|HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
+>>>>>>> 5398a584a086a4085f730c12d8df4aecd6ba60b4
 |HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
+>>>>>>> 9c81ae35cc5d052623aae5b7995c42235b46efee
 <<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.StartGame||11:38:53 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
+<<<<<<< HEAD
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||10:38:44 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||10:36:37 Thu, Mar 23, 2017|
+=======
+|HuntTheWumpus.IterationTwo.BatsInCavern||11:32:34 Thu, Mar 23, 2017|
+>>>>>>> 5398a584a086a4085f730c12d8df4aecd6ba60b4
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||10:34:49 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement||10:33:16 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.MoveInTheMap||10:30:38 Thu, Mar 23, 2017|
@@ -64,11 +84,9 @@
 |DeadEnd||16:02:34 Tue, Mar 21, 2017|
 
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
-|TrackArrows||15:11:51 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
 |MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
-|TrackArrows||14:45:11 Tue, Mar 21, 2017|
 |ChangingArrows||14:17:07 Tue, Mar 21, 2017|
 |GameDriver||12:38:54 Tue, Mar 21, 2017|
 |FrontPage||12:36:24 Tue, Mar 21, 2017|
