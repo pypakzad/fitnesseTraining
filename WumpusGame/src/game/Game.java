@@ -31,10 +31,12 @@ public class Game {
 		String rules = "";
 
 		System.out.println(sendWelcome());
+		System.out.println("enter y to continue to the game.");
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
 			System.out.println(errorInput);
 			System.out.println(sendWelcome());
+			System.out.println("enter y to continue to the game.");
 			userStartCommand = scanner.nextLine();
 		}
 		if (userStartCommand.equals("y")) {
@@ -52,9 +54,10 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
+			System.out.println("enter w, s, a or d to move around. Good Luck :)");
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
-				System.out.println(userInput + " is the User Input");
+//				System.out.println(userInput + " is the User Input");
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					int commandNumber = commandStrings.indexOf(userInput);
@@ -64,8 +67,8 @@ public class Game {
 						System.out.println(m.message);
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
-						System.out.print(player.getPlayerLocation().getX() + ",");
-						System.out.println(player.getPlayerLocation().getY());
+//						System.out.print(player.getPlayerLocation().getX() + ",");
+//						System.out.println(player.getPlayerLocation().getY());
 					}
 					if (command.toString().equals("up")) {
 						playerDeadOrWon = shootArrow(command);
@@ -165,7 +168,12 @@ public class Game {
 		}
 		player.setPlayerLocation(endingCavern);
 		m.message = "User moved " + m.message;
-
+		if (endingCavernType.equals("Pit"))
+			m.message = m.message + "\nWow, you are floating above a pit. That's neat.";
+		if (endingCavernType.equals("Bats"))
+			m.message = m.message + "\nHmm, there are a lot of bats in here. They are pretty fuzzy :D.";
+		if (endingCavernType.equals("Wumpus"))
+			m.message = m.message + "\nOh, why would you come in here? I guess the wumpus is sleeping or something. I don't know.";
 		return senseDanger(m, endingCavern);
 	}
 
@@ -321,7 +329,7 @@ public class Game {
 			if (cavernType.length() > 4 && cavernType.substring(0, 5).equals("Arrow")) {
 				String arrows = getArrowsString(startingCavern);
 				caverns.replace(startingCavern, arrows);
-				eventList.add("Your arrow ended up in an empty cavern");
+				eventList.add("Dead end, arrow falls. Pick up arrow to reclaim.");
 				return false;
 			}
 			if (cavernType.equals("Bats")) {
@@ -385,7 +393,7 @@ public class Game {
 			Arrow selectedArrow = arrowArrayCopy.get(i);
 			if (!selectedArrow.canUseArrow() && (player.getPlayerLocation() == foundArrow.getLocation())) {
 				arrowArrayCopy.set(i, foundArrow);
-				returnMessage = "You have found an arrow!";
+				returnMessage = "Congrats, you found one of your arrows.";
 				break;
 			}
 		}

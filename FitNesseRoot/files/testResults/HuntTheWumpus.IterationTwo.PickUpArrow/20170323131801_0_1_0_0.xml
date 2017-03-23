@@ -1,0 +1,1323 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationTwo.PickUpArrow</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>3</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2017-03-23T13:18:01-04:00</date>
+    <runTimeInMillis>279</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Pick-up Arrow&lt;br/&gt;&lt;br/&gt;Testing the ability to pick-up arrows.&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Arrow Fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Arrow1&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Arrow2&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Testing arrow retrival ability:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;Pickup Arrow&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td colspan="3"&gt;Put User At Location One&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="3" class="error"&gt;Set Arrow Count To Three&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.StackOverflowError
+	at java.util.HashMap.hash(HashMap.java:338) [rt.jar:1.8.0_71]
+	at java.util.HashMap.get(HashMap.java:556) [rt.jar:1.8.0_71]
+	at game.Game.arrowMove(Game.java:287) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at game.Game.arrowMove(Game.java:295) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;4&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;3&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;Move East&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;Y&lt;/span&gt;o&lt;span class="diff"&gt;u h&lt;/span&gt;a&lt;span class="diff"&gt;ve&lt;/span&gt; found &lt;span class="diff"&gt;a&lt;/span&gt;n arrow&lt;span class="diff"&gt;!&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;C&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;ngr&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;ts,&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;you &lt;/span&gt;&lt;span class="fail"&gt;found &lt;/span&gt;&lt;span class="diff"&gt;o&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;of your &lt;/span&gt;&lt;span class="fail"&gt;arrow&lt;/span&gt;&lt;span class="diff"&gt;s.&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;5&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;4&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;check&lt;/td&gt;
+		&lt;td class="error"&gt;Move South&lt;/td&gt;
+		&lt;td class="error"&gt;Congrats, you found one of your arrows.&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.NullPointerException
+	at Fitnesse.PickupArrow.MoveSouth(PickupArrow.java:104) [file:/Users/Parker/Desktop/Fitnesse/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_71]
+	at java.lang.reflect.Method.invoke(Method.java:497) [rt.jar:1.8.0_71]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;</content>
+    <relativePageName>PickUpArrow</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='ArrowFixture', args=[]}</instruction>
+        <slimResult>pass(Arrow Fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Arrow Fixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Arrow1, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_2_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Arrow2, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_2_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_2_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='PickupArrow', args=[]}</instruction>
+        <slimResult>pass(Pickup Arrow)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Pickup Arrow</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='PutUserAtLocationOne', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='SetArrowCountToThree', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>fail(a=4;e=3)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_3_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>4</actual>
+                              <expected>3</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='MoveEast', args=[]}</instruction>
+        <slimResult>fail(a=You have found an arrow!;e=Congrats, you found one of your arrows.)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_3_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have found an arrow!</actual>
+                              <expected>Congrats, you found one of your arrows.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>fail(a=5;e=4)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_3_5</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>5</actual>
+                              <expected>4</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='MoveSouth', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_6</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_7</instructionId>
+                    <col>2</col>
+                              <row>7</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Parker/Desktop/Fitnesse/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>welcome
+rules
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>624</totalRunTimeInMillis>
+</testResults>
+
