@@ -180,7 +180,7 @@ public class Game {
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats"))
-			m.message = m.message + "\nHmm, there are a lot of bats in here. They are pretty fuzzy :D.";
+			m.message = "You have encountered bats! You are being flown to another location...";
 		if (endingCavernType.equals("Wumpus"))
 		{
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
