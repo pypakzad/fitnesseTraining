@@ -159,7 +159,7 @@ public class Game {
 				if (neighborType == "Bats")
 					hazardSense = "You can hear chirping.\n";
 				if (neighborType == "Wumpus")
-					hazardSense = "You can smell the Wumpus.\n";
+					hazardSense = "You can smell a Wumpus.\n";
 			}
 			if (m.hazardSense == null)
 			{
