@@ -1,0 +1,10 @@
+Invalid Input
+
+|script|generate map|
+|make|Empty|map|N|
+|make|Empty|map|E|
+|make|Empty|map|S|
+
+|put user at origin|
+|select invalid key|
+|check that message appears saying "You have pressed an invalid key. Please try again."|

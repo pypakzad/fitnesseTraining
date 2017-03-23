@@ -1,0 +1,473 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.CreateMap</name>
+    <date>2017-03-23T15:42:56-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.CreateMap?pageHistory&amp;resultDate=20170323154256</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>270</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement</name>
+    <date>2017-03-23T15:42:56-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.InvalidMovement?pageHistory&amp;resultDate=20170323154256</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>153</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement</name>
+    <date>2017-03-23T15:42:56-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement?pageHistory&amp;resultDate=20170323154256</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>38</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.MessagesValidMovement?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>36</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.MoveInTheMap.ValidMovement?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>90</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.BatS</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.BatS?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>50</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.PitS</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.PitS?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.WumpuS</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.WumpuS?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>56</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>12</exceptions>
+    </counts>
+    <runTimeInMillis>33</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>16</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>7</exceptions>
+    </counts>
+    <runTimeInMillis>27</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>16</exceptions>
+    </counts>
+    <runTimeInMillis>29</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.MoveTheWumpus</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.MoveTheWumpus?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOftheWumpus</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOftheWumpus?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>17</exceptions>
+    </counts>
+    <runTimeInMillis>34</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>9</exceptions>
+    </counts>
+    <runTimeInMillis>22</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.PitHazards</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.PitHazards?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.BatsInCavern</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.BatsInCavern?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>25</exceptions>
+    </counts>
+    <runTimeInMillis>94</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.DeathByHazard</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.DeathByHazard?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>15</exceptions>
+    </counts>
+    <runTimeInMillis>16</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.KillTheWumpus</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.KillTheWumpus?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>13</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.PickUpArrow</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.PickUpArrow?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>50</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationTwo.StartGame</name>
+    <date>2017-03-23T15:42:57-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationTwo.StartGame?pageHistory&amp;resultDate=20170323154257</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>42</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/aerixxon/Developer/fitnesseTraining/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+null
+null
+null
+null
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+connect 0, 1, 1
+connect 1, 2, 1
+connect 2, 3, 2
+connect 3, 4, 2
+connect 4, 5, 3
+connect 5, 6, 3
+connect 6, 7, 0
+connect 7, 0, 0
+User killed bats. Pick-up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Arrow rebounded. User dies
+Dead end, arrow falls. Pick up arrow to reclaim it.
+User lost arrow in pit.
+User lost arrow in pit.
+User killed the Wumpus.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+No Usable Arrows Available :(
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (d), or West (a) using the wasd letter keys.
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them North(i), South(k), East(l), or West(j) using the ijkl letter keys.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+connect 7, 0, 0
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (d), or West (a) using the wasd letter keys.
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them North(i), South(k), East(l), or West(j) using the ijkl letter keys.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+Rules for Hunt the Wumpus: 
+1. You can move North (w), South (s), East (d), or West (a) using the wasd letter keys.
+
+2. Your goal is to kill the Wumpus with one of your arrows. The Wumpus walks around the caverns randomly.
+If the Wumpus is one cavern away from you, you can smell the Wumpus (he smells really bad...)
+If the Wumpus walks into you or you walk into the Wumpus, then you DIE.
+
+3. You start with 5 arrows. You shoot them North(i), South(k), East(l), or West(j) using the ijkl letter keys.
+An arrow continues in the direction it was shot until it hits a wall or other object.
+If you walk into a cavern with a dropped arrow, you automatically pick it up. You only have 5 arrows after all.
+If you shoot an arrow into a wall directly next to you, you will DIE.
+
+4. There are Bats in these caverns...
+If you walk into a cavern with bats, you will be flown to random location.
+If you shoot an arrow and it lands in a bat cavern, the arrow will kill the bats, and you can then retrieve it.
+If you are one cavern away from bats, you will hear screaching noises.
+
+5. There are Pits in these caverns...
+If you walk into a cavern with pits, you will fall into the pit and DIE.
+If you shoot an arrow and it flies over a pit, the arrow will fall down the pit, and you will be unable to reclaim it.
+If you are one cavern away from a pit, you will hear blustering wind.
+
+GOOD LUCK!!!
+
+Welcome to Hunt The Wumpus!!
+
+you wish to continue to the game (y/n)?
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>14</right>
+    <wrong>0</wrong>
+    <ignores>2</ignores>
+    <exceptions>9</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>2254</totalRunTimeInMillis>
+</suiteResults>
+
