@@ -16,7 +16,7 @@ Input Map:
 
 Testing arrow retrival ability:
 |script|Pickup Arrow|
-|Put User At origin|
+|Put User At Location One|
 |Set Arrow Count To Three|
 |check|getUserArrowCount|3|
 |check| Move E| Congrats, you found one of your arrows.|
