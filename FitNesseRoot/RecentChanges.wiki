@@ -1,5 +1,5 @@
+|HuntTheWumpus.IterationTwo.BatsInCavern||14:03:19 Thu, Mar 23, 2017|
 <<<<<<< HEAD
-|HuntTheWumpus.IterationTwo.BatsInCavern||13:41:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||13:31:19 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 =======
@@ -8,7 +8,6 @@
 |PitS||13:22:14 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationTwo.BatsInCavern||13:22:10 Thu, Mar 23, 2017|
 
 >>>>>>> 1f2b57387542e9eb8987c031308feedda9bf31e6
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||13:19:59 Thu, Mar 23, 2017|
