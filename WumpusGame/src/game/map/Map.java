@@ -19,9 +19,8 @@ public class Map {
 	public HashMap<Cavern, String> getUnvisitedCaverns() {
 		return unvisitedCaverns;
 	}
-
-	public void checkMap(int x, int y) throws Exception {
-
+	public String near(int x, int y){
+		return null;
 	}
 
 	public class Cavern {

@@ -38,15 +38,21 @@ public class Game {
 			for (Commands command : commands) {
 				commandStrings.add(command.getUserInput());
 			}
+			
 			while (!playerDeadOrWon) {
 				System.out.println(sendRules());
 				String userInput = scanner.nextLine();
-				System.out.print(userInput);
+				//System.out.print(userInput);
 				while (commandStrings.contains(userInput)) {
 					// only exit this loop for incorrect input or end condition
 					Commands command = commands[commandStrings.indexOf(userInput)];
+						Movement m = playerCavernMove(command);
+						System.out.println(m.message);
+						System.out.print(player.getPlayerLocation().getX() + ",");
+						System.out.println(player.getPlayerLocation().getY());
 					if (userInput.equals("testExit")) {
 						playerDeadOrWon = true;
+						break;
 					}
 					userInput = scanner.nextLine();
 				}
@@ -57,49 +63,6 @@ public class Game {
 			// if you're here game has ended
 
 		}
-
-		// Scanner scanner = new Scanner(System.in);
-		//
-		// String welcome = "";
-		// String errorInput = "";
-		// String rules = "";
-		//
-		// System.out.println(welcome);
-		// String userStartCommand = scanner.nextLine();
-		// while (!userStartCommand.equals("y") &&
-		// !userStartCommand.equals("n")) {
-		// System.out.println(errorInput);
-		// System.out.println(welcome);
-		// userStartCommand = scanner.nextLine();
-		// }
-		// if (userStartCommand.equals("y")) {
-		// // initialization
-		// createMap();
-		// createPlayer();
-		// boolean playerDeadOrWon = false;
-		// Commands[] commands = Commands.values();
-		// ArrayList<String> commandStrings = new ArrayList<String>();
-		// for (Commands command : commands) {
-		// commandStrings.add(command.getUserInput());
-		// }
-		// while (!playerDeadOrWon) {
-		// // game start
-		// System.out.println(rules);
-		// String userInput = scanner.nextLine();
-		//
-		// while (commandStrings.contains(userInput)) {
-		// // only exit this loop for incorrect input or end condition
-		// Commands command = commands[commandStrings.indexOf(userInput)];
-		// userInput = scanner.nextLine();
-		// }
-		// if (!playerDeadOrWon) {
-		// System.out.println(errorInput);
-		// }
-		// }
-		// // if you're here game has ended
-		//
-		// }
-
 	}
 
 	public static String sendWelcome() {
@@ -120,15 +83,59 @@ public class Game {
 		return player;
 	}
 
-	public class Movement {
+	public static class Movement {
 		public int endingChamber;
+		public Cavern endingCavern;
 		public String message;
+		public String hazardSense;
 	}
 
 	public enum Direction {
 		N, S, E, W
 	};
+	public static Movement playerCavernMove(Commands direction){
+		Movement m = new Movement();
+		Cavern startingCavern = player.getPlayerLocation();
+		int playerX = startingCavern.getX();
+		int playerY = startingCavern.getY();
+		switch (direction){
+		case w: playerY = playerY+1;
+		m.message = "North.";
+		break;
+		case s: playerY = playerY-1;
+		m.message = "South.";
+		break;
+		case d: playerX = playerX+1;
+		m.message = "East.";
+		break;
+		case a: playerX = playerX-1;
+		m.message = "West.";
+		break;
+		}
+		Cavern endingCavern = map.new Cavern(playerX,playerY);
+		String endingCavernType = caverns.get(endingCavern);
+		if (endingCavernType==null){
+			player.setPlayerLocation(startingCavern);
+			m.message = "User cannot move "+ m.message;
+			return m;
+		}
+		player.setPlayerLocation(endingCavern);
+		m.message = "User moved " + m.message;
+		
+		return m;//senseDanger(m, endingCavern);
+	}
 
+	public Movement senseDanger(Movement m, Cavern endingCavern) {
+		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
+		for(Cavern neighbor: cavernNeighbors){
+			String neighborType = caverns.get(neighbor);
+			if (neighborType != "empty")
+			{
+				m.hazardSense = "Something Is There";
+			}
+		}
+		return m;
+	}
 	public Movement playerMove(int startingChamber, Direction direction) throws Exception {
 		validateMove(direction);
 		Movement m = new Movement();
