@@ -48,7 +48,7 @@ public class AtGameStart {
 
 	public void UserShootsArrow() {
 		try {
-			Game.shootArrow();
+			// Game.shootArrow();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 

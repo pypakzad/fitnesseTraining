@@ -1,3 +1,4 @@
+|ShootArrows||10:54:29 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.StartGame||16:41:25 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.StartGame||16:33:40 Wed, Mar 22, 2017|
 
@@ -7,7 +8,6 @@
 
 
 |WumpuS||15:44:51 Wed, Mar 22, 2017|
-|ShootArrows||15:42:07 Wed, Mar 22, 2017|
 |BatS||15:40:21 Wed, Mar 22, 2017|
 |PitS||15:38:41 Wed, Mar 22, 2017|
 

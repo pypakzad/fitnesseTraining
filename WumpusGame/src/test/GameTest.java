@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import game.Game;
+import game.Game.Direction;
 import game.arrow.Arrow;
 import game.map.Map;
 import game.map.Map.Cavern;
@@ -32,21 +33,6 @@ public class GameTest {
 		assertTrue(map != null);
 	}
 
-	/*
-	 * @Test public void hasPlayerLocation() {
-	 * assertTrue(player.getPlayerLocation() != null); }
-	 * 
-	 * @Test public void shootArrowDecreasesArrowCount() throws Exception { int
-	 * expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
-	 * Game.shootArrow(); int arrowCount = player.getNumberOfAvailableArrows();
-	 * assertEquals(arrowCount, expectedArrowCount); }
-	 * 
-	 * @Test(expected = Exception.class) public void
-	 * errorThrownWhenNotEnoughArrows() throws Exception { Game.shootArrow();
-	 * Game.shootArrow(); Game.shootArrow(); Game.shootArrow();
-	 * Game.shootArrow(); Game.shootArrow(); }
-	 */
-
 	@Test
 	public void hasPlayerLocation() {
 		assertTrue(player.getPlayerLocation() != null);
@@ -55,19 +41,19 @@ public class GameTest {
 	@Test
 	public void shootArrowDecreasesArrowCount() throws Exception {
 		int expectedArrowCount = player.getNumberOfAvailableArrows() - 1;
-		Game.shootArrow();
+		Game.shootArrow(Direction.values()[0]);
 		int arrowCount = player.getNumberOfAvailableArrows();
 		assertEquals(arrowCount, expectedArrowCount);
 	}
 
 	@Test(expected = Exception.class)
 	public void errorThrownWhenNotEnoughArrows() throws Exception {
-		Game.shootArrow();
-		Game.shootArrow();
-		Game.shootArrow();
-		Game.shootArrow();
-		Game.shootArrow();
-		Game.shootArrow();
+		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Direction.values()[0]);
+		Game.shootArrow(Direction.values()[0]);
 	}
 
 	@Test
@@ -79,7 +65,7 @@ public class GameTest {
 		arrow.setLocation(arrowLocation);
 		int arrowShotCount = 4;
 		int arrowPickedUpcount = 5;
-		Game.shootArrow();
+		Game.shootArrow(Direction.values()[0]);
 		int afterShot = player.getNumberOfAvailableArrows();
 		assertTrue(afterShot == arrowShotCount);
 		Game.pickupArrow(arrow);
