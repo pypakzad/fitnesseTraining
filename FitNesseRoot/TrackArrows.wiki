@@ -1,3 +1,5 @@
+---DEPRECATED
+
 TrackArrows (the ultimate parent page is HuntTheWumpus)
 
 We are testing how we track arrows throughout HTW.
