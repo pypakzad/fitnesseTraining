@@ -1,0 +1,27 @@
+Sensing One or More Hazards
+
+Input Map:
+|Script|Generate Map|
+|Make|Empty|Map|N|
+|Make|Bats|Map|E|
+|Make|Empty|Map|S|
+|Make|Wumpus|Map|S|
+|Make|Empty|Map|W|
+|Make|Pit|Map|W|
+|Make|Empty|Map|N|
+|Make|Bats|Map|N|
+
+Testing that user can sense more than one hazard at a time:
+|Put user at origin|
+|move west|
+|Check that message appears saying "You hear screeching noises."|
+|Check that message appears saying "You feel blustering wind."|
+
+|Put user at origin|
+|move north|
+|Check that message appears saying "You hear screeching noises."|
+
+|Put user at origin|
+|move south|
+|Check that message appears saying "You feel blustering winds."|
+|Check that message appears saying"You smell something really bad."|

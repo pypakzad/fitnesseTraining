@@ -25,6 +25,11 @@ Directions:
 Invalid user input:
 "You have pressed an invalid key. Please try again."
 
+Sensing messages:
+"You smell something really bad." --> Wumpus
+"You hear screeching noises." --> Bats
+"You feel blustering wind." --> Pit
+
 Welcome message:
 '''
 Welcome to Hunt The Wumpus!!
