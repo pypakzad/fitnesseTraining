@@ -1,18 +1,23 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.ShootArrows
+
+
+|Import|
+|Fitnesse|
+
 Pits
 
-|Start game|
-|Put user in origin|
-|user moves E|
-|shoot arrow E|
-|check arrow count is 4|
-|check message appears saying "User lost arrow in pit."|
+|script|Shoot Arrow|
+|shoot|rt|from|1|at|0|
+|check|arrowCount|4|
+|check|event|User lost arrow in pit.|
 
-|Start game|
-|Put user in origin|
-|shoot arrow E|
-|check arrow count is 4|
-|check message appears saying "Empty cavern, arrow continues East."|
-|check message appears saying "User lost arrow in pit."|
+|script|Shoot Arrow|
+|shoot|rt|from|0|at|0|
+|check|arrowCount|4|
+|check|event|User lost arrow in pit.|
+|check|event|Empty cavern, arrow continues East.|
