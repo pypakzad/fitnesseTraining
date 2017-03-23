@@ -43,7 +43,6 @@ public class AtGameStart {
 		caverns.put(westCavern, "");
 		caverns.put(southCavern, "");
 		caverns.put(northCavern, "");
-
 	}
 
 	public void initializeArrowPickupTest() {

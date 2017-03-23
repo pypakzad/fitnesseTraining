@@ -74,7 +74,7 @@ public class GameTest {
 	}
 
 	@Test
-	public void shootingArrowIntoWall() {
+	public void shootingArrowIntoWall() throws FileNotFoundException {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest3.txt"));
 		Game.main(args);

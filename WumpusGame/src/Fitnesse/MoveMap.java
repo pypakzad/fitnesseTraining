@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import game.Game.Direction;
-import game.Game.Movement;
+import game.map.Movement;
 
 public class MoveMap {
 	int startingChamber;
