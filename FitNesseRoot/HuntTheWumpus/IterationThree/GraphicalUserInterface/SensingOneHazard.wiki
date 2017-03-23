@@ -1,3 +1,6 @@
+---
+Test
+---
 Sensing One Hazard
 
 |script|generate map|

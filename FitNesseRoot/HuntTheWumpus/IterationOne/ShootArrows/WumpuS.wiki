@@ -1,18 +1,17 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+!include .HuntTheWumpus.IterationOne.ShootArrows
+
+
+|Import|
+|Fitnesse|
+
 Wumpus
 
-|Start game|
-|Put user at origin|
-|user moves S|
-|shoot arrow South|
-|check arrow count is 4|
-|check message appears saying "User killed the Wumpus."|
-
-|Start game|
-|Put user at origin|
-|shoot arrow S|
-|check arrow count is 4|
-|check message appears saying "Empty cavern, arrow continues South."|
-|check message appears saying "User killed the Wumpus."|
+|script|Shoot Arrow|
+|shoot|dwn|from|0|at|-1|
+|check|arrowCount|4|
+|check|event|User killed the Wumpus.|

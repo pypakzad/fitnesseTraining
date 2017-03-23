@@ -8,5 +8,5 @@ Testing the GUI
 >SensingAllHazardsAtOnce
 >SensingOneOrMoreHazards
 >SensingOneHazard
->EndGameLoop
+>EndGame
 >InvalidInput

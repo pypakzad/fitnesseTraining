@@ -1,7 +1,6 @@
 package Fitnesse;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import game.map.Map;
 import game.map.Map.Cavern;
@@ -9,16 +8,17 @@ import game.map.Map.Cavern;
 public class GenerateMap {
 
 	Map map = new Map();
-	HashMap<Cavern, String> caverns = new HashMap<Cavern, String>();
 	Cavern currentCavern;
+	String currentState;
 
 	public GenerateMap() {
 		Map.Cavern origin = map.makeCavern(0, 0);
-		caverns.put(origin, "Empty");
 		currentCavern = origin;
+		GenerateMapContext.caverns.put(currentCavern, "Empty");
 	}
 
 	public void makeMap(String state, char direction) {
+		currentState = state;
 		ArrayList<Cavern> neighbors = map.getNeighbors(currentCavern);
 		Cavern newCavern = null;
 		switch (direction) {
@@ -35,7 +35,8 @@ public class GenerateMap {
 			newCavern = neighbors.get(3);
 			break;
 		}
-		caverns.put(newCavern, state);
+		currentCavern = newCavern;
+		GenerateMapContext.caverns.put(currentCavern, currentState);
 	}
 
 }

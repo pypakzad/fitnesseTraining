@@ -1,0 +1,38 @@
+---
+Test
+---
+End of the Game
+
+Testing that the game ends when the user wins or loses.
+User can die 3 ways: trampled by Wumpus, falling into a pit, and being hit by a rebounded arrow.
+User wins by shooting the Wumpus.
+
+Input Map:
+|script|generate map|
+|make|Wumpus|map|N|
+|make|Empty|map|E|
+|make|Pit|map|S|
+
+Trampled by Wumpus:
+|put user at origin|
+|user moves N|
+|check message appears saying "You have been trampled by the Wumpus... Whomp, whomp :("|
+|check message appears saying "end game"|
+
+Falls into Pit:
+|put user at origin|
+|user moves E|
+|check message saying "You have fallen into a pit and died."|
+|check message appears saying "end game"|
+
+Rebounding Arrow:
+|put user at origin|
+|user shoots arrow W|
+|check message appears saying "Arrow rebounded. You die."|
+|check message appears saying "end game"|
+
+Winning:
+|put user at origin|
+|user shoots arrow N|
+|check message appears saying "You killed the Wumpus. YOU WON!!!!"|
+|check message appears saying "end game"|

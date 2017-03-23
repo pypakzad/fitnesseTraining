@@ -14,8 +14,8 @@ Arrows:
 "User killed bats. Pick-up arrow to reclaim it." -> when user shoots arrow into bats
 "Empty cavern, arrow continues [direction]." -> when user shoots arrow and it passes through an empty cavern
 "Dead end, arrow falls. Pick-up arrow to reclaim it." -> when arrow hits a dead end (there is not a cavern in the same direction)
-"User killed the Wumpus." -> when user shoots the Wumpus
-"Arrow rebounded. User dies."
+"You killed the Wumpus. YOU WON!!!!" -> when user shoots the Wumpus
+"Arrow rebounded. You die."
 "Congrats, you have found one of your arrows."
 
 Directions:
