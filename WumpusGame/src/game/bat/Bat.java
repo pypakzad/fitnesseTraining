@@ -10,11 +10,18 @@ public class Bat {
 	private Player player;
 	private Cavern originalLocation;
 	private HashMap<Cavern, String> caverns;
+	private Cavern newLocation = null;
+	private boolean testBat = false;
 
 	public Bat(Player player, HashMap<Cavern, String> caverns) {
 		this.player = player;
 		this.originalLocation = this.player.getPlayerLocation();
 		this.caverns = caverns;
+	}
+
+	public Bat(Cavern cavern) {
+		newLocation = cavern;
+		testBat = true;
 	}
 
 	public String eventMessage() {
@@ -23,9 +30,8 @@ public class Bat {
 
 	public Cavern getNewLocation() {
 		boolean newLocationFound = false;
-		Cavern newLocation = null;
 
-		while (!newLocationFound) {
+		while (!newLocationFound && !testBat) {
 			int randomNum = ThreadLocalRandom.current().nextInt(0, this.caverns.keySet().size());
 			newLocation = (Cavern) this.caverns.keySet().toArray()[randomNum];
 			if (newLocation != this.originalLocation)

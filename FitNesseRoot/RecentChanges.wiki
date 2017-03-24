@@ -1,3 +1,5 @@
+|HuntTheWumpus.IterationTwo.BatsInCavern||11:03:52 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows||10:12:26 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||08:59:34 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||15:58:19 Thu, Mar 23, 2017|
 <<<<<<< HEAD
@@ -8,7 +10,6 @@
 |HuntTheWumpus.IterationThree.PitHazards||15:21:10 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||15:12:20 Thu, Mar 23, 2017|
 |HuntTheWumpus||14:51:54 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.ShootArrows||14:44:48 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 =======
 
@@ -25,7 +26,6 @@
 |PitS||13:22:14 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.PickUpArrow||12:43:31 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationTwo.BatsInCavern||13:22:10 Thu, Mar 23, 2017|
 
 
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||14:40:22 Thu, Mar 23, 2017|
@@ -41,9 +41,7 @@
 |TrackArrows||12:53:37 Thu, Mar 23, 2017|
 |ShootArrows||12:53:16 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||12:52:08 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.ShootArrows||12:44:30 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationOne.ShootArrows||11:48:54 Thu, Mar 23, 2017|
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
 
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|

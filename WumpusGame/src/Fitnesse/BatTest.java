@@ -1,111 +1,50 @@
 package Fitnesse;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 import game.Game;
-import game.arrow.Arrow;
+import game.bat.Bat;
 import game.commands.Commands;
 import game.map.Map;
 import game.map.Map.Cavern;
-import game.map.Movement;
 import game.player.Player;
 
 public class BatTest {
-	private Map map;
-	private Player player;
-	private Cavern origin;
-	private Cavern E;
-	private Cavern N;
-	private Cavern W;
-	private Cavern S;
-	private Cavern NE;
-	private Cavern NW;
-	private Cavern SE;
-	private Cavern SW;
-	private Game game;
+	private Player player = new Player();
+	private Map map = new Map(0, 0, 0, 0);
+	private Bat bat;
 
-	public BatTest() throws FileNotFoundException {
-		String[] args = null;
-		System.setIn(new FileInputStream("GameTest.txt"));
-		Game.main(args);
-		game = new Game();
-		game.player = new Player();
-		initializeMap();
-		game.player.setPlayerLocation(origin);
+	public BatTest() {
+		map.setMap(GenerateMapContext.caverns);
+		Game.setMap(map);
+		Game.populateCaverns();
+		player.setPlayerLocation(map.makeCavern(0, 0));
+		Game.setPlayer(player);
 	}
 
-	public void initializeMap() {
-		game.caverns = new HashMap<Cavern, String>();
-		map = new Map(10, 0, 0, 0);
-		origin = map.new Cavern(0, 0);
-		N = map.new Cavern(0, 1);
-		E = map.new Cavern(1, 0);
-		S = map.new Cavern(0, -1);
-		W = map.new Cavern(-1, 0);
-		NE = map.new Cavern(1, 1);
-		SE = map.new Cavern(1, -1);
-		SW = map.new Cavern(-1, -1);
-		NW = map.new Cavern(-1, 1);
-
-		game.caverns.put(origin, "");
-		game.caverns.put(N, "");
-		game.caverns.put(E, "Arrow");
-		game.caverns.put(S, "");
-		game.caverns.put(W, "");
-		game.caverns.put(NE, "Pit");
-		game.caverns.put(NW, "Bats");
-		game.caverns.put(SW, "Whompus");
-		game.caverns.put(SE, "Bats");
+	public void setBat(int x, int y) {
+		bat = new Bat(map.makeCavern(x, y));
+		Game.setBat(bat);
 	}
 
-	public String PutPlayerAtOrigin() {
-		if (game.player.getPlayerLocation() == origin) {
-			return "true";
-		} else
-			return "false";
+	public void goFromAt(String direction, int x, int y) {
+		player.setPlayerLocation(map.makeCavern(x, y));
+		Commands command = Commands.valueOf(direction);
+		Game.playerCavernMove(command);
+		// ArrayList<String> eventList = Game.getEventList();
+		// eventList.remove(eventList.size() - 1);
 	}
 
-	public String MoveSouth() {
-		int newX = player.getPlayerLocation().getX();
-		int newY = player.getPlayerLocation().getY() - 1;
-		Cavern newLocation = map.new Cavern(newX, newY);
-		player.setPlayerLocation(newLocation);
-		if (game.caverns.get(newLocation).equals("arrow")) {
-			Arrow arrow = new Arrow();
-			arrow.setLocation(newLocation);
-			return Game.pickupArrow(arrow);
-		} else
-			return "";
+	public boolean playerInAt(int x, int y) {
+		Cavern cavern = map.makeCavern(x, y);
+		return cavern.equals(Game.getPlayer().getPlayerLocation());
 	}
 
-	public void handleMessage(String m) {
-		if (m.equals("You have encountered bats! You are being flown to another location..."))
-			;
+	public String event() {
+		ArrayList<String> eventList = Game.getEventList();
+		String testOutput = eventList.get(eventList.size() - 1);
+		eventList.remove(eventList.size() - 1);
+		return testOutput;
 	}
 
-	public String MoveNorth() {
-		Movement m = Game.playerCavernMove(Commands.w);
-		handleMessage(m.message);
-		return m.message;
-	}
-
-	public String MoveWest() {
-		Movement m = Game.playerCavernMove(Commands.a);
-		return m.message;
-	}
-
-	public String MoveEast() {
-		int newX = player.getPlayerLocation().getX() + 1;
-		int newY = player.getPlayerLocation().getY();
-		Cavern newLocation = map.new Cavern(newX, newY);
-		player.setPlayerLocation(newLocation);
-		if (game.caverns.get(newLocation).equals("arrow")) {
-			Arrow arrow = new Arrow();
-			arrow.setLocation(newLocation);
-			return Game.pickupArrow(arrow);
-		} else
-			return "";
-	}
 }
