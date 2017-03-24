@@ -16,23 +16,20 @@ Input Map:
 
 Testing that when user meets Pit they die: 
 |script| Time To Die|
-|Put |user |at| origin|
-|move |N|
-|Check |message|You have fallen into a pit and died.|
+|move|0|player|1|
+|Check |event|You have fallen into a pit and died.|
 |Check |game| ends|
 
 Testing that when user meets Wumpus they die:
 |script| Time To Die|
-|Put |user | at| origin|
-|Move |E|
-|Check |message|You have been trampled by the Wumpus... Whomp, whomp :(|
+|move|1|player|0|
+|Check |event|You have been trampled by the Wumpus... Whomp, whomp :(|
 |Check | game |ends|
 
 Testing that when user shoots arrow while directly next to dead-end that arrow rebounds and kills user:
 |script| Time To Die|
-|Put |user |at| origin|
 |Shoot arrow| W|
-|Check|message |Arrow rebounded. User dies.|
+|Check|event |Arrow rebounded. User dies.|
 |Check |game |ends|
 
 

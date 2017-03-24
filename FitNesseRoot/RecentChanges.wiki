@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationTwo.DeathByHazard||11:54:36 Fri, Mar 24, 2017|
 |RecentChanges||11:14:59 Fri, Mar 24, 2017|
 
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOfTheWumpus||10:42:25 Fri, Mar 24, 2017|
@@ -41,7 +42,6 @@
 
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||10:34:49 Thu, Mar 23, 2017|
