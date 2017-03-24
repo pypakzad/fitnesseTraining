@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import game.Game;
 import game.commands.Commands;
 import game.map.Map;
+import game.map.Movement;
 import game.player.Player;
 
 public class PitTest {
@@ -23,7 +24,8 @@ public class PitTest {
 	public void goFromAt(String direction, int x, int y) {
 		player.setPlayerLocation(map.makeCavern(x, y));
 		Commands command = Commands.valueOf(direction);
-		Game.playerCavernMove(command);
+		Movement m = Game.playerCavernMove(command);
+		Game.senseDanger(m, player.getPlayerLocation());
 	}
 
 	public String event() {
@@ -31,6 +33,8 @@ public class PitTest {
 		String testOutput = eventList.get(eventList.size() - 1);
 		eventList.remove(eventList.size() - 1);
 		return testOutput;
+		// return player.getPlayerLocation().getX() + ", " +
+		// player.getPlayerLocation().getY();
 	}
 
 }

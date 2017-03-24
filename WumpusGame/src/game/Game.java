@@ -53,8 +53,8 @@ public class Game {
 			}
 			System.out.println(sendRules());
 			Movement enterCavern = new Movement();
-			enterCavern = senseDanger(enterCavern,player.getPlayerLocation());
-			if (enterCavern.hazardSense != null) 
+			enterCavern = senseDanger(enterCavern, player.getPlayerLocation());
+			if (enterCavern.hazardSense != null)
 				System.out.println(enterCavern.hazardSense);
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
@@ -121,7 +121,7 @@ public class Game {
 		if (playerX == newWumpusX && playerY == newWumpusY) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
-			}
+		}
 		return m;
 	}
 
@@ -294,7 +294,6 @@ public class Game {
 		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-			
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
 					hazard[0] = "You feel blustering wind.";
@@ -308,8 +307,10 @@ public class Game {
 			if (hazard[i] != null) {
 				if (m.hazardSense == null) {
 					m.hazardSense = hazard[i];
+					eventList.add(hazard[i]);
 				} else {
 					m.hazardSense = m.hazardSense + "\n" + hazard[i];
+					eventList.add(hazard[i]);
 				}
 			}
 		}
