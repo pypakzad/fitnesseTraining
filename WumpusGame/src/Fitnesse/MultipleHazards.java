@@ -6,11 +6,12 @@ import game.map.Map;
 import game.map.Movement;
 import game.player.Player;
 
-public class OneHazard {
+public class MultipleHazards {
+
 	private Player player = new Player();
 	private Map map = new Map(0, 0, 0, 0);
 
-	public OneHazard() {
+	public MultipleHazards() {
 
 		// GenerateMapContext.caverns.put(map.makeCavern(0, -2), "Bats");
 		// GenerateMapContext.caverns.put(map.makeCavern(0, -1), "Empty");
@@ -28,6 +29,8 @@ public class OneHazard {
 
 	public String MoveNorth() {
 		Movement m = Game.playerCavernMove(Commands.w);
+		m = Game.senseDanger(m, player.getPlayerLocation());
+
 		return m.hazardSense;
 	}
 
@@ -39,6 +42,8 @@ public class OneHazard {
 
 	public String MoveWest() {
 		Movement m = Game.playerCavernMove(Commands.a);
+		m = Game.senseDanger(m, player.getPlayerLocation());
+
 		return m.hazardSense;
 	}
 
