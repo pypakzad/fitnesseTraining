@@ -26,7 +26,7 @@ public class Game {
 	public static boolean testMapAndPlayerLoaded = false;
 	private static ArrayList<Bat> bat = new ArrayList<Bat>();
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
 		String errorInput = "";
@@ -69,7 +69,10 @@ public class Game {
 							playerDeadOrWon = true;
 							break;
 						}
-						m = wumpusCavernMove(m);
+						try {
+							m = wumpusCavernMove(m);
+						} catch (Exception e) {
+						}
 						m = senseDanger(m, player.getPlayerLocation());
 						if (m.onHazard == true) {
 							System.out.println(m.message);
