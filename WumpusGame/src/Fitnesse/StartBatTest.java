@@ -15,7 +15,7 @@ public class StartBatTest {
 	private Cavern origin;
 	private HashMap<Cavern, String> caverns;
 
-	public StartBatTest() throws FileNotFoundException {
+	public StartBatTest() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
