@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||08:59:34 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||15:58:19 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour||15:40:38 Thu, Mar 23, 2017|
@@ -11,7 +12,6 @@
 <<<<<<< HEAD
 =======
 
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||15:03:51 Thu, Mar 23, 2017|
 |RecentChanges||14:52:39 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 >>>>>>> aca4ed9e367d068354e7b300d3e99cb878a7331f

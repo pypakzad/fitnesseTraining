@@ -202,7 +202,7 @@ public class Game {
 				pickupArrow(new Arrow());
 			}
 		}
-		return senseDanger(m, endingCavern);
+		return senseDanger(m, player.getPlayerLocation());
 	}
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
