@@ -19,11 +19,12 @@ Sensing One Hazard
 | check | Move South | You hear screeching noises. |
 
 
-| put user at origin |
-| user moves E |
-| check message appears saying "You feel blustering wind." |
+| script | One Hazard |
+| Put User At Origin |
+| check | Move East | You feel blustering wind. |
 
-| put user at origin |
-| user moves E |
-| user moves S |
-| check message appears saying "You smell something really bad." |
+| script | One Hazard |
+| Put User At Origin |
+|Move East|
+| check | Move South | You smell something really bad. |
+
