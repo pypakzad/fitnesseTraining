@@ -2,22 +2,33 @@
 Test
 ---
 Sensing All Hazards at Once
+
 !define TEST_SYSTEM {slim}
 !path ${WUMPUS_PATH}
 Input Map:
-|script|generate map|
-|make|Wumpus|map|W|
-|make|Empty|map|N|
-|make|Bats|map|E|
-|make|Empty|map|E|
-|make|Bats|map|S|
-|make|Empty|map|S|
-|make|Pit|map|W|
-|make|Empty|map|W|
+
+| script | generate map |
+| make | Wumpus | map | W |
+| make | Empty | map | N |
+| make | Bats | map | E |
+| make | Empty | map | E |
+| make | Bats | map | S |
+| make | Empty | map | S |
+| make | Pit | map | W |
+| make | Empty | map | W |
 
 Testing all different senses at once:
+<<<<<<< HEAD
+
+| script | All The Danger |
+| Put User At Origin |
+| check | Sense Danger | You feel blustering wind.!-
+-!You hear screeching noises.!-
+-!You smell something really bad. |
+=======
 |script| test all senses|
 |put user at origin|
 |check message appears saying "You smell something really bad."|
 |check message appears saying "You hear screeching noises."|
 |check message appears saying "You feel blustering wind."|
+>>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
