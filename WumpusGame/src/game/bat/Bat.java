@@ -1,8 +1,6 @@
 package game.bat;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 
 import game.map.Map.Cavern;
@@ -23,22 +21,17 @@ public class Bat {
 		return "You have encountered bats! You are being flown to another location...";
 	}
 
-	public  Cavern getNewLocation() {
-		Set<Cavern> keyset = this.caverns.keySet();
-		int keysetLength = keyset.size();
+	public Cavern getNewLocation() {
 		boolean newLocationFound = false;
 		Cavern newLocation = null;
-		ArrayList<Cavern> cavernList = new ArrayList<>();
-		for (Cavern c : keyset) {
-			cavernList.add(c);
-		}
 
 		while (!newLocationFound) {
-			int randomNum = ThreadLocalRandom.current().nextInt(0, keysetLength);
-			newLocation = cavernList.get(randomNum);
+			int randomNum = ThreadLocalRandom.current().nextInt(0, this.caverns.keySet().size());
+			newLocation = (Cavern) this.caverns.keySet().toArray()[randomNum];
 			if (newLocation != this.originalLocation)
 				newLocationFound = true;
 		}
+
 		return newLocation;
 	}
 

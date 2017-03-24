@@ -67,7 +67,7 @@ public class Game {
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
 					}
-					if (commandNumber > 3&& (!userInput.equals("testExit"))) {
+					if (commandNumber > 3 && (!userInput.equals("testExit"))) {
 						playerDeadOrWon = shootArrow(command);
 						break;
 					}
@@ -195,7 +195,7 @@ public class Game {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
 		}
-		if (endingCavernType.length()>4&&endingCavernType.substring(0, 5).equals("Arrow")) {
+		if (endingCavernType.length() > 4 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			eventList.add("We Got Here");
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			for (; arrowNumber > 0; arrowNumber--) {
@@ -373,7 +373,7 @@ public class Game {
 
 	private static String getArrowsString(Cavern cavern) {
 		String currentState = caverns.get(cavern);
-		int arrowNumber = Integer.valueOf(currentState.substring(6, 7));
+		int arrowNumber = Integer.valueOf(currentState.substring(6, 7)) + 1;
 		return "Arrow|" + String.valueOf(arrowNumber) + "|";
 	}
 
