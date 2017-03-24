@@ -26,7 +26,7 @@ public class BatTest {
 	private Cavern SW;
 	private Game game;
 
-	public BatTest() throws FileNotFoundException {
+	public BatTest() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
