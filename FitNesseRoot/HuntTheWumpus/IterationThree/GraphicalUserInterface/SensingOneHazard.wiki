@@ -2,26 +2,28 @@
 Test
 ---
 Sensing One Hazard
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
+| script | generate map |
+| make | Empty | map | E |
+| make | Pit | map | E |
+| make | Empty | map | S |
+| make | Empty | map | W |
+| make | Empty | map | W |
+| make | Bats | map | S |
+| make | Wumpus | map | E |
+| make | Empty | map | E |
 
-|script|generate map|
-|make|Empty|map|E|
-|make|Pit|map|E|
-|make|Empty|map|S|
-|make|Empty|map|W|
-|make|Empty|map|W|
-|make|Bats|map|S|
-|make|Wumpus|map|E|
-|make|Empty|map|E|
+| script | One Hazard |
+| Put User At Origin |
+| check | Move South | You hear screeching noises. |
 
-|put user at origin|
-|user moves S|
-|check message appears saying "You hear screeching noises."|
 
-|put user at origin|
-|user moves E|
-|check message appears saying "You feel blustering wind."|
+| put user at origin |
+| user moves E |
+| check message appears saying "You feel blustering wind." |
 
-|put user at origin|
-|user moves E|
-|user moves S|
-|check message appears saying "You smell something really bad."|
+| put user at origin |
+| user moves E |
+| user moves S |
+| check message appears saying "You smell something really bad." |

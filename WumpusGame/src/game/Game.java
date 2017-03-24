@@ -26,10 +26,10 @@ public class Game {
 	public static boolean testMapAndPlayerLoaded = false;
 	private static ArrayList<Bat> bat = new ArrayList<Bat>();
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		String errorInput = "";
+		String errorInput = "Invalid User Entry, Please Try Again.";
 
 		System.out.println(sendWelcome());
 		String userStartCommand = scanner.nextLine();
@@ -53,8 +53,8 @@ public class Game {
 			}
 			System.out.println(sendRules());
 			Movement enterCavern = new Movement();
-			enterCavern = senseDanger(enterCavern,player.getPlayerLocation());
-			if (enterCavern.hazardSense != null) 
+			enterCavern = senseDanger(enterCavern, player.getPlayerLocation());
+			if (enterCavern.hazardSense != null)
 				System.out.println(enterCavern.hazardSense);
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
@@ -69,7 +69,10 @@ public class Game {
 							playerDeadOrWon = true;
 							break;
 						}
-						m = wumpusCavernMove(m);
+						try {
+							m = wumpusCavernMove(m);
+						} catch (Exception e) {
+						}
 						m = senseDanger(m, player.getPlayerLocation());
 						if (m.onHazard == true) {
 							System.out.println(m.message);
@@ -89,11 +92,13 @@ public class Game {
 					}
 					userInput = scanner.nextLine();
 				}
-				if (!playerDeadOrWon) {
-					System.out.println(errorInput);
-				}
+//				if (!playerDeadOrWon) {
+//					System.out.println(errorInput);
+//				}
 			}
 			// if you're here game has ended
+			eventList.add("Game Over");
+			System.out.println("Game Over");
 			scanner.close();
 		}
 	}
@@ -121,7 +126,7 @@ public class Game {
 		if (playerX == newWumpusX && playerY == newWumpusY) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
-			}
+		}
 		return m;
 	}
 
@@ -213,6 +218,7 @@ public class Game {
 			break;
 		}
 		Cavern endingCavern = map.new Cavern(playerX, playerY);
+
 		String endingCavernType = caverns.get(endingCavern);
 		if (endingCavernType == null) {
 			player.setPlayerLocation(startingCavern);
@@ -226,9 +232,7 @@ public class Game {
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats")) {
-			m.message = "You have encountered bats! You are being flown to another location...";
 			Bat tempBat = getBat();
-			eventList.add(m.message);
 			return playerTeleport(tempBat.getNewLocation());
 		}
 		if (endingCavernType.equals("Wumpus")) {
@@ -238,6 +242,7 @@ public class Game {
 		if (endingCavernType.length() > 4 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
 			}
@@ -248,33 +253,39 @@ public class Game {
 
 	public static Movement playerTeleport(Cavern endingCavern) {
 		Movement m = new Movement();
+		m.message = "You have encountered bats! You are being flown to another location...";
 		m.onHazard = false;
 		String endingCavernType = caverns.get(endingCavern);
 		player.setPlayerLocation(endingCavern);
 		if (endingCavernType.equals("Pit")) {
-			m.message = "You have fallen into a pit and died.";
-			eventList.add(m.message);
+			m.message +="\nYou have fallen into a pit and died.";
+			//eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats")) {
-			m.message = "You have encountered bats! You are being flown to another location...";
+			//m.message +="\nYou have encountered bats! You are being flown to another location...";
 			Bat tempBat = getBat();
 			eventList.add(m.message);
-			return playerTeleport(tempBat.getNewLocation());
+			Movement downTheRabbit = playerTeleport(tempBat.getNewLocation());
+			m.message += "\n"+downTheRabbit.message;
+			eventList.add(m.message);
+			return m;
 		}
 		if (endingCavernType.equals("Wumpus")) {
-			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
-			eventList.add(m.message);
+			m.message +="\nYou have been trampled by the Wumpus... Whomp, whomp :(";
+			//eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
-			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
-			eventList.add(m.message);
+			m.message +="\nCongrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
+			
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
 			}
 		}
+		eventList.add(m.message);
 		return m;
 	}
 
@@ -292,24 +303,28 @@ public class Game {
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
 		String[] hazard = new String[3];
+		m.hazardSense = null;
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-			
-			if (neighborType != "Empty") {
-				if (neighborType == "Pit")
+			if (neighborType != null && neighborType != "Empty") {
+				if (neighborType.equals("Pit"))
 					hazard[0] = "You feel blustering wind.";
-				if (neighborType == "Bats")
+				if (neighborType.equals("Bats"))
 					hazard[1] = "You hear screeching noises.";
-				if (neighborType == "Wumpus")
+				if (neighborType.equals("Wumpus"))
 					hazard[2] = "You smell something really bad.";
 			}
+
 		}
+
 		for (int i = 0; i < hazard.length; i++) {
 			if (hazard[i] != null) {
 				if (m.hazardSense == null) {
 					m.hazardSense = hazard[i];
+					eventList.add(hazard[i]);
 				} else {
 					m.hazardSense = m.hazardSense + "\n" + hazard[i];
+					eventList.add(hazard[i]);
 				}
 			}
 		}
@@ -348,7 +363,7 @@ public class Game {
 		} catch (Exception e) {
 			System.out.println(e.getLocalizedMessage());
 			m.endingChamber = startingChamber + 1;
-			m.message = "User cannot move " + m.message;
+			m.message = "User cannot move " + m;
 			return m;
 		}
 	}
@@ -415,8 +430,8 @@ public class Game {
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);
 			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
-				System.out.println("Arrow rebounded. User dies");
-				eventList.add("Arrow rebounded. User dies.");
+				System.out.println("Arrow rebounded. You die.");
+				eventList.add("Arrow rebounded. You die.");
 				return true;
 			}
 			String cavernType = caverns.get(startingCavern);
@@ -446,8 +461,8 @@ public class Game {
 			return false;
 		}
 		if (endingCavernType.equals("Wumpus")) {
-			System.out.println("User killed the Wumpus.");
-			eventList.add("User killed the Wumpus.");
+			System.out.println("You killed the Wumpus. YOU WON!!!!");
+			eventList.add("You killed the Wumpus. YOU WON!!!!");
 			return true;
 		}
 		System.out.println("Empty cavern, arrow continues " + direction.getDirection() + ".");

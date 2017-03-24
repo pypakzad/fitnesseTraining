@@ -2,55 +2,61 @@
 Test
 ---
 Test: Bats In Cavern
+
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
 Input Map:
-|script|Generate Map|
-|make|Empty1|map|N|
-|make|Pit|map|E|
-|make|Arrow|map|S|
-|make|Bats|map|S|
-|make|Empty3|map|W|
-|make|Wumpus|map|W|
-|make|Empty4|map|N|
-|make|Bats|map|N|
+
+| script | Generate Map |
+| make | Empty1 | map | N |
+| make | Pit | map | E |
+| make | Arrow | map | S |
+| make | Bats | map | S |
+| make | Empty3 | map | W |
+| make | Wumpus | map | W |
+| make | Empty4 | map | N |
+| make | Bats | map | N |
 
 Testing user teleportation funtion when user meets bats.
 
 Test when bats take user to an empty cavern:
-|script|Bat Test|
-|set | 0 | bat | -1 |
-|go | w | from | -1 | at | 0 |
-|check| event|You have encountered bats! You are being flown to another location...|
-|check| player in | 0 | at | -1 | | true |
 
+| script | Bat Test |
+| set | 0 | bat | -1 |
+| go | w | from | -1 | at | 0 |
+|check|event|You have encountered bats! You are being flown to another location...|
+| check | player in | 0 | at | -1 | | true |
 
 Test when bats take user to another Bat Cavern:
-|script|Bat Test|
-|set | 1 | bat | -1 |
-|set | 0 | bat | -1 |
-|go | w | from | -1 | at | 0 |
-|check| event|You have encountered bats! You are being flown to another location...|
-|check| event|You have encountered bats! You are being flown to another location...|
-|check| player in | 0 | at | -1 | | true |
+
+| script | Bat Test |
+| set | 1 | bat | -1 |
+| set | 0 | bat | -1 |
+| go | w | from | -1 | at | 0 |
+| check | event | You have encountered bats! You are being flown to another location...!-
+-!You have encountered bats! You are being flown to another location...|
+| check | player in | 0 | at | -1 | | true |
 
 Test when bats take user to a Pit:
-|script|Bat Test|
-|set | 1 | bat | 1 |
-|go | w | from | -1 | at | 0 |
-|check| event|You have fallen into a pit and died.|
-|check| event|You have encountered bats! You are being flown to another location...|
+
+| script | Bat Test |
+| set | 1 | bat | 1 |
+| go | w | from | -1 | at | 0 |
+| check | event | You have encountered bats! You are being flown to another location...!-
+-!You have fallen into a pit and died.|
 
 Test when bats take user to Wumpus:
-|script|Bat Test|
-|set | -1 | bat | -1 |
-|go | w | from | -1 | at | 0 |
-|check| event|You have been trampled by the Wumpus... Whomp, whomp :(|
-|check| event|You have encountered bats! You are being flown to another location...|
+
+| script | Bat Test |
+| set | -1 | bat | -1 |
+| go | w | from | -1 | at | 0 |
+| check | event | You have encountered bats! You are being flown to another location...!-
+-!You have been trampled by the Wumpus... Whomp, whomp :(|
 
 Test when bats take user to a cavern that has a dropped arrow:
-|script|Bat Test|
-|set | 1 | bat | 0 |
-|go | w | from | -1 | at | 0 |
-|check| event|Congrats, you have found 1 of your arrows.|
-|check| event|You have encountered bats! You are being flown to another location...|
+
+| script | Bat Test |
+| set | 1 | bat | 0 |
+| go | w | from | -1 | at | 0 |
+| check | event | You have encountered bats! You are being flown to another location...!-
+-!Congrats, you have found 1 of your arrows.|

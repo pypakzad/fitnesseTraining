@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement</rootPath>
+    <result>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-03-24T11:38:48-04:00</date>
+    <runTimeInMillis>45</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;GenerateMapContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;&lt;div class="collapsible"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.IterationOne.TrackArrows"&gt;.HuntTheWumpus.IterationOne.TrackArrows&lt;/a&gt; &lt;a href="HuntTheWumpus.IterationOne.TrackArrows?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;a href="HuntTheWumpus.IterationOne.TrackArrows"&gt;TrackArrows&lt;/a&gt; (the ultimate parent page is &lt;a href="HuntTheWumpus"&gt;.HuntTheWumpus&lt;/a&gt;)&lt;br/&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Generate Map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;We are testing how we track arrows throughout HTW.&lt;br/&gt;&lt;br/&gt;Test Cases for intial arrow count and movement: &lt;a href="HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement"&gt;&amp;gt;ArrowCountAndMovement&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Test Cases for changing arrow counts after shooting and picking up arrows: &lt;a href="HuntTheWumpus.IterationOne.TrackArrows.ChangingArrows"&gt;&amp;gt;ChangingArrows&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+∠( ᐛ 」∠)＿&lt;br/&gt;&lt;a href="HuntTheWumpus.IterationOne.TrackArrows.ArrowCountAndMovement"&gt;ArrowCountAndMovement&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Testing that the user has all arrows when the game begins:&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Testing that the arrows move with the user, when the user moves in all directions:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td colspan="3"&gt;Move North&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td colspan="3"&gt;Move South&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor6"&gt;
+		&lt;td colspan="3"&gt;Move East&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;At Game Start&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td colspan="3"&gt;Move West&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;getUserArrowCount&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;5&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>ArrowCountAndMovement</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='GenerateMapContext', args=[]}</instruction>
+        <slimResult>pass(GenerateMapContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GenerateMapContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='GenerateMap', args=[]}</instruction>
+        <slimResult>pass(Generate Map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Generate Map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_4_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_4_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                    <col>2</col>
+                              <row>1</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_1', instruction='call', instanceName='scriptTableActor', methodName='MoveNorth', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_6_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_2', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_7_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_1', instruction='call', instanceName='scriptTableActor', methodName='MoveSouth', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_7_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_2', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_7_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='MoveEast', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_8_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_2', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_0', instruction='make', instanceName='scriptTableActor', className='AtGameStart', args=[]}</instruction>
+        <slimResult>pass(At Game Start)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_9_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>At Game Start</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_1', instruction='call', instanceName='scriptTableActor', methodName='MoveWest', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_9_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_9_2', instruction='call', instanceName='scriptTableActor', methodName='getUserArrowCount', args=[]}</instruction>
+        <slimResult>pass(5)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_9_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>5</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>45</totalRunTimeInMillis>
+</testResults>
+

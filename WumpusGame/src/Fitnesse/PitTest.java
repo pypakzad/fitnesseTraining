@@ -1,19 +1,17 @@
-
 package Fitnesse;
 
 import java.util.ArrayList;
 
 import game.Game;
-import game.bat.Bat;
 import game.commands.Commands;
 import game.map.Map;
-import game.map.Map.Cavern;
+import game.map.Movement;
 import game.player.Player;
 
 public class PitTest {
+
 	private Player player = new Player();
 	private Map map = new Map(0, 0, 0, 0);
-	private Bat bat;
 
 	public PitTest() {
 		map.setMap(GenerateMapContext.caverns);
@@ -23,20 +21,11 @@ public class PitTest {
 		Game.setPlayer(player);
 	}
 
-	public void setBat(int x, int y) {
-		bat = new Bat(map.makeCavern(x, y));
-		Game.setBat(bat);
-	}
-
 	public void goFromAt(String direction, int x, int y) {
 		player.setPlayerLocation(map.makeCavern(x, y));
 		Commands command = Commands.valueOf(direction);
-		Game.playerCavernMove(command);
-	}
-
-	public boolean playerInAt(int x, int y) {
-		Cavern cavern = map.makeCavern(x, y);
-		return cavern.equals(Game.getPlayer().getPlayerLocation());
+		Movement m = Game.playerCavernMove(command);
+		Game.senseDanger(m, player.getPlayerLocation());
 	}
 
 	public String event() {
@@ -44,6 +33,8 @@ public class PitTest {
 		String testOutput = eventList.get(eventList.size() - 1);
 		eventList.remove(eventList.size() - 1);
 		return testOutput;
+		// return player.getPlayerLocation().getX() + ", " +
+		// player.getPlayerLocation().getY();
 	}
 
 }

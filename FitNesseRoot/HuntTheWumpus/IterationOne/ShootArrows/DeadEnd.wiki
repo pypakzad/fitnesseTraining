@@ -4,14 +4,12 @@ Test
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
 !include .HuntTheWumpus.IterationOne.ShootArrows
-
-
-|Import|
-|Fitnesse|
+| Import |
+| Fitnesse |
 
 Dead End
 
-|script|Shoot Arrow|
-|shoot|up|from|0|at|0|
-|check|arrowCount|4|
-|check|event|Arrow rebounded. User dies.|
+| script | Shoot Arrow |
+| shoot | up | from | 0 | at | 0 |
+| check | arrowCount | 4 |
+| check | event | Arrow rebounded. You die. |
