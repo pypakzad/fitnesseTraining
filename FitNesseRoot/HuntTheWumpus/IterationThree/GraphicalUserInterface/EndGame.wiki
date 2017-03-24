@@ -1,6 +1,9 @@
 ---
 Test
 ---
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
+
 End of the Game
 
 Testing that the game ends when the user wins or loses.
@@ -14,25 +17,27 @@ Input Map:
 |make|Pit|map|S|
 
 Trampled by Wumpus:
-|put user at origin|
-|user moves N|
-|check message appears saying "You have been trampled by the Wumpus... Whomp, whomp :("|
-|check message appears saying "end game"|
+|script|End Game|
+|Put User At Origin|
+|check |Move North|You have been trampled by the Wumpus... Whomp, whomp :(|
+|check|End Game Message|Game Over|
 
 Falls into Pit:
-|put user at origin|
-|user moves E|
-|check message saying "You have fallen into a pit and died."|
-|check message appears saying "end game"|
+
+|script|End Game|
+|Put User At Origin|
+|check|Move East|You have fallen into a pit and died.|
+|check|End Game Message|Game Over|
 
 Rebounding Arrow:
-|put user at origin|
-|user shoots arrow W|
-|check message appears saying "Arrow rebounded. You die."|
-|check message appears saying "end game"|
+|script|End Game|
+|Put User At Origin|
+|check|Shoot Arrow West|Arrow rebounded. You die.|
+|check|End Game Message|Game Over|
+
 
 Winning:
-|put user at origin|
-|user shoots arrow N|
-|check message appears saying "You killed the Wumpus. YOU WON!!!!"|
-|check message appears saying "end game"|
+|script|End Game|
+|Put User At Origin|
+|check|Shoot Arrow North|You killed the Wumpus. YOU WON!!!!|
+|check|End Game Message|Game Over|

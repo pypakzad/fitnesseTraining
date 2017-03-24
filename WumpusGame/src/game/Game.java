@@ -94,6 +94,8 @@ public class Game {
 				}
 			}
 			// if you're here game has ended
+			eventList.add("Game Over");
+			System.out.println("Game Over");
 			scanner.close();
 		}
 	}
@@ -213,6 +215,7 @@ public class Game {
 			break;
 		}
 		Cavern endingCavern = map.new Cavern(playerX, playerY);
+
 		String endingCavernType = caverns.get(endingCavern);
 		if (endingCavernType == null) {
 			player.setPlayerLocation(startingCavern);
@@ -238,6 +241,7 @@ public class Game {
 		if (endingCavernType.length() > 4 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
 			}
@@ -270,6 +274,7 @@ public class Game {
 		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
 			eventList.add(m.message);
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
@@ -292,17 +297,20 @@ public class Game {
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
 		String[] hazard = new String[3];
+		m.hazardSense = null;
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-			if (neighborType != "Empty") {
-				if (neighborType == "Pit")
+			if (neighborType != null && neighborType != "Empty") {
+				if (neighborType.equals("Pit"))
 					hazard[0] = "You feel blustering wind.";
-				if (neighborType == "Bats")
+				if (neighborType.equals("Bats"))
 					hazard[1] = "You hear screeching noises.";
-				if (neighborType == "Wumpus")
+				if (neighborType.equals("Wumpus"))
 					hazard[2] = "You smell something really bad.";
 			}
+
 		}
+
 		for (int i = 0; i < hazard.length; i++) {
 			if (hazard[i] != null) {
 				if (m.hazardSense == null) {
@@ -416,8 +424,8 @@ public class Game {
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);
 			if (shotArrow.getLocation().equals(player.getPlayerLocation())) {
-				System.out.println("Arrow rebounded. User dies");
-				eventList.add("Arrow rebounded. User dies.");
+				System.out.println("Arrow rebounded. You die.");
+				eventList.add("Arrow rebounded. You die.");
 				return true;
 			}
 			String cavernType = caverns.get(startingCavern);
@@ -447,8 +455,8 @@ public class Game {
 			return false;
 		}
 		if (endingCavernType.equals("Wumpus")) {
-			System.out.println("User killed the Wumpus.");
-			eventList.add("User killed the Wumpus.");
+			System.out.println("You killed the Wumpus. YOU WON!!!!");
+			eventList.add("You killed the Wumpus. YOU WON!!!!");
 			return true;
 		}
 		System.out.println("Empty cavern, arrow continues " + direction.getDirection() + ".");

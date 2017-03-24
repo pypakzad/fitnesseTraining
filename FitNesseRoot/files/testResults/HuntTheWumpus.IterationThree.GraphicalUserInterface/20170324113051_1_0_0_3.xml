@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationThree.GraphicalUserInterface</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame</name>
+    <date>2017-03-24T11:30:51-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame?pageHistory&amp;resultDate=20170324113051</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>165</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce</name>
+    <date>2017-03-24T11:30:51-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce?pageHistory&amp;resultDate=20170324113051</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <runTimeInMillis>62</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard</name>
+    <date>2017-03-24T11:30:51-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard?pageHistory&amp;resultDate=20170324113051</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>7</exceptions>
+    </counts>
+    <runTimeInMillis>91</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards</name>
+    <date>2017-03-24T11:30:51-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards?pageHistory&amp;resultDate=20170324113051</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>16</exceptions>
+    </counts>
+    <runTimeInMillis>66</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Parker/Git/fitnesse/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>false
+false
+Arrow rebounded. You die.
+You killed the Wumpus. YOU WON!!!!
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>1</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>3</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>765</totalRunTimeInMillis>
+</suiteResults>
+
