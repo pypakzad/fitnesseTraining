@@ -3,10 +3,14 @@ package game.map;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import game.map.Map.Cavern;
+
 public class Map {
 
 	private HashMap<Cavern, String> caverns = new HashMap<Cavern, String>();
 	private HashMap<Cavern, String> unvisitedCaverns = new HashMap<Cavern, String>();
+	private Cavern wumpusCavern;
+	private String replacedWumpusCavern;
 
 	public Map(int mapsize, int bats, int pits, int wumpus) {
 		makeCaverns(mapsize, bats, pits, wumpus);
@@ -93,6 +97,8 @@ public class Map {
 			Double newIndex = Double.valueOf(Math.floor(Math.random() * options.size()));
 			Cavern newCavern = options.get(newIndex.intValue());
 			caverns.replace(newCavern, "Wumpus");
+			wumpusCavern = newCavern;
+			replacedWumpusCavern = "Empty";
 		}
 	}
 
@@ -137,6 +143,27 @@ public class Map {
 	public int moveOnMap(int startingChamber, int d) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	public void setWumpusLocation(int x, int y) throws Exception{
+		String wumpusCheck = caverns.get(new Cavern(x,y));
+		if (wumpusCheck == null){
+			throw new Exception ("Wumpus Can't Move Here");
+		}
+		caverns.replace(wumpusCavern, getReplacedWumpusCavern());
+		wumpusCavern = new Cavern(x,y);
+		setReplacedWumpusCavern(caverns.get(wumpusCavern));
+		caverns.replace(wumpusCavern, "Wumpus");
+	}
+	public Cavern getWumpusLocation() {
+		return wumpusCavern;
+	}
+
+	private String getReplacedWumpusCavern() {
+		return replacedWumpusCavern;
+	}
+
+	private void setReplacedWumpusCavern(String replacedWumpusCavern) {
+		this.replacedWumpusCavern = replacedWumpusCavern;
 	}
 
 }

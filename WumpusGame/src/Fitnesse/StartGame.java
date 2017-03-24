@@ -19,14 +19,14 @@ public class StartGame {
 		return Game.sendRules();
 	}
 
-	public boolean userInputYEnterGameStart() throws FileNotFoundException {
+	public boolean userInputYEnterGameStart() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream(System.getProperty("user.dir") + "/GameTest.txt"));
 		Game.main(args);
 		return true;
 	}
 
-	public boolean userInputNGameEnds() throws FileNotFoundException {
+	public boolean userInputNGameEnds() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream(System.getProperty("user.dir") + "/GameTest2.txt"));
 		Game.main(args);

@@ -20,11 +20,12 @@ public class Game {
 	public static Map map;
 	public static HashMap<Cavern, String> caverns;
 	public static Player player;
+	public static Player wumpus;
 	public static ArrayList<String> commands = new ArrayList<String>();
 	public static ArrayList<String> eventList = new ArrayList<String>();
 	public static boolean testMapAndPlayerLoaded = false;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
 
 		String errorInput = "";
@@ -32,7 +33,6 @@ public class Game {
 		System.out.println(sendWelcome());
 		String userStartCommand = scanner.nextLine();
 		while (!userStartCommand.equals("y") && !userStartCommand.equals("n")) {
-			System.out.println("What did you mean by " + userStartCommand + "?");
 			System.out.println(sendWelcome());
 			userStartCommand = scanner.nextLine();
 		}
@@ -64,6 +64,13 @@ public class Game {
 							playerDeadOrWon = true;
 							break;
 						}
+						m = wumpusCavernMove(m);
+						m = senseDanger(m,player.getPlayerLocation());
+						if (m.onHazard == true) {
+							System.out.println(m.message);
+							playerDeadOrWon = true;
+							break;
+						}
 						if (m.hazardSense != null)
 							System.out.println(m.hazardSense);
 					}
@@ -84,6 +91,36 @@ public class Game {
 			// if you're here game has ended
 			scanner.close();
 		}
+	}
+
+	private static Movement wumpusCavernMove(Movement m) throws Exception {
+		Cavern wumpusLocation = map.getWumpusLocation();
+		boolean findingNewLocation = true;
+		int wumpusX = wumpusLocation.getX();
+		int wumpusY = wumpusLocation.getY();
+		int newWumpusX = wumpusX;
+		int newWumpusY = wumpusY;
+		while (findingNewLocation){
+		newWumpusX = wumpusX + ((int) Math.round(Math.random()*2)-1);
+		newWumpusY = wumpusY + ((int) Math.round(Math.random()*2)-1);
+		
+		if (caverns.get(map.new Cavern(newWumpusX, newWumpusY))!=null){
+			if (wumpusX != newWumpusX || wumpusY != newWumpusY)
+				break;
+			}
+		}
+		map.setWumpusLocation(newWumpusX, newWumpusY);
+		Cavern playerLocation = player.getPlayerLocation();
+		int playerX = playerLocation.getX();
+		int playerY = playerLocation.getY();
+		if(playerX == newWumpusX && playerY == newWumpusY)
+		{
+			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
+			m.onHazard = true;
+			}
+		System.out.println("Wumpus :" + newWumpusX + ","+ newWumpusY);
+		System.out.println("Player :" + playerX + ","+ playerY);
+		return m;
 	}
 
 	public static String sendWelcome() {
@@ -202,7 +239,7 @@ public class Game {
 				pickupArrow(new Arrow());
 			}
 		}
-		return senseDanger(m, player.getPlayerLocation());
+		return m;
 	}
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
