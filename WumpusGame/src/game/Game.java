@@ -29,7 +29,7 @@ public class Game {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		String errorInput = "";
+		String errorInput = "Invalid User Entry, Please Try Again.";
 
 		System.out.println(sendWelcome());
 		String userStartCommand = scanner.nextLine();
@@ -92,9 +92,9 @@ public class Game {
 					}
 					userInput = scanner.nextLine();
 				}
-				if (!playerDeadOrWon) {
-					System.out.println(errorInput);
-				}
+//				if (!playerDeadOrWon) {
+//					System.out.println(errorInput);
+//				}
 			}
 			// if you're here game has ended
 			eventList.add("Game Over");
@@ -232,7 +232,6 @@ public class Game {
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats")) {
-			m.message = "You have encountered bats! You are being flown to another location...";
 			Bat tempBat = getBat();
 			eventList.add(m.message);
 			return playerTeleport(tempBat.getNewLocation());
@@ -255,28 +254,29 @@ public class Game {
 
 	public static Movement playerTeleport(Cavern endingCavern) {
 		Movement m = new Movement();
+		m.message = "You have encountered bats! You are being flown to another location...";
 		m.onHazard = false;
 		String endingCavernType = caverns.get(endingCavern);
 		player.setPlayerLocation(endingCavern);
 		if (endingCavernType.equals("Pit")) {
-			m.message = "You have fallen into a pit and died.";
+			m.message +="\nYou have fallen into a pit and died.";
 			eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats")) {
-			m.message = "You have encountered bats! You are being flown to another location...";
+			m.message +="\nYou have encountered bats! You are being flown to another location...";
 			Bat tempBat = getBat();
 			eventList.add(m.message);
 			return playerTeleport(tempBat.getNewLocation());
 		}
 		if (endingCavernType.equals("Wumpus")) {
-			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
+			m.message +="\nYou have been trampled by the Wumpus... Whomp, whomp :(";
 			eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
-			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			m.message +="\nCongrats, you have found " + arrowNumber + " of your arrows.";
 			caverns.replace(endingCavern, "Empty");
 			eventList.add(m.message);
 			for (; arrowNumber > 0; arrowNumber--) {
