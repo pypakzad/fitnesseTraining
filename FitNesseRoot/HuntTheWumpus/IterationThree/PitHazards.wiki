@@ -21,6 +21,5 @@ Testing that user firstly hears wind and then dies upon encountering a pit:
 |check |event|You feel blustering wind.|
 |go | s | from | 1 | at | 0|
 |check |event|You have fallen into a pit and died.|
-|check| event|End game|
 
 
