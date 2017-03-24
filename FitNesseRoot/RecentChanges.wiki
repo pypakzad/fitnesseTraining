@@ -1,9 +1,16 @@
+<<<<<<< HEAD
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:43:50 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||11:43:48 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.WumpuS||11:39:44 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||11:38:42 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationTwo.DeathByHazard||11:38:01 Fri, Mar 24, 2017|
+|HuntTheWumpus||11:36:42 Fri, Mar 24, 2017|
+=======
 |HuntTheWumpus.IterationThree.PitHazards||11:56:24 Fri, Mar 24, 2017|
+>>>>>>> 7abda6134e8093038f1bfa1978be8e3a199eed72
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||11:31:32 Fri, Mar 24, 2017|
 <<<<<<< HEAD
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:18:35 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface||09:25:48 Fri, Mar 24, 2017|
-|HuntTheWumpus||09:23:34 Fri, Mar 24, 2017|
 =======
 
 |HuntTheWumpus.IterationTwo.BatsInCavern||11:03:52 Fri, Mar 24, 2017|
@@ -21,12 +28,10 @@
 
 |RecentChanges||14:52:39 Thu, Mar 23, 2017|
 =======
-|HuntTheWumpus||14:51:54 Thu, Mar 23, 2017|
 
 >>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
 |HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGameLoop||14:43:12 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||14:15:41 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||14:15:31 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree||14:15:11 Thu, Mar 23, 2017|
 
@@ -36,15 +41,11 @@
 
 
 
-|HuntTheWumpus.IterationOne.ShootArrows.WumpuS||14:40:22 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||14:37:42 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern||14:35:24 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.PitS||14:26:02 Thu, Mar 23, 2017|
 |HuntTheWumpus.SetUp||13:45:54 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationOne.ShootArrows.WumpuS||13:19:59 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern||13:19:11 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||13:15:49 Thu, Mar 23, 2017|
 
 |TrackArrows||12:53:37 Thu, Mar 23, 2017|
 |ShootArrows||12:53:16 Thu, Mar 23, 2017|
@@ -52,7 +53,6 @@
 
 |ShootArrows||11:46:27 Thu, Mar 23, 2017|
 
-|HuntTheWumpus.IterationTwo.DeathByHazard||11:38:18 Thu, Mar 23, 2017|
 
 
 |HuntTheWumpus.IterationOne.MoveInTheMap.MessagesInvalidMovement||10:34:49 Thu, Mar 23, 2017|
