@@ -1,0 +1,912 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationTwo.BatsInCavern</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>8</wrong>
+      <ignores>0</ignores>
+      <exceptions>15</exceptions>
+    </counts>
+    <date>2017-03-24T10:53:00-04:00</date>
+    <runTimeInMillis>136</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;GenerateMapContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Test: Bats In Cavern&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Generate Map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty1&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Pit&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Arrow&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty3&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Wumpus&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty4&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Testing user teleportation funtion when user meets bats.&lt;br/&gt;&lt;br/&gt;Test when bats take user to an empty cavern:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;bat&lt;/td&gt;
+		&lt;td colspan="4"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;[&lt;span class="diff"&gt;Us&lt;/span&gt;er &lt;span class="diff"&gt;w&lt;/span&gt;as &lt;span class="diff"&gt;c&lt;/span&gt;ar&lt;span class="diff"&gt;ri&lt;/span&gt;e&lt;span class="diff"&gt;d&lt;/span&gt; b&lt;span class="diff"&gt;y&lt;/span&gt; &lt;span class="diff"&gt;b&lt;/span&gt;at&lt;span class="diff"&gt;s&lt;/span&gt;.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;You hav&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt; encounte&lt;/span&gt;&lt;span class="fail"&gt;r&lt;/span&gt;&lt;span class="diff"&gt;ed&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;You &lt;/span&gt;&lt;span class="fail"&gt;are b&lt;/span&gt;&lt;span class="diff"&gt;eing&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;flown to &lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;no&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;her location&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;player in&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Test when bats take user to another Bat Cavern:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;bat&lt;/td&gt;
+		&lt;td colspan="4"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;bat&lt;/td&gt;
+		&lt;td colspan="4"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;[&lt;span class="diff"&gt;Us&lt;/span&gt;er &lt;span class="diff"&gt;w&lt;/span&gt;as &lt;span class="diff"&gt;c&lt;/span&gt;ar&lt;span class="diff"&gt;ri&lt;/span&gt;e&lt;span class="diff"&gt;d&lt;/span&gt; b&lt;span class="diff"&gt;y&lt;/span&gt; &lt;span class="diff"&gt;b&lt;/span&gt;at&lt;span class="diff"&gt;s&lt;/span&gt;.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;You hav&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt; encounte&lt;/span&gt;&lt;span class="fail"&gt;r&lt;/span&gt;&lt;span class="diff"&gt;ed&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;You &lt;/span&gt;&lt;span class="fail"&gt;are b&lt;/span&gt;&lt;span class="diff"&gt;eing&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;flown to &lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;no&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;her location&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;You have encountered bats! You are being flown to another location...&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;player in&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;true&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to a Pit:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set&lt;/td&gt;
+		&lt;td&gt;1&lt;/td&gt;
+		&lt;td&gt;bat&lt;/td&gt;
+		&lt;td colspan="3"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have &lt;span class="diff"&gt;fall&lt;/span&gt;en&lt;span class="diff"&gt; i&lt;/span&gt;nto a &lt;span class="diff"&gt;p&lt;/span&gt;it an&lt;span class="diff"&gt;d&lt;/span&gt; &lt;span class="diff"&gt;d&lt;/span&gt;i&lt;span class="diff"&gt;ed&lt;/span&gt;.] &lt;span class="fail"&gt;expected [You have en&lt;/span&gt;&lt;span class="diff"&gt;cou&lt;/span&gt;&lt;span class="fail"&gt;nt&lt;/span&gt;&lt;span class="diff"&gt;ered bats! Y&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;u&lt;/span&gt;&lt;span class="fail"&gt; a&lt;/span&gt;&lt;span class="diff"&gt;re&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;be&lt;/span&gt;&lt;span class="fail"&gt;i&lt;/span&gt;&lt;span class="diff"&gt;ng flown &lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;o&lt;/span&gt;&lt;span class="fail"&gt; an&lt;/span&gt;&lt;span class="diff"&gt;other&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;locat&lt;/span&gt;&lt;span class="fail"&gt;i&lt;/span&gt;&lt;span class="diff"&gt;on&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have en&lt;span class="diff"&gt;cou&lt;/span&gt;nt&lt;span class="diff"&gt;ered bats! Y&lt;/span&gt;o&lt;span class="diff"&gt;u&lt;/span&gt; a&lt;span class="diff"&gt;re&lt;/span&gt; &lt;span class="diff"&gt;be&lt;/span&gt;i&lt;span class="diff"&gt;ng flown &lt;/span&gt;t&lt;span class="diff"&gt;o&lt;/span&gt; an&lt;span class="diff"&gt;other&lt;/span&gt; &lt;span class="diff"&gt;locat&lt;/span&gt;i&lt;span class="diff"&gt;on&lt;/span&gt;.&lt;span class="diff"&gt;..&lt;/span&gt;] &lt;span class="fail"&gt;expected [You have &lt;/span&gt;&lt;span class="diff"&gt;fall&lt;/span&gt;&lt;span class="fail"&gt;en&lt;/span&gt;&lt;span class="diff"&gt; i&lt;/span&gt;&lt;span class="fail"&gt;nto a &lt;/span&gt;&lt;span class="diff"&gt;p&lt;/span&gt;&lt;span class="fail"&gt;it an&lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt;i&lt;/span&gt;&lt;span class="diff"&gt;ed&lt;/span&gt;&lt;span class="fail"&gt;.]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;put user in origin &lt;span class="error"&gt;Could not invoke constructor for PutUserInOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go N &lt;span class="error"&gt;The instance decisionTable_7.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message saying "You have encountered bats! You are being flown to another location..." &lt;span class="error"&gt;The instance decisionTable_7.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user is in Pit &lt;span class="error"&gt;The instance decisionTable_7.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message appears saying "You have fallen into a pit and died." &lt;span class="error"&gt;The instance decisionTable_7.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to Wumpus:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;set&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;bat&lt;/td&gt;
+		&lt;td colspan="3"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have &lt;span class="diff"&gt;b&lt;/span&gt;e&lt;span class="diff"&gt;e&lt;/span&gt;n&lt;span class="diff"&gt; &lt;/span&gt;tr&lt;span class="diff"&gt;ampl&lt;/span&gt;ed b&lt;span class="diff"&gt;y &lt;/span&gt;t&lt;span class="diff"&gt;he Wumpu&lt;/span&gt;s&lt;span class="diff"&gt;...&lt;/span&gt; &lt;span class="diff"&gt;Wh&lt;/span&gt;o&lt;span class="diff"&gt;mp,&lt;/span&gt; w&lt;span class="diff"&gt;h&lt;/span&gt;o&lt;span class="diff"&gt;mp&lt;/span&gt; &lt;span class="diff"&gt;:(&lt;/span&gt;] &lt;span class="fail"&gt;expected [You have en&lt;/span&gt;&lt;span class="diff"&gt;coun&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt;red b&lt;/span&gt;&lt;span class="diff"&gt;a&lt;/span&gt;&lt;span class="fail"&gt;ts&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;Y&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;u&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;are being flo&lt;/span&gt;&lt;span class="fail"&gt;w&lt;/span&gt;&lt;span class="diff"&gt;n t&lt;/span&gt;&lt;span class="fail"&gt;o &lt;/span&gt;&lt;span class="diff"&gt;another location...&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have en&lt;span class="diff"&gt;coun&lt;/span&gt;t&lt;span class="diff"&gt;e&lt;/span&gt;red b&lt;span class="diff"&gt;ats!&lt;/span&gt; &lt;span class="diff"&gt;You are being flown &lt;/span&gt;t&lt;span class="diff"&gt;o anot&lt;/span&gt;he&lt;span class="diff"&gt;r&lt;/span&gt; &lt;span class="diff"&gt;location&lt;/span&gt;...] &lt;span class="fail"&gt;expected [You have &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt; &lt;/span&gt;&lt;span class="fail"&gt;tr&lt;/span&gt;&lt;span class="diff"&gt;ampl&lt;/span&gt;&lt;span class="fail"&gt;ed b&lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt; the &lt;/span&gt;&lt;span class="diff"&gt;Wumpus&lt;/span&gt;&lt;span class="fail"&gt;...&lt;/span&gt;&lt;span class="diff"&gt; Whomp, whomp :(&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;put user in origin &lt;span class="error"&gt;Could not invoke constructor for PutUserInOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go N &lt;span class="error"&gt;The instance decisionTable_9.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message saying "You have encountered bats! You are being flown to another location..." &lt;span class="error"&gt;The instance decisionTable_9.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user is in Wumpus &lt;span class="error"&gt;The instance decisionTable_9.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message saying "You have been trampled by the Wumpus... Whomp, whomp :(" &lt;span class="error"&gt;The instance decisionTable_9.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to a cavern that has a dropped arrow:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;Us&lt;/span&gt;er &lt;span class="diff"&gt;w&lt;/span&gt;as &lt;span class="diff"&gt;c&lt;/span&gt;ar&lt;span class="diff"&gt;ri&lt;/span&gt;e&lt;span class="diff"&gt;d&lt;/span&gt; b&lt;span class="diff"&gt;y&lt;/span&gt; &lt;span class="diff"&gt;b&lt;/span&gt;at&lt;span class="diff"&gt;s&lt;/span&gt;.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;You hav&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt; encounte&lt;/span&gt;&lt;span class="fail"&gt;r&lt;/span&gt;&lt;span class="diff"&gt;ed&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;You &lt;/span&gt;&lt;span class="fail"&gt;are b&lt;/span&gt;&lt;span class="diff"&gt;eing&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;flown to &lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;no&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;her location&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;Y&lt;/span&gt;o&lt;span class="diff"&gt;u have e&lt;/span&gt;n&lt;span class="diff"&gt;counte&lt;/span&gt;r&lt;span class="diff"&gt;ed b&lt;/span&gt;ats&lt;span class="diff"&gt;!&lt;/span&gt; &lt;span class="diff"&gt;Y&lt;/span&gt;ou a&lt;span class="diff"&gt;r&lt;/span&gt;e &lt;span class="diff"&gt;bei&lt;/span&gt;n&lt;span class="diff"&gt;g&lt;/span&gt; &lt;span class="diff"&gt;fl&lt;/span&gt;o&lt;span class="diff"&gt;w&lt;/span&gt;n &lt;span class="diff"&gt;t&lt;/span&gt;o &lt;span class="diff"&gt;an&lt;/span&gt;o&lt;span class="diff"&gt;the&lt;/span&gt;r &lt;span class="diff"&gt;loc&lt;/span&gt;a&lt;span class="diff"&gt;ti&lt;/span&gt;o&lt;span class="diff"&gt;n&lt;/span&gt;.&lt;span class="diff"&gt;..&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;C&lt;/span&gt;&lt;span class="fail"&gt;on&lt;/span&gt;&lt;span class="diff"&gt;g&lt;/span&gt;&lt;span class="fail"&gt;rats&lt;/span&gt;&lt;span class="diff"&gt;,&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt;ou &lt;/span&gt;&lt;span class="diff"&gt;h&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;v&lt;/span&gt;&lt;span class="fail"&gt;e &lt;/span&gt;&lt;span class="diff"&gt;fou&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt; on&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt; o&lt;/span&gt;&lt;span class="diff"&gt;f&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;u&lt;/span&gt;&lt;span class="fail"&gt;r a&lt;/span&gt;&lt;span class="diff"&gt;rr&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;ws&lt;/span&gt;&lt;span class="fail"&gt;.]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;put user in origin &lt;span class="error"&gt;Could not invoke constructor for PutUserInOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;go N &lt;span class="error"&gt;The instance decisionTable_11.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message saying "You have encountered bats! You are being flown to another location..." &lt;span class="error"&gt;The instance decisionTable_11.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;user is in Arrow &lt;span class="error"&gt;The instance decisionTable_11.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;check message appears saying "Congrats, you have found one of your arrows." &lt;span class="error"&gt;The instance decisionTable_11.setGoW. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;</content>
+    <relativePageName>BatsInCavern</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='GenerateMapContext', args=[]}</instruction>
+        <slimResult>pass(GenerateMapContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GenerateMapContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='GenerateMap', args=[]}</instruction>
+        <slimResult>pass(Generate Map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Generate Map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty1, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Pit, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Arrow, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty3, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Wumpus, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty4, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_7</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_8', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_8</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[0, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_4_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_4_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=User was carried by bats.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_4_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>User was carried by bats.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_4', instruction='call', instanceName='scriptTableActor', methodName='playerInAt', args=[0, -1]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_4</instructionId>
+                    <col>6</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[1, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_5_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_2', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[0, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_5_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_3', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_5_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=User was carried by bats.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_5_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>User was carried by bats.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_5', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>pass(You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_5</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>You have encountered bats! You are being flown to another location...</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_6', instruction='call', instanceName='scriptTableActor', methodName='playerInAt', args=[0, -1]}</instruction>
+        <slimResult>pass(true)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_6</instructionId>
+                    <col>6</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>true</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[1, 1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_6_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_6_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have fallen into a pit and died.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_6_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have fallen into a pit and died.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=You have fallen into a pit and died.)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_6_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>You have fallen into a pit and died.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_0', instruction='make', instanceName='decisionTable_7', className='PutUserInOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_7_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserInOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_4', instruction='call', instanceName='decisionTable_7', methodName='setGoW', args=[go N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_7_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_7.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_7', instruction='call', instanceName='decisionTable_7', methodName='setGoW', args=[check message saying "You have encountered bats! You are being flown to another location..."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_7_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_7.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_10', instruction='call', instanceName='decisionTable_7', methodName='setGoW', args=[user is in Pit]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_7_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_7.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_7_13', instruction='call', instanceName='decisionTable_7', methodName='setGoW', args=[check message appears saying "You have fallen into a pit and died."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_7_13</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_7.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[-1, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_8_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_8_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have been trampled by the Wumpus... Whomp, whomp :(;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_8_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have been trampled by the Wumpus... Whomp, whomp :(</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=You have been trampled by the Wumpus... Whomp, whomp :()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_8_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>You have been trampled by the Wumpus... Whomp, whomp :(</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_9_0', instruction='make', instanceName='decisionTable_9', className='PutUserInOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_9_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserInOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_9_4', instruction='call', instanceName='decisionTable_9', methodName='setGoW', args=[go N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_9_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_9.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_9_7', instruction='call', instanceName='decisionTable_9', methodName='setGoW', args=[check message saying "You have encountered bats! You are being flown to another location..."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_9_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_9.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_9_10', instruction='call', instanceName='decisionTable_9', methodName='setGoW', args=[user is in Wumpus]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_9_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_9.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_9_13', instruction='call', instanceName='decisionTable_9', methodName='setGoW', args=[check message saying "You have been trampled by the Wumpus... Whomp, whomp :("]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_9_13</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_9.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_10_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_1', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_10_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_2', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=User was carried by bats.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_10_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>User was carried by bats.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_10_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=Congrats, you have found one of your arrows.)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_10_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>Congrats, you have found one of your arrows.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_0', instruction='make', instanceName='decisionTable_11', className='PutUserInOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_11_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserInOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_4', instruction='call', instanceName='decisionTable_11', methodName='setGoW', args=[go N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_11_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_11.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_7', instruction='call', instanceName='decisionTable_11', methodName='setGoW', args=[check message saying "You have encountered bats! You are being flown to another location..."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_11_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_11.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_10', instruction='call', instanceName='decisionTable_11', methodName='setGoW', args=[user is in Arrow]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_11_10</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_11.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_11_13', instruction='call', instanceName='decisionTable_11', methodName='setGoW', args=[check message appears saying "Congrats, you have found one of your arrows."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_11_13</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_11.setGoW. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\rapha\fitnesseTraining\fitnesse-standalone.jar;./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>364</totalRunTimeInMillis>
+</testResults>
+

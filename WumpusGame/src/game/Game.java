@@ -24,6 +24,7 @@ public class Game {
 	public static ArrayList<String> commands = new ArrayList<String>();
 	public static ArrayList<String> eventList = new ArrayList<String>();
 	public static boolean testMapAndPlayerLoaded = false;
+	private static ArrayList<Bat> bat = new ArrayList<Bat>();
 
 	public static void main(String[] args) throws Exception {
 		Scanner scanner = new Scanner(System.in);
@@ -69,7 +70,7 @@ public class Game {
 							break;
 						}
 						m = wumpusCavernMove(m);
-						m = senseDanger(m,player.getPlayerLocation());
+						m = senseDanger(m, player.getPlayerLocation());
 						if (m.onHazard == true) {
 							System.out.println(m.message);
 							playerDeadOrWon = true;
@@ -104,26 +105,23 @@ public class Game {
 		int wumpusY = wumpusLocation.getY();
 		int newWumpusX = wumpusX;
 		int newWumpusY = wumpusY;
-		while (findingNewLocation){
-		newWumpusX = wumpusX + ((int) Math.round(Math.random()*2)-1);
-		newWumpusY = wumpusY + ((int) Math.round(Math.random()*2)-1);
-		
-		if (caverns.get(map.new Cavern(newWumpusX, newWumpusY))!=null){
-			if (wumpusX != newWumpusX || wumpusY != newWumpusY)
-				break;
+		while (findingNewLocation) {
+			newWumpusX = wumpusX + ((int) Math.round(Math.random() * 2) - 1);
+			newWumpusY = wumpusY + ((int) Math.round(Math.random() * 2) - 1);
+
+			if (caverns.get(map.new Cavern(newWumpusX, newWumpusY)) != null) {
+				if (wumpusX != newWumpusX || wumpusY != newWumpusY)
+					break;
 			}
 		}
 		map.setWumpusLocation(newWumpusX, newWumpusY);
 		Cavern playerLocation = player.getPlayerLocation();
 		int playerX = playerLocation.getX();
 		int playerY = playerLocation.getY();
-		if(playerX == newWumpusX && playerY == newWumpusY)
-		{
+		if (playerX == newWumpusX && playerY == newWumpusY) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
 			}
-//		System.out.println("Wumpus :" + newWumpusX + ","+ newWumpusY);
-//		System.out.println("Player :" + playerX + ","+ playerY);
 		return m;
 	}
 
@@ -229,21 +227,66 @@ public class Game {
 		}
 		if (endingCavernType.equals("Bats")) {
 			m.message = "You have encountered bats! You are being flown to another location...";
-			Bat bat = new Bat(player, caverns);
-			player.setPlayerLocation(bat.getNewLocation());
+			Bat tempBat = getBat();
+			eventList.add(m.message);
+			return playerTeleport(tempBat.getNewLocation());
 		}
 		if (endingCavernType.equals("Wumpus")) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
 		}
 		if (endingCavernType.length() > 4 && endingCavernType.substring(0, 5).equals("Arrow")) {
-			eventList.add("We Got Here");
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
+			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			for (; arrowNumber > 0; arrowNumber--) {
+				pickupArrow(new Arrow());
+			}
+		}
+		eventList.add(m.message);
+		return m;
+	}
+
+	public static Movement playerTeleport(Cavern endingCavern) {
+		Movement m = new Movement();
+		m.onHazard = false;
+		String endingCavernType = caverns.get(endingCavern);
+		player.setPlayerLocation(endingCavern);
+		if (endingCavernType.equals("Pit")) {
+			m.message = "You have fallen into a pit and died.";
+			eventList.add(m.message);
+			m.onHazard = true;
+		}
+		if (endingCavernType.equals("Bats")) {
+			m.message = "You have encountered bats! You are being flown to another location...";
+			Bat tempBat = getBat();
+			eventList.add(m.message);
+			return playerTeleport(tempBat.getNewLocation());
+		}
+		if (endingCavernType.equals("Wumpus")) {
+			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
+			eventList.add(m.message);
+			m.onHazard = true;
+		}
+		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
+			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
+			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			eventList.add(m.message);
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
 			}
 		}
 		return m;
+	}
+
+	public static void setBat(Bat testBat) {
+		bat.add(testBat);
+	}
+
+	private static Bat getBat() {
+		if (bat.isEmpty()) {
+			return new Bat(player, caverns);
+		}
+		return bat.remove(0);
 	}
 
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {

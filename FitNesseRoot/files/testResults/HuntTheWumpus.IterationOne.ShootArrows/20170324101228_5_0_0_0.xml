@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationOne.ShootArrows</rootPath>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.BatS</name>
+    <date>2017-03-24T10:12:28-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.BatS?pageHistory&amp;resultDate=20170324101228</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>93</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd</name>
+    <date>2017-03-24T10:12:28-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.DeadEnd?pageHistory&amp;resultDate=20170324101228</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>35</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern</name>
+    <date>2017-03-24T10:12:28-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.EmptyCavern?pageHistory&amp;resultDate=20170324101228</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>32</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.PitS</name>
+    <date>2017-03-24T10:12:28-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.PitS?pageHistory&amp;resultDate=20170324101228</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>35</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>HuntTheWumpus.IterationOne.ShootArrows.WumpuS</name>
+    <date>2017-03-24T10:12:28-04:00</date>
+    <pageHistoryLink>HuntTheWumpus.IterationOne.ShootArrows.WumpuS?pageHistory&amp;resultDate=20170324101228</pageHistoryLink>
+    <counts>
+      <right>2</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>27</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\rapha\fitnesseTraining\fitnesse-standalone.jar;./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>User killed bats. Pick-up arrow to reclaim it.
+Empty cavern, arrow continues South.
+Empty cavern, arrow continues South.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+Arrow rebounded. User dies
+Empty cavern, arrow continues East.
+Empty cavern, arrow continues East.
+Dead end, arrow falls. Pick up arrow to reclaim it.
+User lost arrow in pit.
+Empty cavern, arrow continues East.
+User lost arrow in pit.
+User killed the Wumpus.
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>5</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>527</totalRunTimeInMillis>
+</suiteResults>
+
