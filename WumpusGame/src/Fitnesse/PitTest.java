@@ -1,3 +1,4 @@
+
 package Fitnesse;
 
 import java.util.ArrayList;
@@ -9,12 +10,12 @@ import game.map.Map;
 import game.map.Map.Cavern;
 import game.player.Player;
 
-public class BatTest {
+public class PitTest {
 	private Player player = new Player();
 	private Map map = new Map(0, 0, 0, 0);
 	private Bat bat;
 
-	public BatTest() {
+	public PitTest() {
 		map.setMap(GenerateMapContext.caverns);
 		Game.setMap(map);
 		Game.populateCaverns();

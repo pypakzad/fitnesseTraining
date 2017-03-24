@@ -3,8 +3,6 @@ package game.map;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import game.map.Map.Cavern;
-
 public class Map {
 
 	private HashMap<Cavern, String> caverns = new HashMap<Cavern, String>();
@@ -30,7 +28,8 @@ public class Map {
 	public HashMap<Cavern, String> getUnvisitedCaverns() {
 		return unvisitedCaverns;
 	}
-	public String near(int x, int y){
+
+	public String near(int x, int y) {
 		return null;
 	}
 
@@ -144,16 +143,18 @@ public class Map {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	public void setWumpusLocation(int x, int y) throws Exception{
-		String wumpusCheck = caverns.get(new Cavern(x,y));
-		if (wumpusCheck == null){
-			throw new Exception ("Wumpus Can't Move Here");
+
+	public void setWumpusLocation(int x, int y) throws Exception {
+		String wumpusCheck = caverns.get(new Cavern(x, y));
+		if (wumpusCheck == null) {
+			throw new Exception("Wumpus Can't Move Here");
 		}
 		caverns.replace(wumpusCavern, getReplacedWumpusCavern());
-		wumpusCavern = new Cavern(x,y);
+		wumpusCavern = new Cavern(x, y);
 		setReplacedWumpusCavern(caverns.get(wumpusCavern));
 		caverns.replace(wumpusCavern, "Wumpus");
 	}
+
 	public Cavern getWumpusLocation() {
 		return wumpusCavern;
 	}
