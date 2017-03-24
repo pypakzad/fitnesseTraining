@@ -1,12 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.BatsInCavern||12:55:13 Fri, Mar 24, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:54:36 Fri, Mar 24, 2017|
 |RecentChanges||11:14:59 Fri, Mar 24, 2017|
 =======
 =======
+=======
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:54:53 Fri, Mar 24, 2017|
+>>>>>>> 43498876457d65f0ce83f1fec74c7f1ddce1c29e
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||12:43:47 Fri, Mar 24, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:33:03 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||12:23:21 Fri, Mar 24, 2017|
 >>>>>>> 49b71d571867593d455eab7973fd4332aeeb1d62
 <<<<<<< HEAD

@@ -363,7 +363,7 @@ public class Game {
 		} catch (Exception e) {
 			System.out.println(e.getLocalizedMessage());
 			m.endingChamber = startingChamber + 1;
-			m.message = "User cannot move " + m;
+			m.message = "User cannot move " + m.message;
 			return m;
 		}
 	}
