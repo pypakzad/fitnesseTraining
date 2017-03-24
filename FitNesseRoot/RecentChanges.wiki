@@ -1,5 +1,5 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:54:53 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||12:43:47 Fri, Mar 24, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:33:03 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||12:23:21 Fri, Mar 24, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:43:50 Fri, Mar 24, 2017|
