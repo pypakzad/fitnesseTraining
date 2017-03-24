@@ -1,9 +1,9 @@
+|HuntTheWumpus.IterationThree.PitHazards||09:36:20 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationThree.MoveTheWumpus||15:44:50 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour||15:40:38 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.MoveTheWumpus||15:29:47 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOfTheWumpus||15:28:11 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOftheWumpus||15:26:18 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.PitHazards||15:21:10 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||15:12:20 Thu, Mar 23, 2017|
 |HuntTheWumpus||14:51:54 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows||14:44:48 Thu, Mar 23, 2017|
@@ -98,9 +98,3 @@
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
-|MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
-|ChangingArrows||14:17:07 Tue, Mar 21, 2017|
-|GameDriver||12:38:54 Tue, Mar 21, 2017|
-|FrontPage||12:36:24 Tue, Mar 21, 2017|
-
-|ExampleTest||10:47:38 Tue, Mar 21, 2017|
