@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2017-03-24T11:00:34-04:00</date>
+    <runTimeInMillis>184</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;GenerateMapContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Sensing All Hazards at Once&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;generate map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Wumpus&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Pit&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Testing all different senses at once:&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;All The Danger&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td colspan="3"&gt;Put User At Origin&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;Sense Danger&lt;/td&gt;
+		&lt;td&gt;[You &lt;span class="diff"&gt;f&lt;/span&gt;e&lt;span class="diff"&gt;e&lt;/span&gt;l&lt;span class="diff"&gt; b&lt;/span&gt;l&lt;span class="diff"&gt;u&lt;/span&gt;s&lt;span class="diff"&gt;t&lt;/span&gt;e&lt;span class="diff"&gt;r&lt;/span&gt;ing &lt;span class="diff"&gt;win&lt;/span&gt;d.
+You hear screeching noises.
+You &lt;span class="diff"&gt;sm&lt;/span&gt;el&lt;span class="diff"&gt;l&lt;/span&gt; s&lt;span class="diff"&gt;ome&lt;/span&gt;t&lt;span class="diff"&gt;h&lt;/span&gt;ing &lt;span class="diff"&gt;really ba&lt;/span&gt;d.] &lt;span class="fail"&gt;expected [You &lt;/span&gt;&lt;span class="diff"&gt;sm&lt;/span&gt;&lt;span class="fail"&gt;ell&lt;/span&gt;&lt;span class="diff"&gt; &lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;om&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;th&lt;/span&gt;&lt;span class="fail"&gt;ing &lt;/span&gt;&lt;span class="diff"&gt;really ba&lt;/span&gt;&lt;span class="fail"&gt;d.
+You hear screeching noises.
+You &lt;/span&gt;&lt;span class="diff"&gt;f&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt;l &lt;/span&gt;&lt;span class="diff"&gt;blu&lt;/span&gt;&lt;span class="fail"&gt;st&lt;/span&gt;&lt;span class="diff"&gt;er&lt;/span&gt;&lt;span class="fail"&gt;ing &lt;/span&gt;&lt;span class="diff"&gt;win&lt;/span&gt;&lt;span class="fail"&gt;d.&lt;/span&gt;&lt;span class="diff"&gt; &lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SensingAllHazardsAtOnce</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='GenerateMapContext', args=[]}</instruction>
+        <slimResult>pass(GenerateMapContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GenerateMapContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='GenerateMap', args=[]}</instruction>
+        <slimResult>pass(generate map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>generate map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Wumpus, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Pit, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_7</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_8', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_8</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='AllTheDanger', args=[]}</instruction>
+        <slimResult>pass(All The Danger)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>All The Danger</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='PutUserAtOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_4_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='SenseDanger', args=[]}</instruction>
+        <slimResult>fail(a=You feel blustering wind.
+You hear screeching noises.
+You smell something really bad.;e=You smell something really bad.
+You hear screeching noises.
+You feel blustering wind. )</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_4_2</instructionId>
+                    <col>2</col>
+                              <row>2</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You feel blustering wind.
+You hear screeching noises.
+You smell something really bad.</actual>
+                              <expected>You smell something really bad.
+You hear screeching noises.
+You feel blustering wind. </expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/Parker/Git/fitnesse/fitnesse-standalone.jar:./WumpusGame/bin fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut>neighbor type:Bats
+neighbor type:Wumpus
+neighbor type:Pit
+neighbor type:Bats
+</stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>568</totalRunTimeInMillis>
+</testResults>
+
