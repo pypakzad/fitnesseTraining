@@ -20,7 +20,7 @@ public class GameTest {
 	private Player player;
 
 	@Before
-	public void init() throws FileNotFoundException {
+	public void init() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
@@ -64,11 +64,11 @@ public class GameTest {
 		player.setPlayerLocation(arrowLocation);
 		Arrow arrow = new Arrow();
 		arrow.setLocation(arrowLocation);
-		int arrowShotCount = 4;
-		int arrowPickedUpcount = 5;
+		int arrowShotCount = 2;
+		int arrowPickedUpcount = 3;
 		Game.shootArrow(Commands.up);
 		int afterShot = player.getNumberOfAvailableArrows();
-		assertTrue(afterShot == arrowShotCount);
+		assertEquals(afterShot,arrowShotCount);
 		Game.pickupArrow(arrow);
 		int afterPickup = player.getNumberOfAvailableArrows();
 		assertTrue(afterPickup == arrowPickedUpcount);

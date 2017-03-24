@@ -2,4 +2,25 @@
 Test
 ---
 Pit Hazards
+!define TEST_SYSTEM {slim}
+!path ./WumpusGame/bin
+Input Map:
+|script|Generate Map|
+|make|Empty|map|E|
+|make|Empty|map|E|
+|make|Empty|map|S|
+|make|Empty|map|S|
+|make|Empty|map|W|
+|make|Empty|map|W|
+|make|Empty|map|N|
+|make|Pit|map|E|
+
+Testing that user firstly hears wind and then dies upon encountering a pit:
+|script| Pit Test|
+|go | d | from |0|at|0|
+|check |event|You feel blustering wind.|
+|go | s | from | 1 | at | 0|
+|check |event|You have fallen into a pit and died.|
+|check| event|End game|
+
 

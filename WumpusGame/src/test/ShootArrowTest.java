@@ -14,7 +14,7 @@ import game.player.Player;
 public class ShootArrowTest {
 
 	@Test
-	public void shootingArrowIntoWall() throws FileNotFoundException {
+	public void shootingArrowIntoWall() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest3.txt"));
 		Game.setMap(new Map(1, 0, 0, 0));

@@ -22,7 +22,7 @@ public class PickupArrow {
 
 	private HashMap<Cavern, String> caverns;
 
-	public PickupArrow() throws FileNotFoundException {
+	public PickupArrow() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest.txt"));
 		Game.main(args);
