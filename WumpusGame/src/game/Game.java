@@ -300,7 +300,6 @@ public class Game {
 		m.hazardSense = null;
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
-
 			if (neighborType != null && neighborType != "Empty") {
 				if (neighborType.equals("Pit"))
 					hazard[0] = "You feel blustering wind.";
@@ -316,8 +315,10 @@ public class Game {
 			if (hazard[i] != null) {
 				if (m.hazardSense == null) {
 					m.hazardSense = hazard[i];
+					eventList.add(hazard[i]);
 				} else {
 					m.hazardSense = m.hazardSense + "\n" + hazard[i];
+					eventList.add(hazard[i]);
 				}
 			}
 		}

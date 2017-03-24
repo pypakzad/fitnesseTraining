@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:43:50 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||11:43:48 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||11:39:44 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||11:38:42 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:01 Fri, Mar 24, 2017|
 |HuntTheWumpus||11:36:42 Fri, Mar 24, 2017|
+=======
+|HuntTheWumpus.IterationThree.PitHazards||11:56:24 Fri, Mar 24, 2017|
+>>>>>>> 7abda6134e8093038f1bfa1978be8e3a199eed72
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||11:31:32 Fri, Mar 24, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface||09:25:48 Fri, Mar 24, 2017|
@@ -94,4 +98,3 @@
 |ValidMovement||16:01:31 Tue, Mar 21, 2017|
 
 
-|DeadEnd||16:02:34 Tue, Mar 21, 2017|
