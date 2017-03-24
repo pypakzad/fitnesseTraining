@@ -8,6 +8,7 @@ import game.map.Map;
 import game.player.Player;
 
 public class PitTest {
+
 	private Player player = new Player();
 	private Map map = new Map(0, 0, 0, 0);
 
