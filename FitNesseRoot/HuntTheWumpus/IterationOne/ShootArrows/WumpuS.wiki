@@ -4,14 +4,12 @@ Test
 !define TEST_SYSTEM {slim}
 !path ./WumpusGame/bin
 !include .HuntTheWumpus.IterationOne.ShootArrows
-
-
-|Import|
-|Fitnesse|
+| Import |
+| Fitnesse |
 
 Wumpus
 
-|script|Shoot Arrow|
-|shoot|dwn|from|0|at|-1|
-|check|arrowCount|4|
-|check|event|User killed the Wumpus.|
+| script | Shoot Arrow |
+| shoot | dwn | from | 0 | at | -1 |
+| check | arrowCount | 4 |
+| check | event | You killed the Wumpus. YOU WON!!!! |
