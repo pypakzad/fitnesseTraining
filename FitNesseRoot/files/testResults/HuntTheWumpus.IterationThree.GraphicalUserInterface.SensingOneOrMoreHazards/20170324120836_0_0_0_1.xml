@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>16</exceptions>
+    </counts>
+    <date>2017-03-24T12:08:36-04:00</date>
+    <runTimeInMillis>28</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;GenerateMapContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Sensing One or More Hazards&lt;br/&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Generate Map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Wumpus&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Pit&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Empty&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor2"&gt;
+		&lt;td&gt;Make &lt;span class="error"&gt;Method MakeMap[2] not found in Fitnesse.GenerateMap.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;Map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Testing that user can sense more than one hazard at a time:&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Put user at origin &lt;span class="error"&gt;Could not invoke constructor for PutUserAtOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;move west&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Check that message appears saying "You hear screeching noises." &lt;span class="error"&gt;The instance decisionTable_4.setMoveWest. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Check that message appears saying "You feel blustering wind." &lt;span class="error"&gt;The instance decisionTable_4.setMoveWest. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Put user at origin &lt;span class="error"&gt;Could not invoke constructor for PutUserAtOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;move north&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Check that message appears saying "You hear screeching noises." &lt;span class="error"&gt;The instance decisionTable_5.setMoveNorth. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Put user at origin &lt;span class="error"&gt;Could not invoke constructor for PutUserAtOrigin[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;move south&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Check that message appears saying "You feel blustering winds." &lt;span class="error"&gt;The instance decisionTable_6.setMoveSouth. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Check that message appears saying"You smell something really bad." &lt;span class="error"&gt;The instance decisionTable_6.setMoveSouth. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SensingOneOrMoreHazards</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='GenerateMapContext', args=[]}</instruction>
+        <slimResult>pass(GenerateMapContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GenerateMapContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='GenerateMap', args=[]}</instruction>
+        <slimResult>pass(Generate Map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Generate Map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Empty, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Bats, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Empty, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_3</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Wumpus, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_4</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Empty, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Pit, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_6</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Empty, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_8', instruction='call', instanceName='scriptTableActor', methodName='MakeMap', args=[Bats, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_3_8</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method MakeMap[2] not found in Fitnesse.GenerateMap.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_0', instruction='make', instanceName='decisionTable_4', className='PutUserAtOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserAtOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_4', instruction='call', instanceName='decisionTable_4', methodName='setMoveWest', args=[Check that message appears saying "You hear screeching noises."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_4.setMoveWest. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_4_7', instruction='call', instanceName='decisionTable_4', methodName='setMoveWest', args=[Check that message appears saying "You feel blustering wind."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_4_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_4.setMoveWest. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_0', instruction='make', instanceName='decisionTable_5', className='PutUserAtOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_5_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserAtOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_5_4', instruction='call', instanceName='decisionTable_5', methodName='setMoveNorth', args=[Check that message appears saying "You hear screeching noises."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_5_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_5.setMoveNorth. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_6_0', instruction='make', instanceName='decisionTable_6', className='PutUserAtOrigin', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_6_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for PutUserAtOrigin[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_6_4', instruction='call', instanceName='decisionTable_6', methodName='setMoveSouth', args=[Check that message appears saying "You feel blustering winds."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_6_4</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_6.setMoveSouth. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_6_7', instruction='call', instanceName='decisionTable_6', methodName='setMoveSouth', args=[Check that message appears saying"You smell something really bad."]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_6_7</instructionId>
+                              <type>VoidReturnExpectation</type>
+                                        <evaluationMessage>The instance decisionTable_6.setMoveSouth. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>28</totalRunTimeInMillis>
+</testResults>
+
