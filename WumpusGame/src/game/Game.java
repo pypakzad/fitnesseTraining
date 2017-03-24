@@ -52,6 +52,10 @@ public class Game {
 				commandStrings.add(command.getUserInput());
 			}
 			System.out.println(sendRules());
+			Movement enterCavern = new Movement();
+			enterCavern = senseDanger(enterCavern,player.getPlayerLocation());
+			if (enterCavern.hazardSense != null) 
+				System.out.println(enterCavern.hazardSense);
 			while (!playerDeadOrWon) {
 				String userInput = scanner.nextLine();
 				while (commandStrings.contains(userInput)) {
@@ -117,9 +121,7 @@ public class Game {
 		if (playerX == newWumpusX && playerY == newWumpusY) {
 			m.message = "You have been trampled by the Wumpus... Whomp, whomp :(";
 			m.onHazard = true;
-		}
-		System.out.println("Wumpus :" + newWumpusX + "," + newWumpusY);
-		System.out.println("Player :" + playerX + "," + playerY);
+			}
 		return m;
 	}
 
@@ -292,6 +294,7 @@ public class Game {
 		String[] hazard = new String[3];
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
+			
 			if (neighborType != "Empty") {
 				if (neighborType == "Pit")
 					hazard[0] = "You feel blustering wind.";
