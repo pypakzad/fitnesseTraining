@@ -1,5 +1,5 @@
+|HuntTheWumpus.IterationThree.PitHazards||11:20:21 Fri, Mar 24, 2017|
 <<<<<<< HEAD
-|HuntTheWumpus.IterationThree.PitHazards||09:36:20 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus||15:44:50 Thu, Mar 23, 2017|
 =======
 |HuntTheWumpus.IterationTwo.BatsInCavern||11:03:52 Fri, Mar 24, 2017|
@@ -98,7 +98,3 @@
 |FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
 |FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
 |InvalidMovement||15:11:13 Tue, Mar 21, 2017|
-<<<<<<< HEAD
-=======
-|MoveInTheMap||14:56:35 Tue, Mar 21, 2017|
->>>>>>> bf0a531df2aaaa65375224f8468e25ee83e10d4a
