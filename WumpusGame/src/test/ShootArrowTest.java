@@ -14,7 +14,7 @@ import game.player.Player;
 public class ShootArrowTest {
 
 	@Test
-	public void shootingArrowIntoWall() throws FileNotFoundException {
+	public void shootingArrowIntoWall() throws Exception {
 		String[] args = null;
 		System.setIn(new FileInputStream("GameTest3.txt"));
 		Game.setMap(new Map(1, 0, 0, 0));
@@ -25,7 +25,7 @@ public class ShootArrowTest {
 		Game.setPlayer(player2);
 		Game.testMapAndPlayerLoaded = true;
 		Game.main(args);
-		assertTrue(Game.getEventList().get(0).equals("Arrow rebounded. User dies"));
+		assertTrue(Game.getEventList().get(0).equals("Arrow rebounded. User dies."));
 	}
 
 }

@@ -16,6 +16,7 @@ Input Map:
 |make|Empty|map|W|
 
 Testing all different senses at once:
+|script| test all senses|
 |put user at origin|
 |check message appears saying "You smell something really bad."|
 |check message appears saying "You hear screeching noises."|

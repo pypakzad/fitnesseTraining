@@ -36,7 +36,11 @@ public class GenerateMap {
 			break;
 		}
 		currentCavern = newCavern;
-		GenerateMapContext.caverns.put(currentCavern, currentState);
+		if (currentState.equals("Arrow")) {
+			GenerateMapContext.caverns.put(currentCavern, "Arrow|1|");
+		} else {
+			GenerateMapContext.caverns.put(currentCavern, currentState);
+		}
 	}
 
 }
