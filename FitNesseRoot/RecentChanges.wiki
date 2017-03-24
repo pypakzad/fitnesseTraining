@@ -1,3 +1,4 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||12:43:47 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:33:03 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||12:23:21 Fri, Mar 24, 2017|
 <<<<<<< HEAD
@@ -32,7 +33,6 @@
 >>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
 |HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGameLoop||14:43:12 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||14:15:31 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree||14:15:11 Thu, Mar 23, 2017|
 
 

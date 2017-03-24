@@ -2,29 +2,34 @@
 Test
 ---
 Sensing One or More Hazards
-
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
 Input Map:
-|Script|Generate Map|
-|Make|Empty|Map|N|
-|Make|Bats|Map|E|
-|Make|Empty|Map|S|
-|Make|Wumpus|Map|S|
-|Make|Empty|Map|W|
-|Make|Pit|Map|W|
-|Make|Empty|Map|N|
-|Make|Bats|Map|N|
+
+| Script | Generate Map |
+| make | Empty | Map | N |
+| make | Bats | Map | E |
+| make | Empty | Map | S |
+| make | Wumpus | Map | S |
+| make | Empty | Map | W |
+| make | Pit | Map | W |
+| make | Empty | Map | N |
+| make | Bats | Map | N |
 
 Testing that user can sense more than one hazard at a time:
-|Put user at origin|
-|move west|
-|Check that message appears saying "You hear screeching noises."|
-|Check that message appears saying "You feel blustering wind."|
 
-|Put user at origin|
-|move north|
-|Check that message appears saying "You hear screeching noises."|
+| script | Multiple Hazards |
+| Put User At Origin |
+| check | Move West | You feel blustering wind.!-
+-!You hear screeching noises. |
 
-|Put user at origin|
-|move south|
-|Check that message appears saying "You feel blustering winds."|
-|Check that message appears saying"You smell something really bad."|
+|script | Multiple Hazards |
+| Put User At Origin |
+|check | Move North | You hear screeching noises.|
+
+| script | Multiple Hazards |
+| Put User At Origin |
+| check | Move South | You feel blustering wind.!-
+-!You smell something really bad. |
+
+
