@@ -215,7 +215,7 @@ public class Game {
 			break;
 		}
 		Cavern endingCavern = map.new Cavern(playerX, playerY);
-		System.out.println("ending cavern:" + endingCavern == null);
+
 		String endingCavernType = caverns.get(endingCavern);
 		if (endingCavernType == null) {
 			player.setPlayerLocation(startingCavern);

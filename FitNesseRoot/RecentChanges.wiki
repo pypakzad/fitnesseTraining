@@ -1,13 +1,12 @@
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||11:31:32 Fri, Mar 24, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:18:35 Fri, Mar 24, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||11:03:12 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface||09:25:48 Fri, Mar 24, 2017|
 |HuntTheWumpus||09:23:34 Fri, Mar 24, 2017|
 =======
 
 |HuntTheWumpus.IterationTwo.BatsInCavern||11:03:52 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows||10:12:26 Fri, Mar 24, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingAllHazardsAtOnce||08:59:34 Fri, Mar 24, 2017|
 >>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||15:58:19 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour||15:40:38 Thu, Mar 23, 2017|
@@ -99,11 +98,3 @@
 
 
 |DeadEnd||16:02:34 Tue, Mar 21, 2017|
-
-|FitNesse.UserGuide.WritingAcceptanceTests.SliM.ScriptTable||15:21:49 Tue, Mar 21, 2017|
-|FitNesse.UserGuide.TwoMinuteExample||15:07:15 Tue, Mar 21, 2017|
-|InvalidMovement||15:11:13 Tue, Mar 21, 2017|
-<<<<<<< HEAD
-=======
-
->>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
