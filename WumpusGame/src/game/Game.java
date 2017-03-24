@@ -238,6 +238,7 @@ public class Game {
 		if (endingCavernType.length() > 4 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
 			}
@@ -270,6 +271,7 @@ public class Game {
 		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
 			m.message = "Congrats, you have found " + arrowNumber + " of your arrows.";
+			caverns.replace(endingCavern, "Empty");
 			eventList.add(m.message);
 			for (; arrowNumber > 0; arrowNumber--) {
 				pickupArrow(new Arrow());
@@ -292,6 +294,7 @@ public class Game {
 	public static Movement senseDanger(Movement m, Cavern endingCavern) {
 		ArrayList<Cavern> cavernNeighbors = map.getNeighbors(endingCavern);
 		String[] hazard = new String[3];
+		m.hazardSense = null;
 		for (Cavern neighbor : cavernNeighbors) {
 			String neighborType = caverns.get(neighbor);
 			

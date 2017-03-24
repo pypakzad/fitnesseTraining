@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>HuntTheWumpus.IterationTwo.BatsInCavern</rootPath>
+    <result>
+    <counts>
+      <right>3</right>
+      <wrong>8</wrong>
+      <ignores>0</ignores>
+      <exceptions>6</exceptions>
+    </counts>
+    <date>2017-03-24T11:17:12-04:00</date>
+    <runTimeInMillis>43</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="HuntTheWumpus.SetUp"&gt;.HuntTheWumpus.SetUp&lt;/a&gt; &lt;a href="HuntTheWumpus.SetUp?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;Fitnesse&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;HuntTheWumpusContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;GenerateMapContext&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;Test: Bats In Cavern&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;span class="meta"&gt;classpath: ./WumpusGame/bin&lt;/span&gt;&lt;br/&gt;Input Map:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;Generate Map&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty1&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Pit&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;E&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Arrow&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;S&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty3&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Wumpus&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;W&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Empty4&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;make&lt;/td&gt;
+		&lt;td&gt;Bats&lt;/td&gt;
+		&lt;td&gt;map&lt;/td&gt;
+		&lt;td&gt;N&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Testing user teleportation funtion when user meets bats.&lt;br/&gt;&lt;br/&gt;Test when bats take user to an empty cavern:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;0&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="4" class="error"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="7"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;You have encountered bats! You are being flown to another location...&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;player in&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;fals&lt;/span&gt;e] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;tru&lt;/span&gt;&lt;span class="fail"&gt;e]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;Test when bats take user to another Bat Cavern:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="6"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;1&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="4" class="error"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="7"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;0&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="4" class="error"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="7"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td colspan="2"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;You have encountered bats! You are being flown to another location...&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;You have encountered bats! You are being flown to another location...&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;player in&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;&lt;/td&gt;
+		&lt;td&gt;[&lt;span class="diff"&gt;fals&lt;/span&gt;e] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;tru&lt;/span&gt;&lt;span class="fail"&gt;e]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to a Pit:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;1&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="6"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have en&lt;span class="diff"&gt;cou&lt;/span&gt;nt&lt;span class="diff"&gt;ered bats! Y&lt;/span&gt;o&lt;span class="diff"&gt;u&lt;/span&gt; a&lt;span class="diff"&gt;re&lt;/span&gt; &lt;span class="diff"&gt;be&lt;/span&gt;i&lt;span class="diff"&gt;ng flown &lt;/span&gt;t&lt;span class="diff"&gt;o&lt;/span&gt; an&lt;span class="diff"&gt;other&lt;/span&gt; &lt;span class="diff"&gt;locat&lt;/span&gt;i&lt;span class="diff"&gt;on&lt;/span&gt;.&lt;span class="diff"&gt;..&lt;/span&gt;] &lt;span class="fail"&gt;expected [You have &lt;/span&gt;&lt;span class="diff"&gt;fall&lt;/span&gt;&lt;span class="fail"&gt;en&lt;/span&gt;&lt;span class="diff"&gt; i&lt;/span&gt;&lt;span class="fail"&gt;nto a &lt;/span&gt;&lt;span class="diff"&gt;p&lt;/span&gt;&lt;span class="fail"&gt;it an&lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt;i&lt;/span&gt;&lt;span class="diff"&gt;ed&lt;/span&gt;&lt;span class="fail"&gt;.]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;C&lt;/span&gt;on&lt;span class="diff"&gt;g&lt;/span&gt;rats&lt;span class="diff"&gt;,&lt;/span&gt; &lt;span class="diff"&gt;y&lt;/span&gt;ou &lt;span class="diff"&gt;h&lt;/span&gt;a&lt;span class="diff"&gt;v&lt;/span&gt;e fo&lt;span class="diff"&gt;u&lt;/span&gt;n&lt;span class="diff"&gt;d&lt;/span&gt; &lt;span class="diff"&gt;1 &lt;/span&gt;o&lt;span class="diff"&gt;f&lt;/span&gt; &lt;span class="diff"&gt;y&lt;/span&gt;o&lt;span class="diff"&gt;u&lt;/span&gt;r a&lt;span class="diff"&gt;rr&lt;/span&gt;o&lt;span class="diff"&gt;ws&lt;/span&gt;.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;Y&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;u have e&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;counte&lt;/span&gt;&lt;span class="fail"&gt;r&lt;/span&gt;&lt;span class="diff"&gt;ed b&lt;/span&gt;&lt;span class="fail"&gt;ats&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;Y&lt;/span&gt;&lt;span class="fail"&gt;ou a&lt;/span&gt;&lt;span class="diff"&gt;r&lt;/span&gt;&lt;span class="fail"&gt;e &lt;/span&gt;&lt;span class="diff"&gt;being &lt;/span&gt;&lt;span class="fail"&gt;f&lt;/span&gt;&lt;span class="diff"&gt;l&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;w&lt;/span&gt;&lt;span class="fail"&gt;n &lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;o &lt;/span&gt;&lt;span class="diff"&gt;an&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;the&lt;/span&gt;&lt;span class="fail"&gt;r &lt;/span&gt;&lt;span class="diff"&gt;loc&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;ti&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;n&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to Wumpus:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;-1&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;-1&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="6"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[You have en&lt;span class="diff"&gt;coun&lt;/span&gt;t&lt;span class="diff"&gt;e&lt;/span&gt;red b&lt;span class="diff"&gt;ats!&lt;/span&gt; &lt;span class="diff"&gt;You are being flown &lt;/span&gt;t&lt;span class="diff"&gt;o anot&lt;/span&gt;he&lt;span class="diff"&gt;r&lt;/span&gt; &lt;span class="diff"&gt;location&lt;/span&gt;...] &lt;span class="fail"&gt;expected [You have &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;e&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt; &lt;/span&gt;&lt;span class="fail"&gt;tr&lt;/span&gt;&lt;span class="diff"&gt;ampl&lt;/span&gt;&lt;span class="fail"&gt;ed b&lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt; the &lt;/span&gt;&lt;span class="diff"&gt;Wumpus&lt;/span&gt;&lt;span class="fail"&gt;...&lt;/span&gt;&lt;span class="diff"&gt; Whomp, whomp :(&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;De&lt;/span&gt;a&lt;span class="diff"&gt;d&lt;/span&gt; end&lt;span class="diff"&gt;,&lt;/span&gt; a&lt;span class="diff"&gt;rrow fall&lt;/span&gt;s&lt;span class="diff"&gt;.&lt;/span&gt; &lt;span class="diff"&gt;Pick &lt;/span&gt;u&lt;span class="diff"&gt;p&lt;/span&gt; ar&lt;span class="diff"&gt;r&lt;/span&gt;ow to &lt;span class="diff"&gt;r&lt;/span&gt;e&lt;span class="diff"&gt;c&lt;/span&gt;la&lt;span class="diff"&gt;im i&lt;/span&gt;t.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;You h&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;ve&lt;/span&gt;&lt;span class="fail"&gt; en&lt;/span&gt;&lt;span class="diff"&gt;countere&lt;/span&gt;&lt;span class="fail"&gt;d &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;s&lt;/span&gt;&lt;span class="diff"&gt;!&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;Yo&lt;/span&gt;&lt;span class="fail"&gt;u ar&lt;/span&gt;&lt;span class="diff"&gt;e being fl&lt;/span&gt;&lt;span class="fail"&gt;ow&lt;/span&gt;&lt;span class="diff"&gt;n&lt;/span&gt;&lt;span class="fail"&gt; to &lt;/span&gt;&lt;span class="diff"&gt;anoth&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;r &lt;/span&gt;&lt;span class="fail"&gt;l&lt;/span&gt;&lt;span class="diff"&gt;oc&lt;/span&gt;&lt;span class="fail"&gt;at&lt;/span&gt;&lt;span class="diff"&gt;ion&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;Test when bats take user to a cavern that has a dropped arrow:&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="5"&gt;&lt;span class="pass"&gt;Bat Test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;set&lt;/td&gt;
+		&lt;td class="error"&gt;1&lt;/td&gt;
+		&lt;td class="error"&gt;bat&lt;/td&gt;
+		&lt;td colspan="3" class="error"&gt;0&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="6"&gt;&lt;pre&gt;__EXCEPTION__:java.lang.Error: Unresolved compilation problem: 
+	The constructor Bat(Map.Cavern) is undefined
+
+	at Fitnesse.BatTest.setBat(BatTest.java:26) [file:/Users/Paimon/Downloads/FitNesseRoot/WumpusGame/bin/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_101]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_101]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_101]
+	at java.lang.reflect.Method.invoke(Method.java:498) [rt.jar:1.8.0_101]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:147) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:132) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:114) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:92) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:130) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:103) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.handle(SlimService.java:168) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:176) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.accept(SlimService.java:138) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:91) [fitnesse-standalone.jar:20161106]
+	at fitnesse.slim.SlimService.main(SlimService.java:56) [fitnesse-standalone.jar:20161106]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;go&lt;/td&gt;
+		&lt;td&gt;w&lt;/td&gt;
+		&lt;td&gt;from&lt;/td&gt;
+		&lt;td&gt;-1&lt;/td&gt;
+		&lt;td&gt;at&lt;/td&gt;
+		&lt;td&gt;0&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;Y&lt;/span&gt;o&lt;span class="diff"&gt;u have e&lt;/span&gt;n&lt;span class="diff"&gt;counte&lt;/span&gt;r&lt;span class="diff"&gt;ed b&lt;/span&gt;ats&lt;span class="diff"&gt;!&lt;/span&gt; &lt;span class="diff"&gt;Y&lt;/span&gt;ou a&lt;span class="diff"&gt;r&lt;/span&gt;e &lt;span class="diff"&gt;being &lt;/span&gt;f&lt;span class="diff"&gt;l&lt;/span&gt;o&lt;span class="diff"&gt;w&lt;/span&gt;n &lt;span class="diff"&gt;t&lt;/span&gt;o &lt;span class="diff"&gt;an&lt;/span&gt;o&lt;span class="diff"&gt;the&lt;/span&gt;r &lt;span class="diff"&gt;loc&lt;/span&gt;a&lt;span class="diff"&gt;ti&lt;/span&gt;o&lt;span class="diff"&gt;n&lt;/span&gt;.&lt;span class="diff"&gt;..&lt;/span&gt;] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;C&lt;/span&gt;&lt;span class="fail"&gt;on&lt;/span&gt;&lt;span class="diff"&gt;g&lt;/span&gt;&lt;span class="fail"&gt;rats&lt;/span&gt;&lt;span class="diff"&gt;,&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt;ou &lt;/span&gt;&lt;span class="diff"&gt;h&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;v&lt;/span&gt;&lt;span class="fail"&gt;e fo&lt;/span&gt;&lt;span class="diff"&gt;u&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;d&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;1 &lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;f&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;y&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;u&lt;/span&gt;&lt;span class="fail"&gt;r a&lt;/span&gt;&lt;span class="diff"&gt;rr&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;ws&lt;/span&gt;&lt;span class="fail"&gt;.]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;check&lt;/td&gt;
+		&lt;td&gt;event&lt;/td&gt;
+		&lt;td colspan="4"&gt;[&lt;span class="diff"&gt;Empty&lt;/span&gt; &lt;span class="diff"&gt;c&lt;/span&gt;ave&lt;span class="diff"&gt;r&lt;/span&gt;n&lt;span class="diff"&gt;,&lt;/span&gt; ar&lt;span class="diff"&gt;r&lt;/span&gt;ow &lt;span class="diff"&gt;c&lt;/span&gt;ont&lt;span class="diff"&gt;inu&lt;/span&gt;e&lt;span class="diff"&gt;s&lt;/span&gt; &lt;span class="diff"&gt;N&lt;/span&gt;o&lt;span class="diff"&gt;r&lt;/span&gt;t&lt;span class="diff"&gt;h&lt;/span&gt;.] &lt;span class="fail"&gt;expected [&lt;/span&gt;&lt;span class="diff"&gt;You&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;h&lt;/span&gt;&lt;span class="fail"&gt;ave&lt;/span&gt;&lt;span class="diff"&gt; e&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;countered&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;b&lt;/span&gt;&lt;span class="fail"&gt;a&lt;/span&gt;&lt;span class="diff"&gt;ts! You a&lt;/span&gt;&lt;span class="fail"&gt;r&lt;/span&gt;&lt;span class="diff"&gt;e being fl&lt;/span&gt;&lt;span class="fail"&gt;ow&lt;/span&gt;&lt;span class="diff"&gt;n&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;t&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt; a&lt;/span&gt;&lt;span class="fail"&gt;n&lt;/span&gt;&lt;span class="diff"&gt;o&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;h&lt;/span&gt;&lt;span class="fail"&gt;e&lt;/span&gt;&lt;span class="diff"&gt;r&lt;/span&gt;&lt;span class="fail"&gt; &lt;/span&gt;&lt;span class="diff"&gt;l&lt;/span&gt;&lt;span class="fail"&gt;o&lt;/span&gt;&lt;span class="diff"&gt;ca&lt;/span&gt;&lt;span class="fail"&gt;t&lt;/span&gt;&lt;span class="diff"&gt;ion&lt;/span&gt;&lt;span class="fail"&gt;.&lt;/span&gt;&lt;span class="diff"&gt;..&lt;/span&gt;&lt;span class="fail"&gt;]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>BatsInCavern</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='Fitnesse'}</instruction>
+        <slimResult>pass(Fitnesse)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>Fitnesse</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='HuntTheWumpusContext', args=[]}</instruction>
+        <slimResult>pass(HuntTheWumpusContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>HuntTheWumpusContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_2_0', instruction='make', instanceName='decisionTable_2', className='GenerateMapContext', args=[]}</instruction>
+        <slimResult>pass(GenerateMapContext)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_2_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>GenerateMapContext</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='make', instanceName='scriptTableActor', className='GenerateMap', args=[]}</instruction>
+        <slimResult>pass(Generate Map)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Generate Map</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty1, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Pit, E]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_3', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Arrow, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_4', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, S]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_4</instructionId>
+                    <col>0</col>
+                              <row>4</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_5', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty3, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_5</instructionId>
+                    <col>0</col>
+                              <row>5</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_6', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Wumpus, W]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_6</instructionId>
+                    <col>0</col>
+                              <row>6</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_7', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Empty4, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_7</instructionId>
+                    <col>0</col>
+                              <row>7</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_8', instruction='call', instanceName='scriptTableActor', methodName='makeMap', args=[Bats, N]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_3_8</instructionId>
+                    <col>0</col>
+                              <row>8</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[0, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_4_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_4_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>pass(You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_4_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>You have encountered bats! You are being flown to another location...</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_4_4', instruction='call', instanceName='scriptTableActor', methodName='playerInAt', args=[0, -1]}</instruction>
+        <slimResult>fail(a=false;e=true)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_4_4</instructionId>
+                    <col>6</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>true</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[1, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_2', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[0, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_5_2</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_3', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_5_3</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>pass(You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>You have encountered bats! You are being flown to another location...</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_5', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>pass(You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_5_5</instructionId>
+                    <col>2</col>
+                              <row>5</row>
+                    <type>ReturnedValueExpectation</type>
+                                        <evaluationMessage>You have encountered bats! You are being flown to another location...</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_5_6', instruction='call', instanceName='scriptTableActor', methodName='playerInAt', args=[0, -1]}</instruction>
+        <slimResult>fail(a=false;e=true)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_5_6</instructionId>
+                    <col>6</col>
+                              <row>6</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>false</actual>
+                              <expected>true</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_6_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[1, 1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_6_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_6_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=You have fallen into a pit and died.)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_6_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>You have fallen into a pit and died.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_6_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=Congrats, you have found 1 of your arrows.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_6_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>Congrats, you have found 1 of your arrows.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_7_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[-1, -1]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_7_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_7_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=You have been trampled by the Wumpus... Whomp, whomp :()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_7_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>You have been trampled by the Wumpus... Whomp, whomp :(</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_7_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=Dead end, arrow falls. Pick up arrow to reclaim it.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_7_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>Dead end, arrow falls. Pick up arrow to reclaim it.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_0', instruction='make', instanceName='scriptTableActor', className='BatTest', args=[]}</instruction>
+        <slimResult>pass(Bat Test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_8_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Bat Test</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_1', instruction='call', instanceName='scriptTableActor', methodName='setBat', args=[1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_8_1</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_2', instruction='call', instanceName='scriptTableActor', methodName='goFromAt', args=[w, -1, 0]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_8_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_3', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=You have encountered bats! You are being flown to another location...;e=Congrats, you have found 1 of your arrows.)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_8_3</instructionId>
+                    <col>2</col>
+                              <row>3</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>You have encountered bats! You are being flown to another location...</actual>
+                              <expected>Congrats, you have found 1 of your arrows.</expected>
+                            </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_8_4', instruction='call', instanceName='scriptTableActor', methodName='event', args=[]}</instruction>
+        <slimResult>fail(a=Empty cavern, arrow continues North.;e=You have encountered bats! You are being flown to another location...)</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_8_4</instructionId>
+                    <col>2</col>
+                              <row>4</row>
+                    <type>ReturnedValueExpectation</type>
+                    <actual>Empty cavern, arrow continues North.</actual>
+                              <expected>You have encountered bats! You are being flown to another location...</expected>
+                            </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <finalCounts>
+    <right>0</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>43</totalRunTimeInMillis>
+</testResults>
+
