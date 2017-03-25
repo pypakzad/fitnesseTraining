@@ -1,6 +1,6 @@
 package game.arrow;
 
-import game.map.Map.Cavern;
+import game.map.Cavern;
 
 public class Arrow {
 

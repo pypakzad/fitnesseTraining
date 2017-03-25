@@ -2,8 +2,8 @@ package Fitnesse;
 
 import java.util.ArrayList;
 
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 
 public class GenerateMap {
 
@@ -12,7 +12,7 @@ public class GenerateMap {
 	String currentState;
 
 	public GenerateMap() {
-		Map.Cavern origin = map.makeCavern(0, 0);
+		Cavern origin = map.makeCavern(0, 0);
 		currentCavern = origin;
 		GenerateMapContext.caverns.put(currentCavern, "Empty");
 	}

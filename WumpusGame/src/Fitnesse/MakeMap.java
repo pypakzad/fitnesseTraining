@@ -2,8 +2,8 @@ package Fitnesse;
 
 import java.util.HashMap;
 
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 
 public class MakeMap {
 	Map map;

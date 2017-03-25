@@ -7,8 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import game.arrow.Arrow;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 
 public class ArrowTest {
 	private Arrow newArrow;

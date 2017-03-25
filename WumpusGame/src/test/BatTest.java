@@ -9,8 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import game.bat.Bat;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class BatTest {
@@ -42,10 +42,10 @@ public class BatTest {
 	public void getNewPlayerLocation() {
 		// map = new Map(0);
 		map = new Map(10, 0, 0, 0);
-		Cavern cavernOne = map.new Cavern(0, 0);
-		Cavern cavernTwo = map.new Cavern(1, 0);
-		Cavern cavernThree = map.new Cavern(2, 0);
-		Cavern cavernFour = map.new Cavern(0, 1);
+		Cavern cavernOne = new Cavern(0, 0);
+		Cavern cavernTwo = new Cavern(1, 0);
+		Cavern cavernThree = new Cavern(2, 0);
+		Cavern cavernFour = new Cavern(0, 1);
 		caverns.put(cavernOne, "");
 		caverns.put(cavernTwo, "");
 		caverns.put(cavernThree, "");

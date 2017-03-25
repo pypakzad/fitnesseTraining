@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -12,8 +11,8 @@ import org.junit.Test;
 import game.Game;
 import game.arrow.Arrow;
 import game.commands.Commands;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class GameTest {
@@ -60,7 +59,7 @@ public class GameTest {
 	@Test
 	public void pickingUpArrowIncreasesAvailableArrows() throws Exception {
 		Map map = new Map(10, 0, 0, 0);
-		Cavern arrowLocation = map.new Cavern(4, 3);
+		Cavern arrowLocation = new Cavern(4, 3);
 		player.setPlayerLocation(arrowLocation);
 		Arrow arrow = new Arrow();
 		arrow.setLocation(arrowLocation);
@@ -68,7 +67,7 @@ public class GameTest {
 		int arrowPickedUpcount = 3;
 		Game.shootArrow(Commands.up);
 		int afterShot = player.getNumberOfAvailableArrows();
-		assertEquals(afterShot,arrowShotCount);
+		assertEquals(afterShot, arrowShotCount);
 		Game.pickupArrow(arrow);
 		int afterPickup = player.getNumberOfAvailableArrows();
 		assertTrue(afterPickup == arrowPickedUpcount);

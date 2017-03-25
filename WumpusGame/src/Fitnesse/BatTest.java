@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import game.Game;
 import game.bat.Bat;
 import game.commands.Commands;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class BatTest {

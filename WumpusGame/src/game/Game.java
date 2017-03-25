@@ -8,8 +8,8 @@ import java.util.Scanner;
 import game.arrow.Arrow;
 import game.bat.Bat;
 import game.commands.Commands;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.map.MapInter;
 import game.map.Movement;
 import game.player.Player;
@@ -92,9 +92,9 @@ public class Game {
 					}
 					userInput = scanner.nextLine();
 				}
-//				if (!playerDeadOrWon) {
-//					System.out.println(errorInput);
-//				}
+				// if (!playerDeadOrWon) {
+				// System.out.println(errorInput);
+				// }
 			}
 			// if you're here game has ended
 			eventList.add("Game Over");
@@ -114,7 +114,7 @@ public class Game {
 			newWumpusX = wumpusX + ((int) Math.round(Math.random() * 2) - 1);
 			newWumpusY = wumpusY + ((int) Math.round(Math.random() * 2) - 1);
 
-			if (caverns.get(map.new Cavern(newWumpusX, newWumpusY)) != null) {
+			if (caverns.get(new Cavern(newWumpusX, newWumpusY)) != null) {
 				if (wumpusX != newWumpusX || wumpusY != newWumpusY)
 					break;
 			}
@@ -217,7 +217,7 @@ public class Game {
 			m.message = "West.";
 			break;
 		}
-		Cavern endingCavern = map.new Cavern(playerX, playerY);
+		Cavern endingCavern = new Cavern(playerX, playerY);
 
 		String endingCavernType = caverns.get(endingCavern);
 		if (endingCavernType == null) {
@@ -259,24 +259,24 @@ public class Game {
 		String endingCavernType = caverns.get(endingCavern);
 		player.setPlayerLocation(endingCavern);
 		if (endingCavernType.equals("Pit")) {
-			m.message +="\nYou have fallen into a pit and died.";
+			m.message += "\nYou have fallen into a pit and died.";
 			eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.equals("Bats")) {
-			m.message +="\nYou have encountered bats! You are being flown to another location...";
+			m.message += "\nYou have encountered bats! You are being flown to another location...";
 			Bat tempBat = getBat();
 			eventList.add(m.message);
 			return playerTeleport(tempBat.getNewLocation());
 		}
 		if (endingCavernType.equals("Wumpus")) {
-			m.message +="\nYou have been trampled by the Wumpus... Whomp, whomp :(";
+			m.message += "\nYou have been trampled by the Wumpus... Whomp, whomp :(";
 			eventList.add(m.message);
 			m.onHazard = true;
 		}
 		if (endingCavernType.length() > 6 && endingCavernType.substring(0, 5).equals("Arrow")) {
 			int arrowNumber = Integer.valueOf(endingCavernType.substring(6, 7));
-			m.message +="\nCongrats, you have found " + arrowNumber + " of your arrows.";
+			m.message += "\nCongrats, you have found " + arrowNumber + " of your arrows.";
 			caverns.replace(endingCavern, "Empty");
 			eventList.add(m.message);
 			for (; arrowNumber > 0; arrowNumber--) {
@@ -422,7 +422,7 @@ public class Game {
 			m.message = "West.";
 			break;
 		}
-		Cavern endingCavern = map.new Cavern(playerX, playerY);
+		Cavern endingCavern = new Cavern(playerX, playerY);
 		String endingCavernType = caverns.get(endingCavern);
 		if (endingCavernType == null) {
 			shotArrow.setLocation(startingCavern);

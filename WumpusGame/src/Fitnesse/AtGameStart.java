@@ -3,8 +3,8 @@ package Fitnesse;
 import game.Game;
 import game.arrow.Arrow;
 import game.commands.Commands;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class AtGameStart {
@@ -27,7 +27,7 @@ public class AtGameStart {
 
 	public void UserPicksUpArrow() {
 		Map map = new Map(10, 0, 0, 0);
-		Cavern arrowLocation = map.new Cavern(4, 3);
+		Cavern arrowLocation = new Cavern(4, 3);
 		player.setPlayerLocation(arrowLocation);
 		Arrow arrow = new Arrow();
 		arrow.setLocation(arrowLocation);

@@ -3,7 +3,7 @@ package game.bat;
 import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 
-import game.map.Map.Cavern;
+import game.map.Cavern;
 import game.player.Player;
 
 public class Bat {

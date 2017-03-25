@@ -3,7 +3,7 @@ package game.player;
 import java.util.ArrayList;
 
 import game.arrow.Arrow;
-import game.map.Map.Cavern;
+import game.map.Cavern;
 
 public class Player {
 	private Cavern location;

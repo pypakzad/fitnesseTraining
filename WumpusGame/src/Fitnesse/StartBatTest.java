@@ -1,12 +1,11 @@
 package Fitnesse;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 import game.Game;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class StartBatTest {
@@ -26,7 +25,7 @@ public class StartBatTest {
 
 	public void initializeMap() {
 		caverns = new HashMap<Cavern, String>();
-		origin = map.new Cavern(0, 0);
+		origin = new Cavern(0, 0);
 		caverns.put(origin, "");
 	}
 

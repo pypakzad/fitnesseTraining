@@ -10,8 +10,8 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 
 public class MapTest {
 

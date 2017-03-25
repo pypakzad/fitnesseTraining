@@ -1,14 +1,13 @@
 package Fitnesse;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 import game.Game;
 import game.arrow.Arrow;
 import game.commands.Commands;
+import game.map.Cavern;
 import game.map.Map;
-import game.map.Map.Cavern;
 import game.player.Player;
 
 public class PickupArrow {
@@ -34,11 +33,11 @@ public class PickupArrow {
 	public void initializeCaverns() {
 		caverns = new HashMap<Cavern, String>();
 		map = new Map(10, 0, 0, 0);
-		Cavern centralCavern = map.new Cavern(0, 0);
-		Cavern eastCavern = map.new Cavern(1, 0);
-		Cavern westCavern = map.new Cavern(-1, 0);
-		Cavern southCavern = map.new Cavern(0, -1);
-		Cavern northCavern = map.new Cavern(0, 1);
+		Cavern centralCavern = new Cavern(0, 0);
+		Cavern eastCavern = new Cavern(1, 0);
+		Cavern westCavern = new Cavern(-1, 0);
+		Cavern southCavern = new Cavern(0, -1);
+		Cavern northCavern = new Cavern(0, 1);
 		caverns.put(centralCavern, "");
 		caverns.put(eastCavern, "");
 		caverns.put(westCavern, "");
@@ -50,10 +49,10 @@ public class PickupArrow {
 	public void initializeArrowPickupTest() {
 		caverns = new HashMap<Cavern, String>();
 		map = new Map(10, 0, 0, 0);
-		centralCavern = map.new Cavern(0, 0);
-		eastCavern = map.new Cavern(1, 0);
-		westCavern = map.new Cavern(2, 0);
-		southCavern = map.new Cavern(2, -1);
+		centralCavern = new Cavern(0, 0);
+		eastCavern = new Cavern(1, 0);
+		westCavern = new Cavern(2, 0);
+		southCavern = new Cavern(2, -1);
 		caverns.put(centralCavern, "");
 		caverns.put(eastCavern, "arrow");
 		caverns.put(westCavern, "");
@@ -72,7 +71,7 @@ public class PickupArrow {
 
 	public void UserPicksUpArrow() {
 		Map map = new Map(10, 0, 0, 0);
-		Cavern arrowLocation = map.new Cavern(4, 3);
+		Cavern arrowLocation = new Cavern(4, 3);
 		player.setPlayerLocation(arrowLocation);
 		Arrow arrow = new Arrow();
 		arrow.setLocation(arrowLocation);
@@ -99,7 +98,7 @@ public class PickupArrow {
 	public String MoveSouth() {
 		int newX = player.getPlayerLocation().getX();
 		int newY = player.getPlayerLocation().getY() - 1;
-		Cavern newLocation = map.new Cavern(newX, newY);
+		Cavern newLocation = new Cavern(newX, newY);
 		player.setPlayerLocation(newLocation);
 		if (caverns.get(newLocation).equals("arrow")) {
 			Arrow arrow = new Arrow();
@@ -112,7 +111,7 @@ public class PickupArrow {
 	public String MoveEast() {
 		int newX = player.getPlayerLocation().getX() + 1;
 		int newY = player.getPlayerLocation().getY();
-		Cavern newLocation = map.new Cavern(newX, newY);
+		Cavern newLocation = new Cavern(newX, newY);
 		player.setPlayerLocation(newLocation);
 		if (caverns.get(newLocation).equals("arrow")) {
 			Arrow arrow = new Arrow();
