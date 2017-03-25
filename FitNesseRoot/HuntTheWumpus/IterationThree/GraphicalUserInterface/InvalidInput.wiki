@@ -1,10 +1,15 @@
+---
+Test
+---
 Invalid Input
-
+!define TEST_SYSTEM {slim}
+!path ${WUMPUS_PATH}
 |script|generate map|
 |make|Empty|map|N|
 |make|Empty|map|E|
 |make|Empty|map|S|
 
-|put user at origin|
-|select invalid key|
-|check that message appears saying "You have pressed an invalid key. Please try again."|
+|script|User Input GUI|
+|Put User At Origin|
+|check|Select Invalid Key|You have pressed an invalid key. Please try again.|
+

@@ -1,6 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+|HuntTheWumpus.IterationTwo.BatsInCavern||12:55:13 Fri, Mar 24, 2017|
+<<<<<<< HEAD
+|HuntTheWumpus.IterationTwo.DeathByHazard||11:54:36 Fri, Mar 24, 2017|
+|RecentChanges||11:14:59 Fri, Mar 24, 2017|
+=======
+=======
+=======
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||12:54:53 Fri, Mar 24, 2017|
+>>>>>>> 43498876457d65f0ce83f1fec74c7f1ddce1c29e
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||12:43:47 Fri, Mar 24, 2017|
+|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||12:23:21 Fri, Mar 24, 2017|
+>>>>>>> 49b71d571867593d455eab7973fd4332aeeb1d62
+<<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGame||11:43:50 Fri, Mar 24, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneHazard||11:43:48 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.WumpuS||11:39:44 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows.DeadEnd||11:38:42 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationTwo.DeathByHazard||11:38:01 Fri, Mar 24, 2017|
@@ -12,15 +25,14 @@
 <<<<<<< HEAD
 |HuntTheWumpus.IterationThree.GraphicalUserInterface||09:25:48 Fri, Mar 24, 2017|
 =======
+>>>>>>> 1a2b7aba0a9b94d274f640fa8b2c6ab0c7559eb9
 
-|HuntTheWumpus.IterationTwo.BatsInCavern||11:03:52 Fri, Mar 24, 2017|
 |HuntTheWumpus.IterationOne.ShootArrows||10:12:26 Fri, Mar 24, 2017|
 >>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
 |HuntTheWumpus.IterationOne.ShootArrows.BatS||15:58:19 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheWumpusArmour||15:40:38 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus||15:29:47 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.MoveTheWumpus.TestingTheMovementOftheWumpus||15:26:18 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.InvalidInput||15:12:20 Thu, Mar 23, 2017|
 <<<<<<< HEAD
 |HuntTheWumpus.IterationOne.ShootArrows||14:44:48 Thu, Mar 23, 2017|
 <<<<<<< HEAD
@@ -32,7 +44,6 @@
 >>>>>>> b56625987de4af6833b25ac977f1d61f20846f91
 |HuntTheWumpus.IterationTwo.StartGame||14:49:00 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree.GraphicalUserInterface.EndGameLoop||14:43:12 Thu, Mar 23, 2017|
-|HuntTheWumpus.IterationThree.GraphicalUserInterface.SensingOneOrMoreHazards||14:15:31 Thu, Mar 23, 2017|
 |HuntTheWumpus.IterationThree||14:15:11 Thu, Mar 23, 2017|
 
 
@@ -91,10 +102,5 @@
 |EmptyCavern||10:32:39 Wed, Mar 22, 2017|
 |HuntTheWumpus.IteractionTwo.BatsInCavern||10:28:04 Wed, Mar 22, 2017|
 
-
-
-
-
-|ValidMovement||16:01:31 Tue, Mar 21, 2017|
 
 

@@ -12,8 +12,8 @@ public class OneHazard {
 
 	public OneHazard() {
 
-		// GenerateMapContext.caverns.put(map.makeCavern(0, 1), "Wumpus");
-		// GenerateMapContext.caverns.put(map.makeCavern(1, 1), "Pit");
+		// GenerateMapContext.caverns.put(map.makeCavern(0, -2), "Bats");
+		// GenerateMapContext.caverns.put(map.makeCavern(0, -1), "Empty");
 
 		map.setMap(GenerateMapContext.caverns);
 		Game.setMap(map);
@@ -26,38 +26,26 @@ public class OneHazard {
 		Game.setPlayer(player);
 	}
 
-	public String EndGameMessage() {
-		int lastEvent = Game.getEventList().size();
-		// return Game.getEventList().get(lastEvent);
-		return "Game Over";
-	}
-
 	public String MoveNorth() {
 		Movement m = Game.playerCavernMove(Commands.w);
-		return m.message;
+		return m.hazardSense;
 	}
 
 	public String MoveSouth() {
 		Movement m = Game.playerCavernMove(Commands.s);
-		return m.message;
+		m = Game.senseDanger(m, player.getPlayerLocation());
+		return m.hazardSense;
 	}
 
-	public String ShootArrowWest() {
-		Game.shootArrow(Commands.lft);
-		int arrowEvent = Game.getEventList().size() - 1;
-
-		return Game.eventList.get(arrowEvent);
-	}
-
-	public String ShootArrowNorth() {
-		Game.shootArrow(Commands.up);
-		int arrowEvent = Game.getEventList().size() - 1;
-		return Game.eventList.get(arrowEvent);
+	public String MoveWest() {
+		Movement m = Game.playerCavernMove(Commands.a);
+		return m.hazardSense;
 	}
 
 	public String MoveEast() {
 		Movement m = Game.playerCavernMove(Commands.d);
-		return m.message;
+		m = Game.senseDanger(m, player.getPlayerLocation());
+		return m.hazardSense;
 	}
 
 }
